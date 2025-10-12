@@ -43,11 +43,12 @@ const Footer = ({ language }) => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">C</span>
-              </div>
-              <span className="text-2xl font-extrabold">ConnectAlign</span>
+            <div className="mb-6">
+              <img
+                src="/assets/logo-light.svg"
+                alt="ConnectAlign"
+                className="h-8"
+              />
             </div>
             <p className="text-gray-400 mb-6">{text.description}</p>
             <div className="flex space-x-4">

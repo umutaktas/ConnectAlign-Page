@@ -44,16 +44,14 @@ const Header = ({ language, toggleLanguage }) => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center space-x-2 cursor-pointer"
+            className="flex items-center cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <div className="relative w-10 h-10 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-xl">C</span>
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-400 to-purple-400 opacity-0 group-hover:opacity-50 transition-opacity blur"></div>
-            </div>
-            <span className={`text-2xl font-extrabold tracking-tight ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-              ConnectAlign
-            </span>
+            <img
+              src={isScrolled ? '/assets/logo-dark.svg' : '/assets/logo-light.svg'}
+              alt="ConnectAlign"
+              className="h-7 md:h-8 transition-all duration-300"
+            />
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">
@@ -100,7 +98,7 @@ const Header = ({ language, toggleLanguage }) => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden mt-4 bg-white rounded-lg shadow-xl p-6 space-y-4"
+            className="md:hidden mt-4 bg-white/95 backdrop-blur-lg rounded-2xl shadow-xl p-6 space-y-4 border border-gray-100"
           >
             {navItems.map((item, index) => (
               <button
