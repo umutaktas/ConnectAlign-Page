@@ -29,13 +29,13 @@ const Hero = ({ language }) => {
   const text = content[language];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pattern-bg">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-purple-900/50"></div>
-      
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
+      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzYjgyZjYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0di00aC0ydjRoLTR2Mmg0djRoMnYtNGg0di0yaC00em0wLTMwVjBoLTJ2NGgtNHYyaDR2NGgyVjZoNFY0aC00ek02IDM0di00SDR2NGgwdjJoNHY0aDJ2LTRoNHYtMkg2ek02IDRWMEg0djRoMHYyaDR2NGgyVjZoNFY0SDZ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
+
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/30 rounded-full filter blur-3xl opacity-30 animate-blob"></div>
+        <div className="absolute top-40 right-10 w-96 h-96 bg-purple-500/30 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-pink-500/30 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
       </div>
 
       <div className="container mx-auto px-4 py-32 relative z-10">
@@ -50,7 +50,7 @@ const Hero = ({ language }) => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="text-5xl md:text-6xl font-bold leading-tight"
+              className="text-5xl md:text-7xl font-black leading-tight tracking-tight"
             >
               {text.headline}
             </motion.h1>
@@ -59,7 +59,7 @@ const Hero = ({ language }) => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-xl text-gray-200 leading-relaxed"
+              className="text-xl md:text-2xl text-blue-100/90 leading-relaxed font-medium"
             >
               {text.subheadline}
             </motion.p>
@@ -87,14 +87,18 @@ const Hero = ({ language }) => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative"
+            className="relative animate-float"
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl transform rotate-6 opacity-20"></div>
-              <img 
-                className="relative rounded-2xl shadow-2xl w-full transform hover:scale-105 transition-transform duration-500" 
-                alt="Modern dashboard mockup showing ConnectAlign platform interface"
-               src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b" />
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl transform rotate-6 opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl transform rotate-3 opacity-10"></div>
+              <div className="relative rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl">
+                <img
+                  className="relative w-full transform group-hover:scale-105 transition-transform duration-700"
+                  alt="Modern dashboard mockup showing ConnectAlign platform interface"
+                  src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b" />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </div>
             </div>
           </motion.div>
         </div>

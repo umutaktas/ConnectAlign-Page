@@ -33,21 +33,25 @@ const Header = ({ language, toggleLanguage }) => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled
+          ? 'bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50'
+          : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <motion.div
             whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             className="flex items-center space-x-2 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+            <div className="relative w-10 h-10 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 rounded-xl flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-xl">C</span>
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-blue-400 to-purple-400 opacity-0 group-hover:opacity-50 transition-opacity blur"></div>
             </div>
-            <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
+            <span className={`text-2xl font-extrabold tracking-tight ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
               ConnectAlign
             </span>
           </motion.div>
@@ -65,17 +69,19 @@ const Header = ({ language, toggleLanguage }) => {
               </button>
             ))}
             
-            <button
+            <motion.button
               onClick={toggleLanguage}
-              className={`flex items-center space-x-2 px-4 py-2 rounded-lg border-2 transition-all ${
-                isScrolled 
-                  ? 'border-blue-600 text-blue-600 hover:bg-blue-50' 
-                  : 'border-white text-white hover:bg-white/10'
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`flex items-center space-x-2 px-4 py-2 rounded-xl border-2 transition-all duration-300 ${
+                isScrolled
+                  ? 'border-blue-600 text-blue-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-purple-600'
+                  : 'border-white text-white hover:bg-white/20 backdrop-blur-sm'
               }`}
             >
               <span className="text-xl">{language === 'tr' ? '🇹🇷' : '🇬🇧'}</span>
-              <span className="font-medium">{language === 'tr' ? 'TR' : 'EN'}</span>
-            </button>
+              <span className="font-semibold">{language === 'tr' ? 'TR' : 'EN'}</span>
+            </motion.button>
 
             <Button className="btn-primary">
               {language === 'tr' ? 'Ücretsiz Demo' : 'Free Demo'}
