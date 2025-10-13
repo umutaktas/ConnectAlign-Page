@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const Hero = ({ language }) => {
   const scrollToFeatures = () => {
@@ -29,84 +29,72 @@ const Hero = ({ language }) => {
   const text = content[language];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMzYjgyZjYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0di00aC0ydjRoLTR2Mmg0djRoMnYtNGg0di0yaC00em0wLTMwVjBoLTJ2NGgtNHYyaDR2NGgyVjZoNFY0aC00ek02IDM0di00SDR2NGgwdjJoNHY0aDJ2LTRoNHYtMkg2ek02IDRWMEg0djRoMHYyaDR2NGgyVjZoNFY0SDZ6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-20"></div>
-
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-blue-500/30 rounded-full filter blur-3xl opacity-30 animate-blob"></div>
-        <div className="absolute top-40 right-10 w-96 h-96 bg-purple-500/30 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-        <div className="absolute bottom-20 left-1/2 w-96 h-96 bg-pink-500/30 rounded-full filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pattern-bg">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#1a1a2e] via-[#1a1a2e]/80 to-[#1a1a2e]"></div>
+      
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/30 rounded-full mix-blend-screen filter blur-3xl opacity-50 animate-blob"></div>
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/30 rounded-full mix-blend-screen filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-teal-500/30 rounded-full mix-blend-screen filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
       </div>
 
-      <div className="container mx-auto px-4 py-32 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-white space-y-8"
+      <div className="container mx-auto px-4 py-32 relative z-10 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-4xl mx-auto"
+        >
+          <motion.h1
+            className="text-5xl md:text-7xl font-bold leading-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-100 to-gray-400"
           >
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="text-5xl md:text-7xl font-black leading-tight tracking-tight"
-            >
-              {text.headline}
-            </motion.h1>
+            {text.headline}
+          </motion.h1>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-xl md:text-2xl text-blue-100/90 leading-relaxed font-medium"
-            >
-              {text.subheadline}
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4"
-            >
-              <Button className="btn-primary text-lg group">
-                {text.cta1}
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button 
-                onClick={scrollToFeatures}
-                className="btn-secondary text-lg"
-              >
-                {text.cta2}
-              </Button>
-            </motion.div>
-          </motion.div>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+            className="mt-6 text-xl text-gray-300 leading-relaxed"
+          >
+            {text.subheadline}
+          </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative animate-float"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-3xl transform rotate-6 opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl transform rotate-3 opacity-10"></div>
-              <div className="relative rounded-3xl overflow-hidden border-4 border-white/10 shadow-2xl">
-                <img
-                  className="relative w-full transform group-hover:scale-105 transition-transform duration-700"
-                  alt="Modern dashboard mockup showing ConnectAlign platform interface"
-                  src="https://images.unsplash.com/photo-1608222351212-18fe0ec7b13b" />
-                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </div>
-            </div>
+            <Button className="btn-primary text-lg group">
+              {text.cta1}
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button 
+              onClick={scrollToFeatures}
+              className="btn-secondary text-lg"
+            >
+              {text.cta2}
+            </Button>
           </motion.div>
-        </div>
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50, scale: 0.8 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ delay: 0.6, duration: 1, type: "spring" }}
+          className="relative mt-16 lg:mt-24 max-w-5xl mx-auto"
+        >
+          <div className="absolute -inset-2 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 opacity-20 blur-xl"></div>
+          <img 
+            className="relative rounded-xl shadow-2xl w-full border border-white/10" 
+            alt="Modern dashboard mockup showing ConnectAlign platform interface"
+            src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop" 
+          />
+        </motion.div>
       </div>
-
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-3 bg-white rounded-full"></div>
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="w-6 h-10 border-2 border-gray-500 rounded-full flex items-start justify-center p-2">
+          <div className="w-1 h-2 bg-gray-400 rounded-full animate-pulse"></div>
         </div>
       </div>
     </section>

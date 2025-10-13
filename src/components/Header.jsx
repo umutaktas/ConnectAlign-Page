@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Logo from '@/components/Logo';
 
 const Header = ({ language, toggleLanguage }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,7 +9,7 @@ const Header = ({ language, toggleLanguage }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -34,58 +33,53 @@ const Header = ({ language, toggleLanguage }) => {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
-          ? 'bg-white/80 backdrop-blur-lg shadow-lg border-b border-gray-200/50'
-          : 'bg-transparent'
+      transition={{ duration: 0.5 }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? 'glass-header' : 'bg-transparent'
       }`}
     >
-      <nav className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <motion.div
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-20">
+          <motion.a
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="cursor-pointer"
+            className="flex items-center cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <Logo isDark={isScrolled} />
-          </motion.div>
+            <img
+              src="assets/logo.png"
+              alt="ConnectAlign Logo"
+              className="h-8 md:h-10 w-auto"
+              style={{ maxWidth: '320px' }}
+            />
+          </motion.a>
 
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item, index) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(navIds[index])}
-                className={`font-medium hover:text-blue-600 transition-colors ${
-                  isScrolled ? 'text-gray-700' : 'text-white'
-                }`}
+                className="font-medium text-gray-300 hover:text-white transition-colors"
               >
                 {item}
               </button>
             ))}
             
-            <motion.button
+            <button
               onClick={toggleLanguage}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`flex items-center space-x-2 px-4 py-2 rounded-xl border-2 transition-all duration-300 ${
-                isScrolled
-                  ? 'border-blue-600 text-blue-600 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 hover:border-purple-600'
-                  : 'border-white text-white hover:bg-white/20 backdrop-blur-sm'
-              }`}
+              className="flex items-center space-x-2 px-3 py-2 rounded-lg border border-white/20 text-white hover:bg-white/10 transition-colors"
             >
-              <span className="text-xl">{language === 'tr' ? '🇹🇷' : '🇬🇧'}</span>
-              <span className="font-semibold">{language === 'tr' ? 'TR' : 'EN'}</span>
-            </motion.button>
+              <span className="text-lg">{language === 'tr' ? '🇹🇷' : '🇬🇧'}</span>
+              <span className="font-medium text-sm">{language === 'tr' ? 'TR' : 'EN'}</span>
+            </button>
 
-            <Button className="btn-primary">
+            <Button className="btn-primary" size="lg">
               {language === 'tr' ? 'Ücretsiz Demo' : 'Free Demo'}
             </Button>
           </div>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden ${isScrolled ? 'text-gray-900' : 'text-white'}`}
+            className="md:hidden text-white"
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -95,25 +89,25 @@ const Header = ({ language, toggleLanguage }) => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden mt-4 bg-white/95 backdrop-blur-lg rounded-2xl shadow-xl p-6 space-y-4 border border-gray-100"
+            className="md:hidden mt-2 bg-gray-800/80 backdrop-blur-lg rounded-lg shadow-xl p-6 space-y-4"
           >
             {navItems.map((item, index) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(navIds[index])}
-                className="block w-full text-left text-gray-700 font-medium hover:text-blue-600 py-2"
+                className="block w-full text-left text-gray-200 font-medium hover:text-white py-2"
               >
                 {item}
               </button>
             ))}
             <button
               onClick={toggleLanguage}
-              className="w-full flex items-center justify-center space-x-2 px-4 py-2 rounded-lg border-2 border-blue-600 text-blue-600"
+              className="w-full flex items-center justify-center space-x-2 px-4 py-3 rounded-lg border border-white/30 text-white"
             >
               <span className="text-xl">{language === 'tr' ? '🇹🇷' : '🇬🇧'}</span>
               <span className="font-medium">{language === 'tr' ? 'TR' : 'EN'}</span>
             </button>
-            <Button className="w-full btn-primary">
+            <Button className="w-full btn-primary" size="lg">
               {language === 'tr' ? 'Ücretsiz Demo' : 'Free Demo'}
             </Button>
           </motion.div>

@@ -34,4 +34,4 @@ export const useInView = (options = {}) => {
   }, [options.threshold, options.rootMargin, options.triggerOnce]);
 
   return [ref, inView];
-};	
+};
