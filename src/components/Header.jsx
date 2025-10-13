@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Logo from '@/components/Logo';
 
 const Header = ({ language, toggleLanguage }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,14 +45,10 @@ const Header = ({ language, toggleLanguage }) => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center cursor-pointer"
+            className="cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            <img
-              src={isScrolled ? '/assets/logo-dark.svg' : '/assets/logo-light.svg'}
-              alt="ConnectAlign"
-              className="h-7 md:h-8 transition-all duration-300"
-            />
+            <Logo isDark={isScrolled} />
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">

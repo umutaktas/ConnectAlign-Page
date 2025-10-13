@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import Logo from '@/components/Logo';
 
 const Footer = ({ language }) => {
   const content = {
@@ -44,11 +45,7 @@ const Footer = ({ language }) => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
             <div className="mb-6">
-              <img
-                src="/assets/logo-light.svg"
-                alt="ConnectAlign"
-                className="h-8"
-              />
+              <Logo isDark={false} />
             </div>
             <p className="text-gray-400 mb-6">{text.description}</p>
             <div className="flex space-x-4">
