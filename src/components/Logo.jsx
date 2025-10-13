@@ -11,7 +11,7 @@ const Logo = ({ isDark = false, className = "" }) => {
         }`}
         style={{
           height: 'auto',
-          width: '180px',
+          width: '234px',
           maxWidth: '100%'
         }}
       />
