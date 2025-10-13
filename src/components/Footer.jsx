@@ -27,10 +27,11 @@ const Footer = ({ language }) => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
             <a href="#" className="flex items-center mb-4">
-              <img 
-                src="https://horizons-cdn.hostinger.com/afb4c666-3be6-4401-b46f-b4030f1b6cb5/fcbaa1010a3f98fb9a514541f2fecd36.png" 
-                alt="ConnectAlign Logo" 
-                className="h-8 w-auto" 
+              <img
+                src="/assets/logo.png"
+                alt="ConnectAlign Logo"
+                className="h-8 w-auto"
+                style={{ maxWidth: '300px' }}
               />
             </a>
             <p className="text-gray-400 mb-6">{text.description}</p>

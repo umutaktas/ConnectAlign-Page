@@ -46,7 +46,7 @@ const Header = ({ language, toggleLanguage }) => {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
             <img
-              src="assets/logo.png"
+              src="/assets/logo.png"
               alt="ConnectAlign Logo"
               className="h-10 md:h-12 w-auto"
               style={{ maxWidth: '400px' }}
