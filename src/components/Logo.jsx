@@ -6,10 +6,10 @@ const Logo = ({ isDark = false, className = "" }) => {
       <img
         src="/assets/logo.png"
         alt="ConnectAlign"
-        className={`h-6 md:h-7 transition-all duration-300 ${
+        className={`h-7 md:h-9 transition-all duration-300 ${
           isDark ? 'opacity-90' : 'brightness-0 invert opacity-90'
         }`}
-        style={{ maxWidth: '200px' }}
+        style={{ maxWidth: '240px' }}
       />
     </div>
   );
