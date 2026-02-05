@@ -91,10 +91,10 @@ const Hero = ({ language }) => {
           className="relative mt-16 lg:mt-24 max-w-5xl mx-auto"
         >
           <div className="absolute -inset-2 rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 opacity-20 blur-xl"></div>
-          <img 
-            className="relative rounded-xl shadow-2xl w-full border border-white/10" 
+          <img
+            className="relative rounded-xl shadow-2xl w-full border border-white/10"
             alt="Modern dashboard mockup showing ConnectAlign platform interface"
-            src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop" 
+            src="https://images.unsplash.com/photo-1587440871875-191322ee64b0?q=80&w=2071&auto=format&fit=crop"
           />
         </motion.div>
       </div>
