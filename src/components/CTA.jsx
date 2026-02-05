@@ -1,24 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Phone } from 'lucide-react';
-import { toast } from '@/components/ui/use-toast';
 
 const CTA = ({ language }) => {
+  const navigate = useNavigate();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.3
   });
-
-  const handleCTAClick = (type) => {
-    toast({
-      title: "🚀 " + (language === 'tr' ? 'Harika!' : 'Awesome!'),
-      description: language === 'tr' 
-        ? `${type} talebiniz alındı! Ekibimiz en kısa sürede sizinle iletişime geçecek.`
-        : `Your ${type} request has been received! Our team will contact you shortly.`,
-    });
-  };
 
   const content = {
     tr: {
@@ -55,15 +47,15 @@ const CTA = ({ language }) => {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Button
-              onClick={() => handleCTAClick(text.cta1)}
+              onClick={() => navigate('/demo')}
               className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-10 py-6 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 group font-bold"
             >
               {text.cta1}
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
+
             <Button
-              onClick={() => handleCTAClick(text.cta2)}
+              onClick={() => navigate('/contact')}
               className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 text-lg px-10 py-6 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 group"
             >
               <Phone className="mr-2 group-hover:rotate-12 transition-transform" />

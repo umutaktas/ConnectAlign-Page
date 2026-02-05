@@ -107,9 +107,6 @@ const Header = ({ language, toggleLanguage }) => {
               <span className="text-xl">{language === 'tr' ? '🇹🇷' : '🇬🇧'}</span>
               <span className="font-medium">{language === 'tr' ? 'TR' : 'EN'}</span>
             </button>
-            <Button className="w-full btn-primary" size="lg">
-              {language === 'tr' ? 'Ücretsiz Demo' : 'Free Demo'}
-            </Button>
           </motion.div>
         )}
       </nav>

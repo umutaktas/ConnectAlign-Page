@@ -1,20 +1,40 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = ({ language }) => {
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const content = {
     tr: {
       description: 'İşletmenizi dijital dönüşüme taşıyan, tüm operasyonel ihtiyaçlarınızı tek platformda toplayan bulut tabanlı çözüm.',
-      links: { title: 'Bağlantılar', items: ['Özellikler', 'Fiyatlandırma', 'SSS', 'Blog', 'İletişim'] },
-      contact: { title: 'İletişim', email: 'info@connectalign.com', phone: '+90 XXX XXX XX XX', address: 'Istanbul, Türkiye' },
-      copyright: '© 2025 ConnectAlign. Tüm hakları saklıdır.',
+      links: { title: 'Bağlantılar', items: ['Özellikler', 'Fiyatlandırma', 'SSS', 'İletişim'] },
+      navLinks: ['features', 'pricing', 'faq', 'footer'],
+      contact: {
+        title: 'İletişim',
+        email: 'info@utilwork.com',
+        phone: '+90 216 706 30 01',
+        address: 'Küçükbakkalköy, Dereboyu Cd Brandium Residence D:3A R5 Blok K:7 D:48, 34758 Ataşehir/İstanbul'
+      },
+      copyright: '© 2026 ConnectAlign. Utilwork firmasına aittir. Tüm hakları saklıdır.',
       legal: ['Gizlilik Politikası', 'Kullanım Koşulları', 'KVKK']
     },
     en: {
       description: 'Cloud-based solution that transforms your business digitally and brings all your operational needs together in one platform.',
-      links: { title: 'Links', items: ['Features', 'Pricing', 'FAQ', 'Blog', 'Contact'] },
-      contact: { title: 'Contact', email: 'info@connectalign.com', phone: '+90 XXX XXX XX XX', address: 'Istanbul, Turkey' },
-      copyright: '© 2025 ConnectAlign. All rights reserved.',
+      links: { title: 'Links', items: ['Features', 'Pricing', 'FAQ', 'Contact'] },
+      navLinks: ['features', 'pricing', 'faq', 'footer'],
+      contact: {
+        title: 'Contact',
+        email: 'info@utilwork.com',
+        phone: '+90 216 706 30 01',
+        address: 'Brandium Residence D:3A R5 Block Floor:7 No:48, Dereboyu Cd, Küçükbakkalköy, 34758 Ataşehir/Istanbul'
+      },
+      copyright: '© 2026 ConnectAlign. Powered by Utilwork. All rights reserved.',
       legal: ['Privacy Policy', 'Terms of Use', 'GDPR']
     }
   };
@@ -56,9 +76,12 @@ const Footer = ({ language }) => {
             <ul className="space-y-3">
               {text.links.items.map((item, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                  <button
+                    onClick={() => scrollToSection(text.navLinks[index])}
+                    className="text-gray-400 hover:text-white transition-colors text-left"
+                  >
                     {item}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -75,7 +98,9 @@ const Footer = ({ language }) => {
               </li>
               <li className="flex items-start">
                 <Phone className="w-5 h-5 mr-3 mt-1 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-400">{text.contact.phone}</span>
+                <a href={`tel:${text.contact.phone.replace(/\s/g, '')}`} className="text-gray-400 hover:text-white transition-colors">
+                  {text.contact.phone}
+                </a>
               </li>
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 mt-1 text-blue-400 flex-shrink-0" />
@@ -89,11 +114,15 @@ const Footer = ({ language }) => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 mb-4 md:mb-0">{text.copyright}</p>
             <div className="flex space-x-6">
-              {text.legal.map((item, index) => (
-                <a key={index} href="#" className="text-gray-500 hover:text-white transition-colors text-sm">
-                  {item}
-                </a>
-              ))}
+              <Link to="/privacy" className="text-gray-500 hover:text-white transition-colors text-sm">
+                {text.legal[0]}
+              </Link>
+              <Link to="/terms" className="text-gray-500 hover:text-white transition-colors text-sm">
+                {text.legal[1]}
+              </Link>
+              <Link to="/kvkk" className="text-gray-500 hover:text-white transition-colors text-sm">
+                {text.legal[2]}
+              </Link>
             </div>
           </div>
         </div>

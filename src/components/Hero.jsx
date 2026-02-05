@@ -1,9 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 const Hero = ({ language }) => {
+  const navigate = useNavigate();
+
   const scrollToFeatures = () => {
     const element = document.getElementById('features');
     if (element) {
@@ -66,11 +69,14 @@ const Hero = ({ language }) => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button className="btn-primary text-lg group">
+            <Button
+              onClick={() => navigate('/demo')}
+              className="btn-primary text-lg group"
+            >
               {text.cta1}
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button 
+            <Button
               onClick={scrollToFeatures}
               className="btn-secondary text-lg"
             >

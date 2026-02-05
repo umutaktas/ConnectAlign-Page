@@ -1,24 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import { Check, X, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { toast } from '@/components/ui/use-toast';
 
 const Pricing = ({ language }) => {
+  const navigate = useNavigate();
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1
   });
-
-  const handlePricingClick = (plan) => {
-    toast({
-      title: "🚧 " + (language === 'tr' ? 'Yakında!' : 'Coming Soon!'),
-      description: language === 'tr' 
-        ? `${plan} planı için demo talebiniz alındı! Ekibimiz en kısa sürede sizinle iletişime geçecek.`
-        : `Your demo request for ${plan} plan has been received! Our team will contact you shortly.`,
-    });
-  };
 
   const content = {
     tr: {
@@ -102,10 +94,10 @@ const Pricing = ({ language }) => {
               </ul>
 
               <Button
-                onClick={() => handlePricingClick(plan.name)}
+                onClick={() => navigate('/demo')}
                 className={`w-full text-lg py-3 ${
-                  plan.popular 
-                    ? 'bg-white text-blue-600 hover:bg-gray-200' 
+                  plan.popular
+                    ? 'bg-white text-blue-600 hover:bg-gray-200'
                     : 'btn-primary'
                 }`}
               >
