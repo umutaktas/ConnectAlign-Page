@@ -54,7 +54,6 @@ const Pricing = ({ language }) => {
               className="pricing-card"
             >
               <div className="text-center mb-6">
-                <div className="text-5xl mb-3">{plan.icon}</div>
                 <h3 className={`text-2xl font-bold mb-2 ${plan.popular ? 'text-white' : 'text-white'}`}>
                   {plan.name}
                 </h3>
