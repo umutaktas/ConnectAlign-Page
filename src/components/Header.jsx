@@ -48,7 +48,7 @@ const Header = ({ language, toggleLanguage }) => {
             <img
               src="/assets/logo.png"
               alt="ConnectAlign Logo"
-              className="h-10 md:h-12 w-auto"
+              //className="h-10 md:h-12 w-auto"
               style={{ maxWidth: '400px' }}
             />
           </motion.a>

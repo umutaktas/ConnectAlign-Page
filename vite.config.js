@@ -11,11 +11,23 @@ export default defineConfig({
     },
   },
   server: {
-    host: '::',
-    port: 3000,
+    host: '127.0.0.1',
+    port: 5173,
+    strictPort: false,
+    open: true,
   },
   preview: {
-    host: '::',
-    port: 3000,
+    host: '127.0.0.1',
+    port: 4173,
+    // Enable SPA routing fallback for client-side navigation
+    strictPort: false,
+  },
+  // Ensure all routes fall back to index.html for client-side routing
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
   },
 });

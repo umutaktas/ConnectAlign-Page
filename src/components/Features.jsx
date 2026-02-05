@@ -1,7 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link } from 'react-router-dom';
 import { FileText, MessageSquare, Building2, GraduationCap, BarChart3, Calendar, CreditCard, Smartphone, Shield } from 'lucide-react';
+import { generateSlug } from '@/utils/featureHelpers';
 
 const Features = ({ language }) => {
   const [ref, inView] = useInView({
@@ -150,14 +152,8 @@ const Features = ({ language }) => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.1 }}
-              className={`feature-card relative ${feature.featured ? 'ring-2 ring-blue-500' : ''}`}
+              className="feature-card relative"
             >
-              {feature.featured && (
-                <div className="absolute -top-3 -right-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold">
-                  ⭐ {language === 'tr' ? 'Öne Çıkan' : 'Featured'}
-                </div>
-              )}
-              
               <div className="w-14 h-14 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center mb-4">
                 <feature.icon className="w-7 h-7 text-white" />
               </div>
@@ -165,9 +161,12 @@ const Features = ({ language }) => {
               <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
               <p className="text-gray-600 mb-4">{feature.description}</p>
               
-              <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">
+              <Link
+                to={`/features/${generateSlug(feature.title)}`}
+                className="text-blue-600 font-semibold hover:text-blue-700 transition-colors inline-block"
+              >
                 {language === 'tr' ? 'Daha Fazla →' : 'Learn More →'}
-              </button>
+              </Link>
             </motion.div>
           ))}
         </div>
