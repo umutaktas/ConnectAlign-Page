@@ -47,8 +47,7 @@ const Header = ({ language, toggleLanguage }) => {
           >
             <img
               src="/assets/logo.png"
-              alt="ConnectAlign Logo"
-              //bite ="h-10 md:h-12 w-auto"
+              alt="ConnectAlign Logo"           
               style={{ maxWidth: '400px' }}
             />
           </motion.a>
@@ -72,7 +71,13 @@ const Header = ({ language, toggleLanguage }) => {
               <span className="font-medium text-sm">{language === 'tr' ? 'TR' : 'EN'}</span>
             </button>
 
-          
+            <Button
+              onClick={() => window.location.href = 'https://dashboard.connectalign.com'}
+              className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-semibold px-6 py-2 rounded-lg transition-all shadow-lg"
+              size="lg"
+            >
+              {language === 'tr' ? 'Dashboard\'a Giriş' : 'Login to Dashboard'}
+            </Button>
           </div>
 
           <button
