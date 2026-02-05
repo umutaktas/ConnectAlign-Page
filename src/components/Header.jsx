@@ -48,7 +48,7 @@ const Header = ({ language, toggleLanguage }) => {
             <img
               src="/assets/logo.png"
               alt="ConnectAlign Logo"
-              //className="h-10 md:h-12 w-auto"
+              //bite ="h-10 md:h-12 w-auto"
               style={{ maxWidth: '400px' }}
             />
           </motion.a>
@@ -72,9 +72,7 @@ const Header = ({ language, toggleLanguage }) => {
               <span className="font-medium text-sm">{language === 'tr' ? 'TR' : 'EN'}</span>
             </button>
 
-            <Button className="btn-primary" size="lg">
-              {language === 'tr' ? 'Ücretsiz Demo' : 'Free Demo'}
-            </Button>
+          
           </div>
 
           <button
