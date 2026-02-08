@@ -35,6 +35,7 @@ export async function sendEmail(formData) {
       email: formData.email,
       phone: formData.phone,
       message: formData.message,
+      displayName: 'ConnectAlign Sales from Web',
     };
 
     // Add form-specific fields
