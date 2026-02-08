@@ -1,0 +1,596 @@
+DOKÜMAN 1: UTILWORK VERİ İŞLEYİCİ AYDINLATMA METNİ
+
+CONNECTALIGN UYGULAMASI
+KİŞİSEL VERİLERİN KORUNMASINA İLİŞKİN AYDINLATMA METNİ
+(Veri İşleyici Sıfatıyla)
+
+GİRİŞ
+Kişisel verilerin işlenmesinde başta özel hayatın gizliliği olmak üzere kişilerin temel hak ve özgürlüklerinin korunmasını amaçlayan 7 Nisan 2016 tarihli ve 29677 Sayılı Resmi Gazete'de yayımlanan 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve ilgili ikincil mevzuat uyarınca, Utilwork Bilgi Teknolojileri Limited Şirketi ("Utilwork" veya "Şirketimiz"), veri işleyici sıfatıyla ConnectAlign uygulaması kapsamında işlenen kişisel verileriniz hakkında sizleri bilgilendirmeyi amaçlamaktadır.
+
+ÖNEMLİ BİLDİRİM: VERİ SORUMLUSU VE VERİ İŞLEYİCİ İLİŞKİSİ
+Utilwork Bilgi Teknolojileri Ltd. Şti., ConnectAlign uygulaması kapsamında VERİ İŞLEYİCİ konumundadır.
+VERİ SORUMLUSU: İşvereniniz veya üyesi olduğunuz kuruluş (ConnectAlign lisansını satın alan şirket)
+Bu aydınlatma metni, Utilwork'ün veri işleyici sıfatıyla yaptığı teknik işleme faaliyetlerini kapsamaktadır. Kişisel verilerinizin işlenmesine ilişkin temel sorumluluk, veri sorumlusu sıfatıyla işvereninize aittir. KVKK kapsamındaki haklarınızı kullanmak için öncelikle işvereninize başvurmanız gerekmektedir.
+
+1. VERİ İŞLEYİCİ BİLGİLERİ
+Ticaret Unvanı: Utilwork Bilgi Teknolojileri Limited Şirketi
+Adres: [Şirket adresi]
+İletişim:
+
+E-posta: [KVKK e-posta adresi]
+Telefon: [İletişim telefonu]
+Web: [Web sitesi]
+
+
+2. İŞLENEN KİŞİSEL VERİLER
+Utilwork, veri işleyici sıfatıyla aşağıdaki kişisel veri kategorilerini işlemektedir:
+2.1. Kimlik Bilgileri
+
+Ad, soyad
+Cinsiyet (opsiyonel)
+Doğum tarihi (opsiyonel)
+Profil fotoğrafı
+
+2.2. İletişim Bilgileri
+
+E-posta adresi
+Telefon numarası (opsiyonel)
+Şehir/konum bilgisi (opsiyonel)
+
+2.3. Çalışan Bilgileri
+
+Departman
+Pozisyon/Ünvan
+Sicil numarası (varsa)
+Organizasyon içindeki hiyerarşik konum
+
+2.4. Kullanım Bilgileri
+
+Uygulama kullanım logları (giriş zamanı, çıkış zamanı)
+Okunan duyurular, indirilen dokümanlar
+Katılım sağlanan etkinlikler
+Tamamlanan eğitimler ve anket yanıtları
+Cihaz bilgileri (işletim sistemi, uygulama versiyonu, cihaz modeli)
+IP adresi
+
+2.5. Görsel ve İşitsel Kayıtlar
+
+Profil fotoğrafı
+Kartvizit görüntüleri (OCR ile taranmış)
+Doküman ve eğitim videoları (kullanıcı tarafından yüklenirse)
+
+2.6. Uygunluk Durumu Bilgileri
+
+Çalışma durumu (Ofiste, Dışarıda, İzinde, Eğitimde, Yurtdışında vb.)
+Uygunluk tarih aralığı
+
+2.7. QR Kod ve Kartvizit Verileri
+
+Kullanıcının kendi QR kodu
+Kartvizit taraması ile elde edilen üçüncü kişi bilgileri (ad, soyad, telefon, e-posta, şirket)
+Kartvizit tarama tarihi ve konum bilgisi
+
+2.8. Pazarlama ve Analitik Bilgileri
+
+Çerez kayıtları
+Firebase Analytics verileri
+Uygulama içi davranış analizleri
+
+
+3. KİŞİSEL VERİLERİN İŞLENME AMAÇLARI
+Utilwork, veri sorumlusunun (işvereninizin) talimatları doğrultusunda kişisel verilerinizi yalnızca aşağıdaki amaçlarla işlemektedir:
+
+Teknik Altyapı Sağlama: Uygulama'nın çalışması için gerekli sunucu, veritabanı ve bulut altyapısının sağlanması
+Veri Saklama: Kişisel verilerin güvenli bir şekilde Azure bulut sunucularında saklanması
+Push Notification Gönderimi: Firebase üzerinden bildirim gönderimi
+SMS Gönderimi: Utilwork SMS servisi üzerinden bilgilendirme mesajları gönderimi
+Sistem Bakımı ve Destek: Teknik arıza çözümü, hata düzeltme ve sistem güncellemeleri
+Güvenlik: Siber saldırı, yetkisiz erişim ve kötü niyetli kullanımların tespiti ve önlenmesi
+Yedekleme: Veri kaybını önlemek için düzenli yedekleme faaliyetleri
+Hukuki Yükümlülükler: Yasal düzenlemelerin gerektirdiği veri saklama ve raporlama
+
+
+4. KİŞİSEL VERİLERİN TOPLANMA YÖNTEMİ
+Kişisel verileriniz, aşağıdaki yöntemlerle otomatik ve elektronik araçlarla toplanmaktadır:
+
+ConnectAlign mobil uygulaması (iOS/Android)
+Web yönetim paneli
+API entegrasyonları
+Kullanıcı kayıt formları
+Profil güncelleme ekranları
+Kartvizit tarama modülü (OCR)
+Sistem logları ve analitik araçlar
+
+
+5. KİŞİSEL VERİLERİN HUKUKİ İŞLEME ŞARTLARI
+Kişisel verileriniz, KVKK'nın 5. ve 6. maddelerinde belirtilen aşağıdaki hukuki sebeplere dayanılarak işlenmektedir:
+
+Sözleşmenin İfası: İşvereniniz ile Utilwork arasındaki hizmet sözleşmesinin ifası için zorunlu olması
+Hukuki Yükümlülük: KVKK, TBK, TTK ve diğer mevzuattan kaynaklanan yükümlülüklerin yerine getirilmesi
+Meşru Menfaat: Utilwork'ün hizmet kalitesini artırma, sistem güvenliğini sağlama ve teknik destek verme gibi meşru menfaatleri
+Açık Rıza: Özel nitelikli kişisel verilerin işlenmesi gereken durumlarda (varsa) açık rızanızın alınması
+
+
+6. KİŞİSEL VERİLERİN AKTARILDIĞI TARAFLAR
+Utilwork, veri işleyici sıfatıyla kişisel verilerinizi yalnızca aşağıdaki taraflara ve yalnızca teknik hizmet sunumu amacıyla aktarabilir:
+6.1. Yurt İçi Aktarımlar
+a) Veri Sorumlusu (İşvereniniz)
+
+Amaç: Raporlama, kullanıcı yönetimi, hizmet sunumu
+Aktarım Şekli: API, raporlar, yönetim paneli
+
+b) Bulut Altyapı Sağlayıcısı
+
+Microsoft Azure (Türkiye veri merkezi)
+Amaç: Veri saklama, sunucu hizmetleri
+Güvenlik: ISO 27001, SOC 2 sertifikalı
+
+c) Analitik Hizmet Sağlayıcıları
+
+Firebase Analytics (Google)
+Amaç: Uygulama performans analizi, kullanıcı deneyimi iyileştirme
+
+d) Kamu Kurum ve Kuruluşları
+
+Yasal zorunluluklar gereği (mahkeme kararı, savcılık talebi vb.)
+
+6.2. Yurt Dışı Aktarımlar
+Firebase (Google LLC - ABD)
+
+Amaç: Push notification ve analytics
+Koruma: Avrupa Komisyonu Yeterlilik Kararı / Standart Sözleşme Hükümleri
+Güvenlik: GDPR uyumlu
+
+Not: Yurt dışı aktarımlar, KVKK'nın 9. maddesi ve Kişisel Verilerin Yurt Dışına Aktarılması Hakkında Yönetmelik çerçevesinde gerçekleştirilmektedir.
+
+7. KİŞİSEL VERİLERİN SAKLANMA SÜRESİ
+Kişisel verileriniz, veri sorumlusu (işvereniniz) tarafından belirlenen süre boyunca saklanır. Utilwork, veri işleyici sıfatıyla:
+
+İşvereninizin talimatları doğrultusunda verileri saklar
+Hizmet sözleşmesi sona erdiğinde verileri siler veya iade eder
+Yasal saklama yükümlülükleri varsa (vergi, ticari kayıt vb.) ilgili süre kadar saklar
+
+Genel Saklama Süresi: Çalışan işverende çalıştığı sürece + işverenin belirlediği ek süre
+Pasif Hesaplar: İşveren tarafından pasif edilen hesapların verileri, işverenin talimatına göre saklanır veya silinir.
+
+8. GÜVENLİK TEDBİRLERİ
+Utilwork, kişisel verilerinizin güvenliğini sağlamak için aşağıdaki teknik ve idari tedbirleri almıştır:
+Teknik Önlemler:
+
+Şifreleme: Tüm veriler transit ve rest halinde şifrelenir (SSL/TLS, AES-256)
+Erişim Kontrolü: Rol tabanlı erişim yönetimi, iki faktörlü kimlik doğrulama
+Firewall ve IDS/IPS: Güvenlik duvarı ve saldırı tespit sistemleri
+Düzenli Yedekleme: Günlük otomatik yedekleme
+Güvenlik Taraması: Düzenli zafiyet taraması ve penetrasyon testleri
+DDoS Koruması: Azure DDoS Protection
+Log Yönetimi: Tüm sistem erişimleri loglanır ve izlenir
+
+İdari Önlemler:
+
+Çalışanlar için gizlilik sözleşmeleri
+KVKK ve veri güvenliği eğitimleri
+Veri işleme politika ve prosedürleri
+Düzenli güvenlik denetimleri
+Olay müdahale planı
+
+
+9. KİŞİSEL VERİ SAHİBİNİN HAKLARI
+KVKK'nın 11. maddesi uyarınca aşağıdaki haklara sahipsiniz:
+
+Kişisel verilerinizin işlenip işlenmediğini öğrenme
+Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme
+Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme
+Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme
+Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme
+KVKK'da öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme
+Düzeltme, silme ve yok edilme işlemlerinin kişisel verilerin aktarıldığı üçüncü kişilere bildirilmesini isteme
+İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme
+Kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme
+
+
+10. HAKLARINIZI NASIL KULLANABİLİRSİNİZ?
+ADIM 1: ÖNCE İŞVERENİNİZE BAŞVURUN
+Kişisel verilerinizin asıl sorumlusu işvereniniz/veri sorumlusu olduğu için, KVKK haklarınızı kullanmak için öncelikle işvereninize başvurmanız gerekmektedir.
+İşvereniniz, talebinizi değerlendirecek ve gerekirse Utilwork'e talimat verecektir.
+ADIM 2: GEREKİRSE UTILWORK'E BAŞVURUN
+Sadece aşağıdaki durumlarda Utilwork'e doğrudan başvurabilirsiniz:
+
+İşvereniniz Utilwork'e talimat vermesine rağmen talep karşılanmadıysa
+Utilwork'ün veri işleyici sıfatıyla yaptığı teknik işlemlerle ilgili özel bir sorunuz varsa
+
+Başvuru Yöntemleri:
+1. Yazılı Başvuru (Posta/Elden):
+Utilwork Bilgi Teknolojileri Limited Şirketi
+KVKK Başvuru Birimi
+[Şirket Adresi]
+[Posta Kodu] [Şehir]
+2. Kayıtlı Elektronik Posta (KEP):
+[KEP adresi]@hs03.kep.tr
+3. E-posta (Güvenli Elektronik İmza ile):
+kvkk@utilwork.com.tr
+4. Başvuru Formu:
+www.utilwork.com.tr/kvkk-basvuru
+
+11. BAŞVURU SÜRECİ VE CEVAPLAMA SÜRESİ
+
+Başvurunuz, kimlik doğrulamasını takiben en geç 30 gün içinde yanıtlanacaktır
+Başvurunuz ücretsizdir
+Cevap, başvuru yöntemine uygun şekilde verilir
+10 sayfadan fazla yazılı cevap için sayfa başına 1 TL ücret alınabilir
+CD/USB gibi kayıt ortamında cevap verilirse maliyet tutarı kadar ücret talep edilebilir
+
+
+12. KVKK KURUL BAŞVURUSU
+Başvurunuzun reddedilmesi, verilen cevabın yetersiz bulunması veya süresinde cevap verilmemesi hallerinde; ret kararının öğrenildiği, cevabın yetersiz bulunduğu veya sürenin dolduğu tarihten itibaren 30 gün ve her halde 60 gün içinde Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsiniz.
+Kişisel Verileri Koruma Kurumu
+Adres: Nasuh Akar Mah. Ziyabey Cad. 1407. Sok. No: 4 06520 Balgat-Çankaya/ANKARA
+Telefon: 0 (312) 216 50 50
+Web: www.kvkk.gov.tr
+
+13. İLETİŞİM BİLGİLERİ
+Utilwork Bilgi Teknolojileri Limited Şirketi
+
+Adres: [Tam Adres]
+Telefon: [Telefon]
+E-posta: kvkk@utilwork.com.tr
+KEP: [KEP Adresi]
+Web: www.utilwork.com.tr
+
+KVKK ve kişisel verileriniz hakkında detaylı bilgi için:
+www.utilwork.com.tr/kvkk
+
+Son Güncelleme: [Tarih]
+Versiyon: 1.0
+
+
+DOKÜMAN 2: MÜŞTERİ ŞİRKET AYDINLATMA METNİ (TEMPLATE)
+
+CONNECTALIGN UYGULAMASI
+KİŞİSEL VERİLERİN KORUNMASINA İLİŞKİN AYDINLATMA METNİ
+(Veri Sorumlusu Sıfatıyla)
+
+GİRİŞ
+Kişisel verilerin işlenmesinde başta özel hayatın gizliliği olmak üzere kişilerin temel hak ve özgürlüklerinin korunmasını amaçlayan 7 Nisan 2016 tarihli ve 29677 Sayılı Resmi Gazete'de yayımlanan 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve ilgili ikincil mevzuat uyarınca, [ŞİRKET UNVANI] ("Şirket" veya "Şirketimiz"), veri sorumlusu sıfatıyla çalışanlarının ConnectAlign uygulaması kapsamında işlenen kişisel verileri hakkında aydınlatma yükümlülüğünü yerine getirmektedir.
+
+VERİ SORUMLUSU BİLGİLERİ
+Ticaret Unvanı: [ŞİRKET UNVANI]
+Adres: [Şirket Adresi]
+Telefon: [Telefon]
+E-posta: [E-posta]
+KEP Adresi: [KEP Adresi]
+Mersis No: [Mersis No]
+
+1. KİŞİSEL VERİLERİN İŞLENMESİ
+Şirketimiz, KVKK ve ilgili mevzuat hükümlerine uygun olarak çalışanlarının kişisel verilerini aşağıda belirtilen amaçlar ve hukuki sebepler kapsamında işlemektedir.
+
+2. İŞLENEN KİŞİSEL VERİ KATEGORİLERİ
+ConnectAlign uygulaması kapsamında işlenen kişisel veri kategorileri ve içerikleri aşağıda belirtilmiştir:
+2.1. Kimlik Bilgileri
+
+Ad, soyad
+T.C. kimlik numarası (sistemde saklanmıyor, sadece kimlik doğrulama için)
+Cinsiyet
+Doğum tarihi
+Profil fotoğrafı
+
+2.2. İletişim Bilgileri
+
+Kurumsal e-posta adresi
+Cep telefonu numarası
+İç hat numarası
+Ofis/şube adresi
+
+2.3. Çalışan Bilgileri
+
+Sicil numarası
+Departman/Birim
+Ünvan/Pozisyon
+Yönetici bilgisi
+İşe giriş tarihi
+Görev tanımı
+Organizasyon içindeki hiyerarşik konum
+
+2.4. Kullanım ve İşlem Bilgileri
+
+Uygulama giriş/çıkış kayıtları
+Okunan duyurular
+Katılım sağlanan etkinlikler
+İndirilen dokümanlar
+Tamamlanan eğitimler ve test sonuçları
+Doldurulmuş anketler
+Görüş ve öneriler
+Uygulama kullanım istatistikleri
+IP adresi, cihaz bilgileri
+
+2.5. Görsel ve İşitsel Kayıtlar
+
+Profil fotoğrafı
+Kartvizit taramaları (OCR)
+Eğitim videoları (varsa)
+
+2.6. Mesleki Deneyim ve Eğitim Bilgileri
+
+Tamamlanan eğitimler
+Eğitim paketleri ve başarı oranları
+Sertifikalar (varsa)
+
+2.7. Diğer Bilgiler
+
+Uygunluk durumu (Ofiste, Dışarıda, İzinde, Eğitimde, Yurtdışında)
+Uygunluk tarihi ve süresi
+QR kod bilgileri
+Taranan kartvizit bilgileri (üçüncü kişilere ait: ad, soyad, telefon, e-posta, şirket)
+Kullanıcı görüş ve önerileri
+
+2.8. Pazarlama ve Analitik Verileri
+
+Çerez kayıtları
+Analitik veriler (Firebase Analytics)
+Push notification tercih ve geçmişi
+
+
+3. KİŞİSEL VERİLERİN İŞLENME AMAÇLARI
+Kişisel verileriniz, KVKK'nın 5. ve 6. maddelerinde belirtilen ilkelere uygun olarak aşağıdaki amaçlarla işlenmektedir:
+3.1. İnsan Kaynakları Yönetimi
+
+Çalışan bilgilerinin kayıt altına alınması
+Organizasyon şemasının oluşturulması ve güncellenmesi
+Personel yönetim süreçlerinin yürütülmesi
+
+3.2. İç İletişim ve Bilgilendirme
+
+Şirket içi duyuruların iletilmesi
+Etkinlik bilgilendirmelerinin yapılması
+Acil durum bildirimleri
+Push notification gönderimi
+
+3.3. Doküman ve Bilgi Yönetimi
+
+Kurumsal dokümanların paylaşılması ve erişim kontrolü
+Elektronik evrak sisteminin işletilmesi
+Katalog, kılavuz ve prosedürlerin dağıtımı
+Dokümana erişim yetkilerinin yönetimi
+
+3.4. Eğitim ve Gelişim
+
+Eğitim programlarının planlanması ve uygulanması
+Eğitim katılımlarının takibi
+Eğitim başarı değerlendirmesi
+Video tabanlı eğitimlerin sunulması
+
+3.5. Anket ve Geri Bildirim
+
+Çalışan memnuniyeti anketleri
+Performans değerlendirme anketleri
+Görüş ve önerilerin toplanması
+Geri bildirim süreçlerinin yönetimi
+
+3.6. İletişim ve Erişilebilirlik
+
+Çalışanların birbirleriyle iletişim kurmasının sağlanması
+Uygunluk durumlarının paylaşılması
+QR kod ile kolay erişim imkanı sunulması
+Kartvizit bilgilerinin saklanması ve aranabilmesi
+
+3.7. Sistem Güvenliği ve Denetim
+
+Yetkisiz erişimin önlenmesi
+Sistem loglarının tutulması
+Güvenlik ihlallerinin tespiti
+İç denetim ve uyum faaliyetleri
+
+3.8. Hukuki Yükümlülükler
+
+Yasal saklama yükümlülüklerinin yerine getirilmesi
+Mahkeme ve resmi makam taleplerinin cevaplanması
+İş sözleşmesi ve mevzuattan kaynaklanan yükümlülükler
+
+
+4. KİŞİSEL VERİLERİN TOPLANMA YÖNTEMİ
+Kişisel verileriniz, aşağıdaki yöntemlerle otomatik ve yarı-otomatik yollarla toplanmaktadır:
+
+ConnectAlign mobil uygulaması (iOS/Android)
+Web yönetim paneli
+Sistem yöneticileri tarafından toplu veri yüklemesi
+Kullanıcı profil güncelleme formları
+Kartvizit tarama modülü (OCR teknolojisi)
+Anket ve geri bildirim formları
+Sistem logları ve otomatik kayıtlar
+İnsan Kaynakları departmanından aktarım (varsa)
+
+
+5. KİŞİSEL VERİLERİN HUKUKİ İŞLEME ŞARTLARI
+Kişisel verileriniz, KVKK'nın 5. ve 6. maddelerinde öngörülen aşağıdaki hukuki sebeplere dayanılarak işlenmektedir:
+a) İş Sözleşmesinin Kurulması ve İfası
+ConnectAlign kullanımı, iş sözleşmesinin ifasının doğal bir parçasıdır.
+b) Kanuni Yükümlülükler
+
+İş Kanunu
+Türk Borçlar Kanunu
+Ticaret Kanunu
+Vergi mevzuatı
+İş Sağlığı ve Güvenliği mevzuatı
+
+c) Meşru Menfaat
+
+Verimli iç iletişim sağlama
+Bilgi güvenliğini koruma
+Eğitim ve gelişim faaliyetleri
+Şirket içi süreçleri optimize etme
+
+d) Açık Rıza (Gerektiğinde)
+Özel nitelikli kişisel veri işlenmesi gereken durumlarda (sağlık verileri vb.) açık rızanız alınacaktır.
+
+6. KİŞİSEL VERİLERİN AKTARILDIĞI TARAFLAR
+Şirketimiz, kişisel verilerinizi aşağıdaki taraflara aktarabilir:
+6.1. Grup Şirketleri
+[Varsa grup şirketleri listelenebilir]
+
+Amaç: Konsolide raporlama, merkezi hizmetler
+
+6.2. Veri İşleyiciler
+Utilwork Bilgi Teknolojileri Ltd. Şti.
+
+Amaç: ConnectAlign uygulamasının teknik altyapısının sağlanması
+Aktarım: Tüm kullanıcı verileri
+Konum: Azure Türkiye veri merkezi
+
+Microsoft Corporation (Azure)
+
+Amaç: Bulut sunucu hizmetleri
+Güvenlik: ISO 27001, SOC 2 sertifikalı
+
+Google LLC (Firebase)
+
+Amaç: Push notification ve analytics
+Konum: Yurt dışı (GDPR uyumlu)
+
+6.3. Yetkili Kamu Kurum ve Kuruluşları
+
+Mahkeme kararı gereği
+Savcılık talebi
+Düzenleyici otorite talepleri
+Vergi dairesi, SGK vb.
+
+6.4. Hizmet Sağlayıcılar
+
+Hukuk danışmanları
+Denetim firmaları
+Teknik destek sağlayıcıları
+
+
+7. KİŞİSEL VERİLERİN YURT DIŞINA AKTARILMASI
+Kişisel verileriniz, aşağıdaki hallerde yurt dışına aktarılabilir:
+Firebase (Google LLC - ABD)
+
+Push notification ve analytics hizmetleri
+Koruma: Avrupa Komisyonu Yeterlilik Kararı / Standart Sözleşme Hükümleri
+Güvenlik: GDPR uyumlu veri işleme
+
+Yurt dışı aktarımlar, KVKK'nın 9. maddesi ve Yurt Dışına Veri Aktarımı Yönetmeliği çerçevesinde gerçekleştirilmektedir.
+
+8. KİŞİSEL VERİLERİN SAKLANMA SÜRESİ
+Kişisel verileriniz, işlenme amacının gerektirdiği süre boyunca ve yasal saklama süreleri boyunca saklanır:
+Genel Kural:
+Çalışanların aktif çalışma süresi + İş ilişkisi sona erdikten sonra 10 yıl
+Özel Durumlar:
+
+Eğitim kayıtları: 10 yıl
+Elektronik evrak: İlgili mevzuata göre (genellikle 10 yıl)
+Anket ve değerlendirmeler: 5 yıl
+Kullanım logları: 2 yıl
+Kartvizit bilgileri: Kullanıcı hesabı aktif olduğu sürece
+
+İş İlişkisi Sona Erdiğinde:
+
+Hesabınız pasif duruma alınır (veriler silinmez)
+Veriler yasal saklama süreleri boyunca saklanır
+Saklama süreleri sonunda veriler anonim hale getirilir veya silinir
+
+
+9. GÜVENLİK ÖNLEMLERİ
+Şirketimiz ve veri işleyicimiz Utilwork, kişisel verilerinizin hukuka aykırı işlenmesini ve erişilmesini önlemek için gerekli tüm teknik ve idari tedbirleri almıştır:
+Teknik Tedbirler:
+
+SSL/TLS şifreleme
+AES-256 veri şifreleme
+Çok faktörlü kimlik doğrulama
+Güvenlik duvarı (Firewall)
+Saldırı tespit sistemleri (IDS/IPS)
+Düzenli güvenlik taramaları
+Günlük yedekleme
+Azure güvenlik altyapısı
+
+İdari Tedbirler:
+
+Gizlilik sözleşmeleri
+Erişim yetkilendirmesi ve loglanması
+KVKK ve veri güvenliği eğitimleri
+Veri işleme envanteri
+Olay müdahale planı
+
+
+10. KİŞİSEL VERİ SAHİBİNİN HAKLARI
+KVKK'nın 11. maddesi kapsamında aşağıdaki haklara sahipsiniz:
+
+Bilgi Talep Etme: Kişisel verilerinizin işlenip işlenmediğini öğrenme
+Detay Talep Etme: İşlenmişse buna ilişkin bilgi talep etme
+Amaç Öğrenme: İşlenme amacını öğrenme
+Üçüncü Kişileri Öğrenme: Yurt içi/dışı aktarılan üçüncü kişileri öğrenme
+Düzeltme: Eksik veya yanlış işlenmiş verilerin düzeltilmesini isteme
+Silme/Yok Etme: KVKK şartları çerçevesinde silme veya yok edilmesini isteme
+Bildirim Talep Etme: Düzeltme/silme işlemlerinin üçüncü kişilere bildirilmesini isteme
+İtiraz: Otomatik sistemlerle analiz sonucu aleyhinize sonuç çıkmasına itiraz etme
+Tazminat: Kanuna aykırı işleme nedeniyle zarara uğramanız halinde tazminat talep etme
+
+
+11. HAKLARINIZI NASIL KULLANABİLİRSİNİZ?
+KVKK haklarınızı kullanmak için aşağıdaki yöntemlerle başvuruda bulunabilirsiniz:
+Başvuru Yöntemleri:
+1. Yazılı Başvuru (Elden/Posta):
+[ŞİRKET UNVANI]
+KVKK Başvuru Birimi
+[Şirket Adresi]
+[Posta Kodu] [Şehir]
+2. Kayıtlı Elektronik Posta (KEP):
+[KEP Adresi]
+3. E-posta (Güvenli Elektronik İmza ile):
+[KVKK E-posta Adresi]
+4. İnsan Kaynakları Departmanı:
+Şirket içi başvuru formu ile
+5. Online Başvuru:
+[Varsa web sitesi başvuru linki]
+
+12. BAŞVURU FORMU VE GEREKLİ BİLGİLER
+Başvurunuzda aşağıdaki bilgiler bulunmalıdır:
+
+Ad, soyad
+T.C. kimlik numarası
+Tebligata esas adres
+E-posta/telefon
+Talep konusu
+Kimlik teyidi için imza (yazılı başvurularda)
+
+Başvuru Formu: [Eğer varsa link]
+
+13. BAŞVURU SÜRECİ
+
+Başvurunuz alındıktan sonra kimlik doğrulaması yapılır
+Talebiniz en geç 30 gün içinde sonuçlandırılır
+Cevap, başvuru yönteminize uygun şekilde verilir
+Başvuru ücretsizdir
+Cevap 10 sayfayı aşarsa sayfa başına 1 TL işlem ücreti alınabilir
+CD/USB gibi kayıt ortamında cevap verilirse maliyet tutarı kadar ücret talep edilebilir
+
+
+14. KVKK KURUL BAŞVURUSU
+Başvurunuzun reddedilmesi, yetersiz bulunması veya süresinde cevap verilmemesi halinde; 30 gün ve her halde 60 gün içinde Kişisel Verileri Koruma Kurulu'na şikayette bulunabilirsiniz.
+Kişisel Verileri Koruma Kurumu
+Nasuh Akar Mah. Ziyabey Cad. 1407. Sok. No: 4
+06520 Balgat-Çankaya/ANKARA
+Tel: 0 (312) 216 50 50
+Web: www.kvkk.gov.tr
+
+15. SÖZLEŞME DEĞİŞİKLİKLERİ
+Şirketimiz, yasal düzenlemelerdeki değişiklikler veya iş süreçlerindeki değişimler nedeniyle bu aydınlatma metnini güncelleme hakkını saklı tutar. Güncellemeler ConnectAlign uygulaması üzerinden size bildirilecektir.
+
+16. İLETİŞİM
+[ŞİRKET UNVANI]
+
+Adres: [Tam Adres]
+Telefon: [Telefon]
+E-posta: [E-posta]
+KEP: [KEP]
+Web: [Web Sitesi]
+
+İnsan Kaynakları Departmanı:
+Telefon: [HR Telefon]
+E-posta: [HR E-posta]
+
+17. ONAY VE KABUL BEYANI
+ConnectAlign uygulamasını kullanmaya başladığınız anda, bu aydınlatma metnini okuduğunuzu, anladığınızı ve kişisel verilerinizin yukarıda belirtilen kapsamda işlenmesini kabul ettiğinizi beyan etmiş sayılırsınız.
+Özel nitelikli kişisel veri işlenmesi gereken durumlarda ayrıca açık rızanız talep edilecektir.
+
+Son Güncelleme: [Tarih]
+Versiyon: 1.0
+Onay: [Yetkilinin Adı, İmza]

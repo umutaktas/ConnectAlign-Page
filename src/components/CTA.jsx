@@ -37,7 +37,7 @@ const CTA = ({ language }) => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           className="text-center text-white max-w-4xl mx-auto"
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-relaxed py-4" style={{ lineHeight: '1.3' }}>
             {text.headline}
           </h2>
           

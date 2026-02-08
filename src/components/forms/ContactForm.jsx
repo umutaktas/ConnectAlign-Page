@@ -19,6 +19,7 @@ export default function ContactForm({ formType = 'demo', language = 'tr', onSucc
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [touched, setTouched] = useState({});
+  const [gdprConsent, setGdprConsent] = useState(false);
 
   const translations = getTranslations(language);
   const employeeCountOptions = getEmployeeCountOptions(language);
@@ -106,6 +107,7 @@ export default function ContactForm({ formType = 'demo', language = 'tr', onSucc
         setFormData(getInitialFormData(formType));
         setErrors({});
         setTouched({});
+        setGdprConsent(false);
 
         // Call success callback
         if (onSuccess) {
@@ -267,6 +269,8 @@ export default function ContactForm({ formType = 'demo', language = 'tr', onSucc
         <input
           type="checkbox"
           id="gdpr-consent"
+          checked={gdprConsent}
+          onChange={(e) => setGdprConsent(e.target.checked)}
           required
           disabled={isSubmitting}
           className="mt-1 w-4 h-4 rounded border-gray-600 bg-[#0f1729] text-purple-600 focus:ring-2 focus:ring-purple-500"
@@ -282,7 +286,7 @@ export default function ContactForm({ formType = 'demo', language = 'tr', onSucc
       {/* Submit Button */}
       <button
         type="submit"
-        disabled={isSubmitting}
+        disabled={isSubmitting || !gdprConsent}
         className="w-full px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 group"
       >
         {isSubmitting ? (

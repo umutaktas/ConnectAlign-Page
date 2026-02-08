@@ -39,20 +39,28 @@ const Pricing = ({ language }) => {
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient"
+          className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient leading-relaxed py-4"
+          style={{ lineHeight: '1.3' }}
         >
           {text.headline}
         </motion.h2>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-center">
+        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
           {text.plans.map((plan, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.15 }}
-              className="pricing-card"
+              className={`pricing-card h-full flex flex-col relative ${
+                plan.popular ? 'lg:scale-105 ring-2 ring-blue-500 shadow-2xl shadow-blue-500/50' : ''
+              }`}
             >
+              {plan.popular && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">
+                  ⭐ {language === 'tr' ? 'ÖNERİLEN' : 'RECOMMENDED'}
+                </div>
+              )}
               <div className="text-center mb-6">
                 <h3 className={`text-2xl font-bold mb-2 ${plan.popular ? 'text-white' : 'text-white'}`}>
                   {plan.name}
@@ -71,7 +79,7 @@ const Pricing = ({ language }) => {
                 </span>
               </div>
 
-              <ul className="space-y-4 mb-8">
+              <ul className="space-y-4 mb-8 flex-1">
                 {plan.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">
                     {feature.included ? (

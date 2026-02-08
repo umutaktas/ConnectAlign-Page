@@ -72,7 +72,7 @@ const Header = ({ language, toggleLanguage }) => {
             </button>
 
             <Button
-              onClick={() => window.location.href = 'https://dashboard.connectalign.com'}
+              onClick={() => window.open('https://dashboard.connectalign.com', '_blank')}
               className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-semibold px-6 py-2 rounded-lg transition-all shadow-lg"
               size="lg"
             >

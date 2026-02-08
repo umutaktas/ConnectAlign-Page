@@ -1,33 +1,22 @@
 /**
- * Email Service using Web3Forms API
- * Documentation: https://docs.web3forms.com
+ * Email Service using backend API
+ * Backend server: backend/server.js (Express + Nodemailer)
  */
 
-const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
+const API_URL = import.meta.env.DEV
+  ? 'http://localhost:3001'
+  : 'https://connectalign.com';
 
 /**
- * Send email via Web3Forms API
+ * Send email via backend API
  * @param {Object} formData - Form data to send
  * @param {string} formData.name - Sender name
  * @param {string} formData.email - Sender email
  * @param {string} formData.formType - Type of form (demo/contact)
- * @param {Object} additionalFields - Additional form fields
  * @returns {Promise<{success: boolean, message: string}>}
  */
 export async function sendEmail(formData) {
   try {
-    // Validate required environment variables
-    const accessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
-    const recipientEmail = import.meta.env.VITE_CONTACT_EMAIL;
-
-    if (!accessKey || accessKey === 'your-web3forms-access-key-here') {
-      throw new Error('Web3Forms access key not configured. Please set VITE_WEB3FORMS_ACCESS_KEY in .env file.');
-    }
-
-    if (!recipientEmail) {
-      throw new Error('Contact email not configured. Please set VITE_CONTACT_EMAIL in .env file.');
-    }
-
     // Check honeypot (spam protection)
     if (formData.honeypot) {
       console.warn('Spam detected (honeypot filled)');
@@ -35,35 +24,48 @@ export async function sendEmail(formData) {
       return { success: true, message: 'Email sent successfully' };
     }
 
-    // Prepare submission data
-    const submissionData = {
-      access_key: accessKey,
-      from_name: formData.name,
+    // Determine endpoint based on form type
+    const endpoint = formData.formType === 'demo'
+      ? '/api/send-demo-request'
+      : '/api/send-contact';
+
+    // Prepare request data
+    const requestData = {
+      name: formData.name,
       email: formData.email,
-      subject: getEmailSubject(formData),
-      message: formatEmailMessage(formData),
-      // Web3Forms metadata
-      replyto: formData.email,
-      from_email: recipientEmail,
-      to_email: recipientEmail,
+      phone: formData.phone,
+      message: formData.message,
     };
 
+    // Add form-specific fields
+    if (formData.formType === 'demo') {
+      requestData.company = formData.company;
+      requestData.employees = formData.employeeCount;
+    } else if (formData.formType === 'contact') {
+      requestData.subject = formData.subject;
+    }
+
     // Make API request
-    const response = await fetch(WEB3FORMS_ENDPOINT, {
+    const response = await fetch(`${API_URL}${endpoint}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
       },
-      body: JSON.stringify(submissionData),
+      body: JSON.stringify(requestData),
     });
 
-    const result = await response.json();
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
 
-    if (response.ok && result.success) {
+    const text = await response.text();
+    const result = text ? JSON.parse(text) : {};
+
+    if (result.success) {
       return {
         success: true,
         message: 'Email sent successfully',
+        messageId: result.messageId,
       };
     } else {
       throw new Error(result.message || 'Failed to send email');
@@ -75,109 +77,6 @@ export async function sendEmail(formData) {
       message: error.message || 'An error occurred while sending the email',
     };
   }
-}
-
-/**
- * Generate email subject based on form type
- */
-function getEmailSubject(formData) {
-  const formTypeLabels = {
-    demo: 'Demo Request',
-    contact: 'Contact Form Submission',
-  };
-
-  const baseSubject = formTypeLabels[formData.formType] || 'Form Submission';
-
-  // Add company name for demo forms
-  if (formData.formType === 'demo' && formData.company) {
-    return `${baseSubject} - ${formData.company}`;
-  }
-
-  // Add subject for contact forms
-  if (formData.formType === 'contact' && formData.subject) {
-    return `${baseSubject} - ${formData.subject}`;
-  }
-
-  return baseSubject;
-}
-
-/**
- * Format email message body based on form type
- */
-function formatEmailMessage(formData) {
-  const { formType } = formData;
-
-  if (formType === 'demo') {
-    return formatDemoMessage(formData);
-  } else if (formType === 'contact') {
-    return formatContactMessage(formData);
-  }
-
-  return JSON.stringify(formData, null, 2);
-}
-
-/**
- * Format demo form message
- */
-function formatDemoMessage(formData) {
-  const lines = [
-    '=== DEMO REQUEST ===',
-    '',
-    `Name: ${formData.name}`,
-    `Email: ${formData.email}`,
-  ];
-
-  if (formData.phone) {
-    lines.push(`Phone: ${formData.phone}`);
-  }
-
-  if (formData.company) {
-    lines.push(`Company: ${formData.company}`);
-  }
-
-  if (formData.position) {
-    lines.push(`Position: ${formData.position}`);
-  }
-
-  if (formData.employeeCount) {
-    lines.push(`Employee Count: ${formData.employeeCount}`);
-  }
-
-  if (formData.message) {
-    lines.push('', '--- Message ---', formData.message);
-  }
-
-  lines.push('', `Submitted at: ${new Date().toLocaleString()}`);
-
-  return lines.join('\n');
-}
-
-/**
- * Format contact form message
- */
-function formatContactMessage(formData) {
-  const lines = [
-    '=== CONTACT FORM ===',
-    '',
-    `Name: ${formData.name}`,
-    `Email: ${formData.email}`,
-  ];
-
-  if (formData.phone) {
-    lines.push(`Phone: ${formData.phone}`);
-  }
-
-  if (formData.subject) {
-    lines.push(`Subject: ${formData.subject}`);
-  }
-
-  if (formData.message) {
-    lines.push('', '--- Message ---', formData.message);
-  }
-
-  lines.push('', `Submitted at: ${new Date().toLocaleString()}`);
-
-  return lines.join('\n');
 }
 
 /**

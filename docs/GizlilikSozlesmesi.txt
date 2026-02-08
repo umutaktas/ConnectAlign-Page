@@ -1,0 +1,183 @@
+CONNECTALIGN
+KULLANIM KOŞULLARI, GİZLİLİK VE GÜVENLİK POLİTİKASI
+
+1. TARAFLAR
+İşbu "Kullanım Koşulları, Gizlilik ve Güvenlik Politikası" ("SÖZLEŞME"), Utilwork Bilgi Teknolojileri Limited Şirketi ("SAĞLAYICI") ile KULLANICI arasında (bu SÖZLEŞME'de KULLANICI ifadesi SİZ'i işaret etmektedir) elektronik ortamda düzenlenmiş olup, KULLANICI tarafından SAĞLAYICI'nın ConnectAlign ("ConnectAlign" veya "Uygulama") uygulamasının KULLANICI'nın işvereni veya bağlı bulunduğu kuruluş ("KURUM") tarafından sağlanan kurumsal lisans kapsamında, e-posta adresi ve giriş şifresine sahip olması şartlarıyla kullanımı ile vereceği bilgilerin güvenliği konusundaki TARAFLAR'ın hak ve yükümlülüklerinin düzenlenmesine yöneliktir. (SAĞLAYICI tarafından, tamamen SAĞLAYICI'nın kararıyla, zaman zaman web sitesinde yayımlanabilecek tüm güncelleştirmeler bu SÖZLEŞME'ye dahildir.)
+SÖZLEŞME'de SAĞLAYICI ve KULLANICI ayrı ayrı "TARAF", birlikte "TARAFLAR" olarak adlandırılmışlardır.
+
+2. AMAÇ VE TANIMLAR
+Bu Sözleşme'nin amacı ("Amaç"), KULLANICI'nın ConnectAlign uygulaması dahilinde SAĞLAYICI'ye vermiş olduğu e-posta adresi ve giriş şifresinin ("Gizli Bilgi") gizliliğinin korunması ve ConnectAlign uygulamasının kullanım koşullarının belirlenmesidir.
+Uygulama/ConnectAlign: iOS ve Android mobil cihazlarda çalışan mobil uygulama yazılımı ve web tabanlı yönetim panelini içeren, bu yazılım ile bağlantılı olarak oluşturulan şirket içi iletişim ve dokümantasyon yönetimi hizmetlerinin sunulduğu tüm platformları ifade etmektedir.
+Kullanıcı: ConnectAlign ile SAĞLAYICI tarafından sunulan hizmetlerden bu SÖZLEŞME'de belirtilen koşullar dahilinde, KURUM'un kurumsal lisansı kapsamında yararlanan gerçek kişi çalışanları ifade etmektedir.
+KURUM: KULLANICI'nın işvereni veya üyesi olduğu, SAĞLAYICI ile kurumsal lisans sözleşmesi imzalamış tüzel kişiliği ifade etmektedir.
+Kurum Yöneticisi/Admin: KURUM tarafından yetkilendirilmiş, kullanıcı yönetimi, içerik yönetimi ve sistem ayarlarını yapma yetkisine sahip kişileri ifade etmektedir.
+Gizli Bilgi: KULLANICI'nın e-posta adresi, şifresi ve Uygulama üzerinden paylaştığı kişisel ve iş verileri dahil olmak üzere tüm gizli nitelikli bilgileri ifade etmektedir.
+
+3. UYGULAMA KULLANIM ŞARTLARI
+3.1. Yaş ve Ehliyet Şartı
+Reşit olmayan kişiler tarafından yapılan başvurular, kayıt işlemlerini tamamlamış olsa dahi KULLANICI'nın doğurduğu haklardan yararlanamazlar. Aksi yöndeki talep ve işlemler SAĞLAYICI'nın sorumluğunda değildir. KULLANICI, ConnectAlign uygulamasında kendisi tarafından sağlanan bilgilerin ve içeriklerin doğru ve hukuka uygun olduğunu kabul ve taahhüt eder. SAĞLAYICI, KULLANICI tarafından ConnectAlign uygulaması üzerinden kendisi tarafından yüklenen, değiştirilen ve sağlanan bilgilerin ve içeriklerin doğruluğunu araştırma, bu bilgi ve içeriklerin güvenli, doğru ve hukuka uygun olduğunu taahhüt ve garanti etmekle yükümlü ve sorumlu olmadığı gibi, söz konusu bilgi ve içeriklerin yanlış veya hatalı olmasından dolayı ortaya çıkacak hiçbir zarardan da sorumlu değildir.
+3.2. Sözleşme Feshi
+SAĞLAYICI, her zaman herhangi bir gerekçe göstermeden, herhangi bir bildirimde bulunmadan ve herhangi bir tazminat ödeme yükümlülüğü bulunmadan ve derhal yürürlüğe girecek şekilde işbu SÖZLEŞME'yi tek taraflı olarak feshedebilir ve KULLANICI'nın ConnectAlign uygulamasından yararlanmasına son verebilir.
+3.3. Yasalara Uygunluk
+KULLANICI, ConnectAlign uygulamasını yürürlükte bulunan tüm ulusal ve uluslararası mevzuata, internet kullanımına ilişkin kural ve yasalara, KURUM'un iç politikalarına ve çalışma kurallarına uygun olarak kullanacağını kabul eder.
+3.4. Bilgi Paylaşımı ve Açıklama
+KULLANICI, ConnectAlign uygulaması ile ilgili olarak mevzuat gereği resmi makamlarca bu bilgilerin talep edilmesi halinde ve/veya SÖZLEŞME konusu ürün ve hizmetlerin ifasına yönelik olarak ve/veya bu amaçla anlaşma akdettiği iş ortaklarına (Microsoft Azure, Firebase, Utilwork SMS Servisi vb.) ticari ilişki gereği açıklama yapmakla yükümlü olduğu durumlarda, KULLANICI'lara ait ConnectAlign uygulaması dahilinde edinilen bilgileri açıklamaya yetkili olacağını ve bu sebeple kendisinden her ne nam altında olursa olsun tazminat talep edilemeyeceğini kabul eder.
+3.5. Yasaklanan Kullanımlar
+KULLANICI, ConnectAlign'ı hukuka aykırı, amacı dışında, hileli veya uygunsuz bir amaç için kullanmak veya bunları yapması için herhangi bir üçüncü şahsa izin vermek, bu yöndeki bir fiile katılmak veya teşvik etmek, belirli zamanlarda revize edildiği şekliyle işbu SÖZLEŞME'yi ihlal edecek bir şekilde hareket etmek, SÖZLEŞME ile edinilen hakları üçüncü kişilere kullandırmak eylemlerini yapamaz veya bu eylemleri yapması için herhangi bir üçüncü şahsa izin veremez veya onu teşvik edemez. SAĞLAYICI, KULLANICI tarafından bu fiillerin gerçekleştirilmesi durumunda işbu SÖZLEŞME'yi feshedebilir. Bu durumda SAĞLAYICI'nın diğer tüm hukuki hakları saklıdır.
+3.6. Hesap Güvenliği ve Gizli Bilgi Koruma
+KULLANICI, ConnectAlign uygulamasına erişmek için kullandığı e-posta bilgisi, şifre, kod gibi bilgilerini gizli tutmakla yükümlüdür. ConnectAlign uygulamasının üçüncü bir şahıs tarafından kullanımının sonuçlarından tamamen KULLANICI sorumludur. Usulsüz kullanımları yapan kişilerin kimliklerini tespit etmekle SAĞLAYICI yükümlü değildir. KULLANICI, yukarıda belirtilen hükümler saklı kalmak kaydıyla, işbu bilgilerinin üçüncü bir şahıs tarafından kullanımından ve bunun neticelerinden kendisinin sorumlu olduğunu, işbu bilgilerin kullanımı suretiyle yapılan işlemlerin kendisini bağlayıcı olduğunu kabul, beyan ve taahhüt eder. KULLANICI, şifresinin başkalarınca ele geçirildiğini öğrendiği takdirde SAĞLAYICI'yı ve/veya KURUM Yöneticisi'ni derhal bilgilendirmekle yükümlüdür.
+3.7. Fikri ve Sınai Mülkiyet Hakları
+KULLANICI, ConnectAlign uygulamasının fikri ve sınai haklarının SAĞLAYICI'ya ait olduğunu ve onun tarafından işletildiğini kabul eder. KULLANICI, ConnectAlign uygulamasında bulunan resimleri, metinleri, görsel ve işitsel imgeleri, dosyaları, veri tabanlarını, katalogları ve uygulamadaki her türlü içeriği çoğaltmayacağını, kopyalamayacağını, dağıtmayacağını, işlemeyeceğini ve/veya SAĞLAYICI ve/veya KURUM ve/veya üçüncü bir şahsın ayni veya şahsi haklarına, malvarlığına tecavüz teşkil edecek hareketlerde bulunmayacağını kabul ve taahhüt etmektedir. Bu maddenin ihlali halinde, tüm sorumluluk ihlalde bulunan kişiye ait olacak, SAĞLAYICI hiçbir şekilde sorumlu olmayacaktır.
+3.8. İletişim İzni
+KULLANICI, SAĞLAYICI ve/veya KURUM'un kendisi ile elektronik haberleşme araçları (push notification, e-posta, SMS) ile iletişim kurmasını, duyuru, etkinlik, eğitim ve bilgilendirmeleri yapmasını kabul, beyan ve taahhüt eder.
+3.9. Uygulama Üzerindeki Yetkiler
+Uygulama'nın her türlü hakkı SAĞLAYICI'ya ait olup SAĞLAYICI, Uygulama içeriğini değiştirme, ekleme, çıkarma yapma, güncelleme yapma hakkını saklı tutar. Yapılacak güncellemeler nedeniyle teknik olarak yetersiz cihazlar Uygulama'daki yenilikleri kullanamayabilir.
+3.10. Kurumsal Lisans Modeli
+Bu SÖZLEŞME'nin okunup kabul edilmesinden sonra KULLANICI, KURUM tarafından sağlanan kurumsal lisans kapsamında ConnectAlign uygulamasını kullanabilir.
+KULLANICI, KURUM çalışanı veya yetkilisi ise ve KURUM'un ConnectAlign kurumsal lisansı kapsamında kullanım hakkı var ise, KURUM Yöneticisi tarafından sisteme tanımlanan e-posta adresi ve kendi belirlediği şifre ile giriş yaptığında ConnectAlign'ı ücretsiz (KULLANICI'nın KURUM'dan ayrılması, hesabının pasif edilmesi, KURUM ile SAĞLAYICI arasındaki lisans sözleşmesinin sona ermesi hallerinde kullanım hakkı son bulacaktır) şekilde kullanabilir.
+ConnectAlign kurumsal lisans kapsamını ve kullanım haklarını www.utilwork.com üzerinden veya KURUM Yöneticisi'nden öğrenebilirsiniz. SAĞLAYICI, ConnectAlign kullanım haklarında değişiklik yapma hakkına sahiptir.
+
+4. KURUMSAL KULLANIM
+4.1. Ticari Olmayan, Kurumsal Kullanım
+ConnectAlign uygulamasında sunulan her türlü içerik, ticari amaçlar dışında kalan sadece KURUM'un iş süreçlerine yönelik kurumsal kullanım içindir. KULLANICI, bu içeriklerin herhangi bir şekilde kişisel amaçlarla yayınlanması, kopyalanması, çoğaltılması, işlenmesi, değiştirilmesi, içeriğin doğrudan veya dolaylı olarak yayınlanması, bir topluluğa dinletilmesi ve/veya izletilmesi, halka açık yerlerde yayınlanması eylemlerini gerçekleştiremez.
+ConnectAlign ile sunulan içeriğin KULLANICI tarafından umuma açık mekanlarda kullanılması veya gösterilmesi, yararlandırılması yasaktır. SAĞLAYICI tarafından KULLANICI'ya tanınan haklar ConnectAlign uygulamasının kurumsal, ticari olmayan kullanımı içindir. KULLANICI, ConnectAlign uygulamasını kullanarak doğrudan veya dolaylı herhangi bir kişisel gelir veya benzeri menfaat elde edemez.
+4.2. Kullanım Hakları ve Kapsamı
+KULLANICI, dahil olduğu ConnectAlign uygulaması kullanım haklarının kapsamına, SAĞLAYICI'nın www.utilwork.com veya SAĞLAYICI'nın uygun göreceği diğer web adreslerinden ulaşabilecektir. İşbu SÖZLEŞME'nin kabul edilmesi ile bu kurumsal lisans kullanım hakları kapsamı da KULLANICI tarafından kabul edilmiş sayılır. Bu nedenle, kullanım haklarına ilişkin bilgilere ilgili adreslerden ulaşarak lütfen dikkatlice okuyunuz.
+SAĞLAYICI, KULLANICI'ya kullanıma ilişkin kurumsal lisans dahilinde tanınan hakları, KURUM ile yapılan sözleşme çerçevesinde herhangi bir zamanda değiştirme hakkını saklı tutar.
+4.3. Sistem Bütünlüğü
+KULLANICI, SAĞLAYICI'nın veya onun içerik, ortam veya platform tedarikçilerinin (Microsoft Azure, Firebase vb.) sitelerine, mal veya hizmetlerine, yazılım, veri veya datalarına herhangi bir şekilde zarar verecek, erişimi engelleyecek, aşırı yükleme yapacak veya hasar verecek şekilde işlemler, müdahaleler yapamaz. ConnectAlign uygulaması bu şekilde ya da üçüncü kişilerin SAĞLAYICI'nın hizmetlerinden faydalanmasına engel olacak şekilde kullanamaz.
+4.4. Devir Yasağı
+KULLANICI, bu SÖZLEŞME ile tanınan hakkını, SAĞLAYICI ve KURUM'un yazılı izni olmaksızın hiçbir şekilde üçüncü kişilere bedelsiz de olsa devredemez, kiralayamaz, kullanımına ve/veya yararına sunamaz veya satamaz.
+
+5. SAĞLAYICI'NIN HAK VE YÜKÜMLÜLÜKLERİ
+5.1. Üçüncü Taraf Linkleri
+SAĞLAYICI, SAĞLAYICI'nın kendi kontrolünde olmayan üçüncü kişi satıcılar, sağlayıcılar ve başkaca üçüncü kişilerin sahip olduğu ve işlettiği başka web sitelerine ve/veya portallara, dosyalara veya içeriklere "link" verebilir. Bu "link"ler, sadece referans kolaylığı nedeniyle SAĞLAYICI tarafından sağlanmış olabilir ve web sitesini veya siteyi işleten kişiyi desteklemek amacı veya web sitesi veya içerdiği bilgilere yönelik herhangi bir türde bir beyan veya garanti niteliği taşımamaktadır. Site üzerindeki "link"ler vasıtasıyla erişilen portallar, web siteleri, dosyalar ve içerikler, bu "link"ler vasıtasıyla erişilen portallar veya web sitelerinden sunulan hizmetler veya ürünler veya bunların içeriği hakkında SAĞLAYICI'nın herhangi bir sorumluluğu yoktur.
+5.2. Kullanıcı Bilgileri
+SAĞLAYICI, KULLANICI bilgilerini veya üyeliğe ilişkin KULLANICI bilgilerini, KULLANICI güvenliği, kendi yükümlülüğünü ifa, KURUM'a raporlama ve bazı istatistiki değerlendirmeler için KURUM ile yapılan sözleşme ve KVKK hükümlerine uygun olarak kullanabilir. Bunları bir veritabanı üzerinde tasnif edip yasal saklama süreleri boyunca muhafaza edebilir.
+5.3. Bağımsız Taraflar
+KULLANICI ve SAĞLAYICI hukuken bağımsız taraflardır. Aralarında ortaklık, temsilcilik veya işçi-işveren ilişkisi yoktur. KULLANICI ile işveren ilişkisi KURUM ile olan iş sözleşmesinden kaynaklanır.
+5.4. Kullanıcı İçerik Sorumluluğu
+KULLANICI'nın, aldığı hizmet dahilinde sisteme yüklediği "tüm kullanıcı bilgileri ve içeriklerinin" üçüncü şahısların telif hakkı, marka, ticari unvan ve işletme adı gibi yasal haklarını ihlal etmemesi gerekmektedir. KULLANICI'nın işbu madde hükmüne aykırı davranması durumunda, SAĞLAYICI, işbu SÖZLEŞME'ye aykırı bu durumun düzeltilmesini KULLANICI'dan talep edebileceği gibi dilerse KULLANICI'ya önceden haber vermeksizin KULLANICI'nın hesabını geçici veya kalıcı olarak iptal edebilir. KULLANICI'nın sisteme yüklediği içeriklerin üçüncü kişilerin telif hakkı, marka, ticari unvan, işletme adları dahil fikri ve sınai mülkiyet haklarını ihlal etmesi durumunda, bu nedenle ortaya çıkacak üçüncü kişi taleplerinin tek muhatabı ve sorumlusu KULLANICI olacak, bu tür taleplere karşı SAĞLAYICI'yı ve KURUM'u beri kılacak ve derhal tazmin edecektir.
+5.5. İçerik Sorumluluğu
+SAĞLAYICI, ConnectAlign uygulamasında KURUM ve KULLANICI tarafından sunulan içeriklerin (duyurular, dokümanlar, etkinlikler, eğitimler vb.) doğruluğundan, yasallığından veya kalitesinden sorumlu değildir. İçerik sorumluluğu tamamen KURUM ve/veya içeriği oluşturan KULLANICI'ya aittir.
+
+6. FİKRİ MÜLKİYET
+6.1. Mülkiyet Hakları
+ConnectAlign'ın ve bölümlerinin ve ConnectAlign ile birlikte veya aracılığıyla elde edilen yazılım, programlar ve teknik altyapı üzerindeki tüm fikri ve/veya sınai mülkiyet haklarının sahibi SAĞLAYICI ve/veya SAĞLAYICI'nın içerik, ortam veya platform tedarikçileri dahil olmak üzere eserler üzerinde hak sahibi üçüncü kişilerdir. ConnectAlign'ın kullanılması KULLANICI'ya, ConnectAlign'da bulunan eser ve içeriklerin hiçbir fikri ve sınai mülkiyet hakkının sahipliğini vermez. KULLANICI, SAĞLAYICI ve/veya SAĞLAYICI'nın içerik, ortam veya platform tedarikçileri dahil olmak üzere eser ve içerikler üzerinde hak sahibi üçüncü kişilerin sahip olduğu fikri ve/veya sınai mülkiyet haklarını ihlal edecek faaliyetlerde bulunamaz.
+6.2. Kullanım Sınırlamaları
+KULLANICI, ConnectAlign'daki eserleri ve içeriğin hiçbir unsurunu değiştirmemeyi, uyarlamamayı, çevirmemeyi, satmamayı; bu içerik/ürün/servisten türev veya işleme eserler hazırlamamayı, bu içerik/ürün/servisin düzenini bozmamayı, bu servis kapsamında kullandığı her türlü içeriği, görüntüleri bu SÖZLEŞME dışındaki amaçlar için kullanmamayı, değiştirmemeyi, bütünlüğünü bozacak şekilde ters mühendislik yapmamayı ve herhangi bir mecrada yayınlamaya teşebbüs etmemeyi kabul eder.
+6.3. Bildirimler ve Tescil Hakları
+KULLANICI, ConnectAlign'ın kapsamındaki veya ConnectAlign ile ilgili SAĞLAYICI'nın veya SAĞLAYICI'nın içerik, ortam veya platform tedarikçileri dahil olmak üzere eserler üzerinde hak sahibi üçüncü şahısların eser üzerindeki haklarını ve telif haklarını, ticaret markaları veya diğer tescil hakları bildirilerini kaldırmamayı, gizlememeyi veya değiştirmemeyi kabul eder.
+6.4. Gizlilik Yükümlülüğü
+KULLANICI, işbu SÖZLEŞME uyarınca ConnectAlign'ın kullanımı sırasında ConnectAlign kullanım amaçları dışında kalan, sisteme, SAĞLAYICI'nın içerik, ortam veya platform tedarikçileri dahil olmak üzere eserler üzerinde hak sahibi üçüncü kişilere veya SAĞLAYICI'ye veya KURUM'a ilişkin öğrenilen gizli bilgileri muhafaza etmeyi, kısmen veya tamamen üçüncü kişilere doğrudan veya dolaylı olarak hiçbir şekilde ifşa etmemeyi veya açıklamamayı kabul etmiş olur.
+6.5. İhlal Sorumluluğu
+KULLANICI, işbu madde kapsamındaki taahhüt ve yükümlülüklerine uymadığı takdirde, üçüncü parti firma ve üçüncü kişi taleplerinin tek sorumlusu KULLANICI olacak ve eser ve içeriğe ilişkin ayrıca lisans verenler de dahil ancak bunlarla sınırlı olmaksızın, üçüncü kişilerin uğradıkları zararlardan dolayı SAĞLAYICI'den talep edilen tazminat miktarını ve mahkeme masrafları ve avukatlık ücreti dahil ancak bununla sınırlı olmamak üzere diğer her türlü masrafı karşılamakla sorumlu olacaktır.
+6.6. Tüm Haklar Saklıdır
+SAĞLAYICI'nın, SAĞLAYICI hizmetleri, SAĞLAYICI bilgileri, SAĞLAYICI telif haklarına tabi çalışmaları, SAĞLAYICI ticari markaları, SAĞLAYICI ticari görünümü veya sahip olduğu her tür maddi ve fikri mülkiyet hakları dahil tüm malvarlığı, ayni ve şahsi hakları, ticari bilgi ve know-how'a yönelik tüm hakları saklıdır.
+
+7. SORUMLULUĞUN SINIRLANMASI
+7.1. Genel Sorumsuzluk
+SAĞLAYICI, ConnectAlign'da yer alan içeriklerin kullanımı sırasında KULLANICI tarafında oluşabilecek sorun veya zararlardan hiçbir şekilde sorumlu değildir.
+7.2. Kullanıcı Riski
+KULLANICI, ConnectAlign ile ilgili olarak temin edilen tüm duyuru, doküman, eğitim, etkinlik, görsel, video vb. içerikleri sadece kendi iş ihtiyaçları için ve doğabilecek riskleri kabul ederek kullanacağını kabul eder. ConnectAlign'ın içeriklerine ilişkin olarak veya kullanımından kaynaklanan veri kaybı veya cihaz sistem hasarları KULLANICI'nın sorumluluğunda olup SAĞLAYICI'nın bu hususta herhangi bir sorumluluğu bulunmamaktadır.
+7.3. Hizmet Seviyesi
+SAĞLAYICI, ConnectAlign'ın 7 gün 24 saat kesintisiz olarak sunulmasını KULLANICI'lara garanti etmemekte ve bu konuda herhangi bir hizmet ya da performans seviyesi taahhüdü vermemektedir. Hizmet seviyesi taahhütleri KURUM ile SAĞLAYICI arasındaki kurumsal lisans sözleşmesinde düzenlenir.
+7.4. "Olduğu Gibi" Hizmeti
+ConnectAlign'ın etkin biçimde kullanımı ve bu kullanımın tüm sonuçları KULLANICI'nın sorumluluğunda olup, SAĞLAYICI, ConnectAlign'ın kendisinden beklenen sonuçlarının tam olmaması ya da eksik veya amaca uygun olmamasından ve bu sebeplerle ortaya çıkabilecek doğrudan veya dolaylı zararlardan hiçbir şekilde sorumlu değildir.
+7.5. Özel Sorumsuzluk Halleri
+SAĞLAYICI, (a) ConnectAlign ile sunulan herhangi bir içerik sonucunda maruz kalınan kayıp veya hasarlardan; (b) KURUM veya KULLANICI tarafından yüklenen doküman, görüntü, video veya içerikteki hata, hasar ya da bozulmalardan; (c) ConnectAlign'ın KULLANICI tarafından kullanımı neticesinde oluşacak herhangi bir telif hakkı ve mülkiyet haklarının ihlalinden hiçbir şekilde sorumlu olmayacaktır.
+7.6. İçerik Değiştirme Yetkisi
+SAĞLAYICI, ConnectAlign ile sunulan her türlü özellik ve içerik üzerinde, tamamen kendi takdirinde olmak üzere, değişiklik yapma, uygun görmediği özelliği kaldırma ve/veya yeni özellik ekleme yetkilerine sahiptir.
+
+8. TAZMİNAT
+8.1. Lisans ve Yazılım Sorumluluğu
+ConnectAlign'dan temin edilen içeriklerin görüntülenmesi ve/veya kullanılması için gerekli yazılımların ya da programların ve işletim sistemlerinin üzerindeki eser sahibinin haklarının veya diğer lisansların gerekli olup olmadığını belirlemek ve bu lisansları almak KULLANICI'nın sorumluluğundadır.
+8.2. Kullanıcı Tazmin Yükümlülüğü
+KULLANICI, ConnectAlign'ı bu SÖZLEŞME hükümlerine aykırı kullandığı takdirde, tüm sorumluluğun kendisine ait olduğunu ve bu nedenle ortaya çıkabilecek zarar ve ziyandan ve üçüncü şahıslar tarafından açılacak her türlü dava, zarar veya ziyan taleplerinden münferiden sorumlu olacağını, SAĞLAYICI'nın bu kabil dava, şikâyet ve benzeri konularda hiçbir şekilde taraf ve muhatap olmayacağını kabul eder.
+8.3. Rücu Hakkı
+KULLANICI, SÖZLEŞME hükümlerinin KULLANICI tarafından ihlali nedeniyle, SAĞLAYICI'nın üçüncü şahıslar tarafından açılacak herhangi bir davada taraf addedilerek üçüncü şahıslara herhangi bir tazminat ödemesi veya yükümlülük altına sokulması durumunda, başta ödemiş olduğu tazminat olmak üzere, bundan dolayı uğrayacağı her türlü zararı KULLANICI'ya rücu edebileceğini ve SAĞLAYICI'nın talebi üzerine, ödenmiş olan tazminat, zarar ve masrafları kayıtsız şartsız olarak defaten ödemeyi gayrı kabulü rücu olarak beyan, kabul ve taahhüt etmiştir.
+
+9. VERİ UYGULAMALARI VE GİZLİLİK POLİTİKASI
+9.1. Hesap Bilgileri Güvenliği
+ConnectAlign'a giriş yaparken kimlik doğrulaması için KULLANICI tarafından girilen e-posta bilgisinin ve şifrenin doğruluğundan, güvenliğinden, saklanması, üçüncü kişilerin bilgisinden uzak tutulması ve kullanılması durumlarıyla ilgili her türlü husus tamamen KULLANICI sorumlu olup girilen bilgilerdeki yanlışlıklardan ve/veya KULLANICI bilgilerinin bir başkası tarafından ele geçirilerek/öğrenilerek kullanılması yoluyla ConnectAlign'a KULLANICI adına erişimden SAĞLAYICI sorumlu değildir.
+9.2. Güvenlik Sorumluluğu
+KULLANICI'ların ConnectAlign'a erişim araçlarının (e-posta ve şifre) güvenliği, saklanması, üçüncü kişilerin bilgisinden uzak tutulması, kullanılması gibi hususlardan kaynaklanan KULLANICI'nın ve/veya üçüncü kişilerin uğradığı veya uğrayabileceği zararlarla ilgili olarak SAĞLAYICI'nın, doğrudan veya dolaylı, herhangi bir sorumluluğu yoktur. Bu kapsamda KULLANICI, SAĞLAYICI'den zarar, tazminat her ne ad altında olsun herhangi bir talepte bulunamaz.
+9.3. Gizlilik Politikası
+SAĞLAYICI'nın kişisel bilgileri muhafazasına ilişkin Gizlilik ve Güvenlik Politikası'na www.utilwork.com/gizlilik-politikasi linkinden ulaşılabilir. SAĞLAYICI olarak söz konusu Gizlilik Politikası'nın dikkatlice okunmasını öneririz.
+9.4. Veri Sorumlusu İlişkisi
+KULLANICI'nın kişisel verilerinin asıl sorumlusu KURUM'dur. SAĞLAYICI, veri işleyici konumundadır. KVKK kapsamındaki haklarını kullanmak isteyen KULLANICI, öncelikle KURUM'a başvurmalıdır. Detaylı bilgi için KVKK Aydınlatma Metni'ne bakınız.
+9.5. Karşılıklı Gizlilik
+KULLANICI, işbu SÖZLEŞME ve dolayısıyla SAĞLAYICI ve KURUM hakkında öğreneceği her türlü bilgiyi işbu SÖZLEŞME'nin herhangi bir nedenle sona ermesinden bağımsız olarak süresiz olarak gizli tutacağını kabul ve taahhüt eder.
+
+10. SÖZLEŞME DEĞİŞİKLİKLERİ
+SAĞLAYICI, tamamen kendi takdirine bağlı ve tek taraflı olarak, işbu SÖZLEŞME'yi uygun göreceği herhangi bir zamanda değiştirebilir. İşbu SÖZLEŞME'nin değişen hükümleri, www.utilwork.com web sitesi sayfasında ve/veya ConnectAlign uygulamasında ilan edildikleri tarihte geçerlilik kazanacak olup; KULLANICI, bu SÖZLEŞME'deki değişiklikleri, değişiklikler SAĞLAYICI'nın web sitesinde yayınlandıktan sonra kabul etmiş sayılır. Bu değişikliklerden haberdar olabilmek için işbu SÖZLEŞME'yi sık sık gözden geçirmenizi tavsiye ederiz. Geri kalan hükümler, aynen yürürlükte kalarak hüküm ve sonuçlarını doğurmaya devam edecektir. İşbu SÖZLEŞME, KULLANICI'nın tek taraflı beyanları ile değiştirilemez.
+
+11. MÜCBİR SEBEPLER
+Hukuken "mücbir sebep" sayılan tüm hallerde, SAĞLAYICI, işbu SÖZLEŞME ile belirlenen yükümlülüklerinden herhangi birini geç veya eksik ifa etme veya ifa etmeme nedeniyle yükümlü değildir. Bu ve bunun gibi durumlar, SAĞLAYICI için gecikme, eksik ifa etme veya ifa etmeme veya temerrüt addedilmeyecek veya bu durumlar için SAĞLAYICI'den herhangi bir nam altında tazminat talep edilemeyecektir. "Mücbir sebep" terimi, doğal afet, isyan, savaş, grev, salgın hastalıklar, siber saldırılar, DDoS saldırıları, iletişim sorunları, altyapı ve internet arızaları, bulut servis sağlayıcı arızaları, elektrik kesintisi ve kötü hava koşulları dahil ve fakat bunlarla sınırlı olmamak kaydıyla, SAĞLAYICI'nın makul kontrolü haricinde ve gerekli özeni göstermesine rağmen önleyemediği, kaçınılamayacak olaylar olarak yorumlanacaktır.
+
+12. ÇEŞİTLİ HÜKÜMLER
+12.1. Uygulanacak Hukuk ve Yetki
+İşbu SÖZLEŞME ve SÖZLEŞME'nin uygulanması, yorumlanması, hükümleri dahilinde doğan hukuki ilişkilerin yönetimi ve uyuşmazlıkların çözümü Türk Hukukuna tabi olacaktır. TARAFLAR, işbu SÖZLEŞME'nin uygulanmasından doğan uyuşmazlıklar için İstanbul (Çağlayan) Mahkemeleri'nin ve İcra Daireleri'nin yetkili olduğunu kabul ederler.
+12.2. Kısmi Hükümsüzlük
+İşbu SÖZLEŞME'nin konusu olduğu bir dava neticesinde yetkili mahkeme tarafından işbu SÖZLEŞME'nin herhangi bir hüküm veya kısmının hükümsüzlüğüne karar verilmesi halinde diğer hüküm ve kısımlar geçerli olur ve yürürlükte kalır.
+12.3. Devir ve Temlik
+SAĞLAYICI, işbu SÖZLEŞME kapsamındaki yükümlülüklerini veya haklarını tamamen kendi takdirinde olmak üzere kısmen veya tamamen başkalarına devir ve temlik edebilir veya alt sözleşme yapabilir. KULLANICI, bu SÖZLEŞME kapsamındaki haklarını ve yükümlülüklerini üçüncü kişilere devredemez.
+12.4. Feragat
+İşbu SÖZLEŞME'de yer alan hükümlere ilişkin ihlaller ya da işbu SÖZLEŞME kapsamındaki temerrütlere ilişkin tatbik edilecek haklardan edilen feragatler, söz konusu feragat yazılı olarak düzenlenmediği ve feragat eden tarafından imzalanmadığı sürece yürürlüğe girmeyecektir. Herhangi bir ihlalden ya da temerrütten feragat edilmesi, daha sonraki ihlallerden ya da temerrütlerden de feragat edildiği anlamını taşımayacaktır.
+
+13. SÖZLEŞME'NİN YÜRÜRLÜĞÜ VE FESHİ
+13.1. Yürürlük
+KULLANICI, ConnectAlign uygulamasını kullandığı ya da işbu SÖZLEŞME'yi kabul ettiğini beyan ettiği anda işbu SÖZLEŞME ile belirlenen şartları kabul etmiş sayılır ve bu SÖZLEŞME TARAFLAR arasında yürürlüğe girer.
+13.2. Tazmin Yükümlülüğü
+KULLANICI, ConnectAlign uygulamasını kullandığı ya da işbu SÖZLEŞME'yi onayladığı tarihten itibaren, SÖZLEŞME'de belirtilen hak ve yükümlülüklere aykırı hareketleri ve/veya edim ve taahhütlerini yerine getirmemesi nedeniyle, SAĞLAYICI'nın ve/veya KURUM'un ve/veya üçüncü kişilerin uğrayacağı her türlü zarar ve ziyanı derhal tazmin etmeyi kabul ve taahhüt eder.
+13.3. Fesih Halleri
+İşbu SÖZLEŞME ve KULLANICI'nın ConnectAlign'ı kullanma hakkı, aşağıdaki hallerde sona erer:
+
+KULLANICI'nın ConnectAlign'ı kullanmayı sona erdirmesi ve hesabını kapatması
+İşbu SÖZLEŞME'de sayılan fesih hallerinden herhangi birinin gerçekleşmesi
+KURUM ile SAĞLAYICI arasındaki kurumsal lisans sözleşmesinin herhangi bir nedenle sona ermesi
+KULLANICI'nın KURUM'dan ayrılması veya hesabının KURUM Yöneticisi tarafından pasif edilmesi
+
+ile ve her halukarda hiçbir ihtara gerek kalmaksızın kendiliğinden hükümsüz kalacaktır. SAĞLAYICI, işbu SÖZLEŞME'yi ve KULLANICI'nın ConnectAlign'ı kullanma yetkisini önceden haber vermeksizin herhangi bir zamanda feshetme hakkını saklı tutar.
+13.4. Fesih Sonrası Yükümlülükler
+KULLANICI, bu SÖZLEŞME'nin sona ermesi üzerine, SAĞLAYICI veya KURUM'un talep etmesi halinde, ConnectAlign'dan elde ettiği içerikleri; mülkiyeti, yönetimi veya denetim ve kontrolü altında bulunan tüm cihazlardan ve/veya depolama ortamlarından silmeyi kabul, beyan ve taahhüt etmiştir.
+
+14. GİZLİLİK VE GÜVENLİK
+14.1. Kullanıcı Gizlilik Taahhüdü
+KULLANICI, SAĞLAYICI ve KURUM ile paylaştığı Gizli Bilgi'lerin kendisine ait olduğunu veya paylaşma yetkisine sahip olduğunu, aksi halde SAĞLAYICI, KURUM ve üçüncü kişilere karşı sorumlu olacağını kabul ve taahhüt eder.
+14.2. Sağlayıcı Gizlilik Taahhüdü
+SAĞLAYICI, KULLANICI'nın gizli bilgilerini kendi gizliliğini korumak ve muhafaza etmek için gerekli teknik ve idari tedbirleri alarak ve ne olursa olsun makul seviyeden az titizlik göstermeyerek koruyacağını ve Gizli Bilgi'yi bilmeye mutlaka ihtiyacı olan yetkili çalışanlar (kendi veya iş ortağı çalışanları dahil olmak üzere) ve danışmanlarla sınırlı tutacağını kabul eder.
+14.3. Üçüncü Taraf Paylaşımı
+SAĞLAYICI, Gizli Bilgileri KULLANICI'nın veya KURUM'un açık yazılı izni olmadan herhangi bir üçüncü şahsa ifşa etmeyeceğini ve Gizli Bilgi'yi sadece aşağıdaki hallerde paylaşacağını kabul eder:
+
+Adli veya resmi bir karar gereğince usulüne uygun şekilde talep edilmesi
+KVKK ve ilgili mevzuatın gerektirdiği haller
+Hizmetin sunulması için gerekli teknik alt yükleniciler (Azure, Firebase vb.)
+KURUM'un talimatı
+
+14.4. KVKK Uyumu
+SAĞLAYICI, KULLANICI kişisel verilerini 6698 Sayılı Kişisel Verilerin Korunması Hakkında Kanunda (KVKK) öngörülen veri işlemeye ilişkin ilkelere ve işlenme şartlarına uygun olarak işleyeceğini, KVKK uyarınca çalışanlarını bu konuda bilgilendireceğini kabul eder.
+14.5. Gizlilik Kapsamı
+Bu Sözleşme'nin kurulması aşamasında aktarılan veya aktarılacak diğer gizli bilgileri de kişisel verileri, Gizli Bilgi olarak kabul edip süresiz olarak ifşa etmemekle yükümlü olduğunu kabul eder.
+14.6. Süreklilik
+Bu SÖZLEŞME herhangi bir nedenle sona erse dahi bu madde yürürlükte kalacaktır.
+
+15. SORUMLULUĞUN REDDİ
+Taraflar arasında veya KURUM ile SAĞLAYICI arasında imzalanan kurumsal lisans sözleşmesinde belirtilmediği sürece, taraflar Gizli Bilgi'nin doğruluğu, eksiksizliği, durumu, uygunluğu veya performansına ilişkin herhangi bir beyan veya tekeffülde bulunmamaktadır.
+ConnectAlign "olduğu gibi" (as is) ve "mevcut haliyle" (as available) sunulmaktadır.
+
+16. ONAY BEYANI
+KULLANIM KOŞULLARI, GİZLİLİK VE GÜVENLİK POLİTİKASI'NI OKUDUM VE ANLADIM.
+SÖZLEŞME'DE YER ALAN TÜM HUSUSLARIN TARAFIMCA ONAY TARİHİM İLE KABUL EDİLMİŞ OLDUĞUNU BEYAN VE TAAHHÜT EDERİM.
+CONNECTALIGN UYGULAMASINI KURUM'UMUN SAĞLADIĞI KURUMSAL LİSANS KAPSAMINDA KULLANDIĞIMI, KİŞİSEL VERİLERİMİN ASIL SORUMLUSUNUN KURUM'UM OLDUĞUNU VE SAĞLAYICI'NIN VERİ İŞLEYİCİ KONUMUNDA BULUNDUĞUNU BİLİYORUM.
+GİZLİ BİLGİLERİMİ KORUMAK VE ÜÇÜNCÜ KIŞILERLE PAYLAŞMAMAK SORUMLULUĞUNUN TAMAMEN BANA AİT OLDUĞUNU KABUL EDİYORUM.
+
+Son Güncelleme Tarihi: [Tarih]
+Versiyon: 1.0
+İletişim:
+Utilwork Bilgi Teknolojileri Limited Şirketi
+Web: www.utilwork.com
+E-posta: destek@utilwork.com
+Gizlilik: www.utilwork.com/gizlilik-politikasi
+KVKK: www.utilwork.com/kvkk
+Adres: [Şirket Adresi]

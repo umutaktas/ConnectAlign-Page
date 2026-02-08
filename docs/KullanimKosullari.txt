@@ -1,0 +1,224 @@
+ConnectAlign Mobil Uygulama Kullanım Koşulları
+SON KULLANICI LİSANS SÖZLEŞMESİ (EULA)
+
+1. TARAFLAR VE KONU
+Bu Son Kullanıcı Lisans Sözleşmesi ("SÖZLEŞME"), Utilwork Bilgi Teknolojileri Limited Şirketi ("SAĞLAYICI" veya "Utilwork") ile ConnectAlign mobil uygulamasını ("UYGULAMA") kullanan son kullanıcı ("KULLANICI") arasında elektronik ortamda düzenlenmiş olup, KULLANICI'nın Uygulama'yı kullanımı ile ilgili hak ve yükümlülüklerinin düzenlenmesine yöneliktir.
+SÖZLEŞME'de SAĞLAYICI ve KULLANICI ayrı ayrı "TARAF", birlikte "TARAFLAR" olarak adlandırılmışlardır.
+ÖNEMLİ BİLDİRİM: ConnectAlign, KULLANICI'nın işvereni veya üyesi olduğu kuruluş ("KURUM") tarafından satın alınmış kurumsal bir SaaS (Software as a Service) uygulamasıdır. KULLANICI, bu Uygulama'yı KURUM'un sağladığı kurumsal lisans kapsamında ücretsiz olarak kullanmaktadır. KULLANICI ile SAĞLAYICI arasında doğrudan bir ücretlendirme ilişkisi bulunmamaktadır.
+KULLANICI, Uygulama'yı kullandığı anda veya ilk giriş sırasında "Kullanım Koşulları'nı okudum ve kabul ediyorum" seçeneğini işaretleyerek bu SÖZLEŞME'yi bütün hükümleri ile birlikte kabul etmiş olur. KULLANICI bu SÖZLEŞME'yi kabul etmiyorsa Uygulama'yı kullanamaz.
+
+2. TANIMLAR
+Uygulama/ConnectAlign: iOS ve Android mobil cihazlarda çalışan mobil uygulama yazılımı ve web tabanlı yönetim panelini içeren, şirket içi iletişim ve dokümantasyon yönetimi platformunu ifade eder.
+Kullanıcı: ConnectAlign'a erişim yetkisi verilen, KURUM çalışanı veya yetkili gerçek kişiyi ifade eder.
+KURUM: KULLANICI'nın işvereni veya üyesi olduğu, SAĞLAYICI ile kurumsal lisans sözleşmesi imzalamış tüzel kişiliği ifade eder.
+Kurum Yöneticisi/Admin: KURUM tarafından yetkilendirilmiş, kullanıcı yönetimi, içerik yönetimi ve sistem ayarlarını yapma yetkisine sahip kişileri ifade eder.
+İçerik: Uygulama üzerinde paylaşılan, yüklenen veya görüntülenen her türlü veri, doküman, duyuru, etkinlik, görsel, metin ve bilgiyi ifade eder.
+
+3. UYGULAMA ERİŞİMİ VE KULLANIM ŞARTLARI
+3.1. Hesap Oluşturma ve Giriş
+KULLANICI'nın Uygulama'ya erişimi, KURUM Yöneticisi tarafından sisteme tanımlanan e-posta adresi ile sağlanır. KULLANICI, ilk girişte kendisine özel bir şifre belirler ve bu şifreyi güvenli bir şekilde saklamakla yükümlüdür.
+KULLANICI, hesap bilgilerinin (e-posta ve şifre) güvenliğinden, gizli tutulmasından ve üçüncü kişilerce kullanılmamasından bizzat sorumludur. Hesap bilgilerinin başkası tarafından kullanılması sonucu oluşabilecek her türlü zarar ve sorumluluğun muhatabı KULLANICI'dır.
+3.2. Yaş ve Yeterlilik Şartı
+KULLANICI, 18 yaşını doldurmuş ve hukuki işlem yapma ehliyetine sahip olduğunu kabul ve beyan eder. Reşit olmayan kişiler Uygulama'yı kullanamaz.
+3.3. Kurumsal Kullanım
+KULLANICI, Uygulama'yı yalnızca KURUM'un iş süreçleri kapsamında ve KURUM'un belirlediği kurallar çerçevesinde kullanacağını kabul eder. Uygulama'nın kişisel, ticari veya KURUM dışı amaçlarla kullanılması kesinlikle yasaktır.
+3.4. Bilgi Doğruluğu
+KULLANICI, Uygulama'da kendisi tarafından girilen, yüklenen veya paylaşılan bilgilerin doğru, güncel ve hukuka uygun olduğunu kabul ve taahhüt eder. SAĞLAYICI, KULLANICI tarafından sağlanan bilgilerin doğruluğunu araştırma, teyit etme veya doğrulama yükümlülüğü altında değildir.
+3.5. Yasalara Uygunluk
+KULLANICI, Uygulama'yı yürürlükteki tüm ulusal ve uluslararası mevzuata, internet kullanım kurallarına ve iş yerinin çalışma kurallarına uygun olarak kullanacağını kabul eder.
+3.6. Yasaklanan Kullanımlar
+KULLANICI, aşağıdaki eylemleri gerçekleştiremez veya bunları gerçekleştirmesi için üçüncü kişilere izin veremez:
+
+Uygulama'yı hukuka aykırı, hileli veya uygunsuz amaçlarla kullanmak
+Uygulama'nın altyapısına, güvenlik sistemlerine müdahale etmek
+Ters mühendislik (reverse engineering), kaynak kodunu çıkarma, kopyalama veya türev çalışmalar yapmak
+Diğer kullanıcıların sistemden yararlanmasını engellemek
+Sistemde aşırı yük oluşturacak, hizmet aksatacak davranışlarda bulunmak
+Virüs, zararlı yazılım veya kötü amaçlı kod yaymak
+Başkalarının hesaplarına yetkisiz erişim sağlamak
+Ticari kazanç elde etmek amacıyla Uygulama'yı kullanmak
+Spam, istenmeyen mesaj veya içerik göndermek
+Başkalarının şahsi haklarını, telif haklarını veya gizlilik haklarını ihlal etmek
+Yanıltıcı, hakaret içeren, müstehcen veya yasadışı içerik paylaşmak
+
+3.7. Hesap Güvenliği ve Şifre Yönetimi
+KULLANICI, şifresini ve hesap bilgilerini kesinlikle gizli tutmakla yükümlüdür. Şifrenin üçüncü kişilerce ele geçirildiğini öğrenmesi halinde derhal KURUM Yöneticisi'ni ve SAĞLAYICI'yı bilgilendirmelidir.
+KULLANICI'nın hesabı üzerinden gerçekleştirilen tüm işlemler, hesap sahibinin bilgisi ve onayı ile yapılmış sayılır. SAĞLAYICI, yetkisiz erişim veya kötüye kullanım durumlarından sorumlu tutulamaz.
+3.8. Hesap Askıya Alma ve İptal
+SAĞLAYICI, aşağıdaki durumlarda KULLANICI'nın hesabını geçici veya kalıcı olarak askıya alma veya iptal etme hakkını saklı tutar:
+
+SÖZLEŞME hükümlerinin ihlali
+Uygulama'nın kötüye kullanılması
+Yasalara aykırı davranışlar
+KURUM ile SAĞLAYICI arasındaki lisans sözleşmesinin sona ermesi
+KURUM Yöneticisi'nin talebi (çalışan ayrılması, yetki iptali vb.)
+
+SAĞLAYICI bu durumda KULLANICI'ya önceden bildirimde bulunma veya tazminat ödeme yükümlülüğü altında değildir.
+3.9. İletişim İzni
+KULLANICI, SAĞLAYICI ve/veya KURUM'un kendisi ile Uygulama içi bildirimler, e-posta, SMS ve diğer elektronik iletişim araçları ile iletişim kurmasını kabul eder.
+
+4. KİŞİSEL VERİLERİN KORUNMASI VE GİZLİLİK
+4.1. Veri Sorumlusu ve Veri İşleyici İlişkisi
+6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında:
+
+Veri Sorumlusu: KURUM (KULLANICI'nın işvereni)
+Veri İşleyici: SAĞLAYICI (Utilwork Bilgi Teknolojileri Ltd. Şti.)
+
+KULLANICI, kişisel verilerinin asıl sorumlusunun KURUM olduğunu, SAĞLAYICI'nın ise sadece teknik altyapı sağlayıcısı ve veri işleyicisi konumunda bulunduğunu kabul eder.
+4.2. Veri Saklama ve Güvenlik
+KULLANICI'nın kişisel verileri ve Uygulama üzerinde oluşturduğu içerikler, SAĞLAYICI'nın bulut sunucularında güvenli bir şekilde saklanır. SAĞLAYICI, sektör standartlarında güvenlik önlemleri almakla yükümlüdür.
+4.3. Veri Sahipliği
+Uygulama'da oluşturulan, yüklenen veya paylaşılan tüm içerik ve veriler KURUM'un mülkiyetindedir. KULLANICI, bu verilerin asıl sahibinin KURUM olduğunu ve KURUM'un veriler üzerinde tam yetkiye sahip olduğunu kabul eder.
+4.4. Veri Erişimi ve Kullanımı
+KURUM Yöneticileri, KULLANICI'ların hesaplarını, aktivitelerini ve içeriklerini görüntüleme, denetleme ve yönetme yetkisine sahiptir. KULLANICI, KURUM'un bu yetkisini kabul eder.
+SAĞLAYICI, KULLANICI verilerine yalnızca teknik destek, sistem bakımı, yasal yükümlülükler ve KURUM ile yapılan sözleşme kapsamında erişebilir.
+4.5. Üçüncü Kişilere Veri Aktarımı
+SAĞLAYICI, KULLANICI verilerini aşağıdaki hallerde üçüncü kişilere aktarabilir:
+
+KURUM'un yazılı talebi
+Yasal zorunluluklar (mahkeme kararı, resmi makam talebi)
+Hizmetin sunulması için gerekli alt yükleniciler (bulut altyapı sağlayıcıları)
+Acil güvenlik tehditleri
+
+4.6. KVKK Hakları
+KULLANICI, KVKK'da tanımlanan haklarını (veri öğrenme, düzeltme, silme, itiraz vb.) kullanmak için öncelikle KURUM'a başvurmalıdır. KURUM, SAĞLAYICI'ya gerekli talimatları iletir.
+4.7. İş İlişkisi Sona Erdiğinde
+KULLANICI, KURUM'dan ayrılması veya hesabının pasif edilmesi durumunda:
+
+Uygulama'ya erişim hakkı sona erer
+Veriler KURUM tarafından belirlenen süre boyunca saklanmaya devam eder
+Verilerin silinmesi veya saklanması KURUM'un takdirindedir
+
+
+5. FİKRİ VE SINAİ MÜLKİYET HAKLARI
+5.1. Uygulama Mülkiyeti
+ConnectAlign Uygulama'sının yazılımı, kaynak kodu, tasarımı, logosu, arayüzü ve tüm bileşenleri üzerindeki her türlü fikri ve sınai mülkiyet hakkı münhasıran SAĞLAYICI'ya aittir.
+5.2. Lisans Kapsamı
+Bu SÖZLEŞME, KULLANICI'ya yalnızca sınırlı, şahsi, devredilemez, alt lisans verilemez, geri alınabilir bir kullanım hakkı tanır. KULLANICI, Uygulama üzerinde hiçbir mülkiyet hakkı elde etmez.
+5.3. Yasaklanan İşlemler
+KULLANICI, aşağıdaki eylemleri gerçekleştiremez:
+
+Uygulama'nın tamamını veya bir kısmını kopyalamak, çoğaltmak
+Kaynak kodunu çıkarmak, ters mühendislik uygulamak
+Uygulama'yı değiştirmek, uyarlamak, türev eserler oluşturmak
+Uygulama'yı satmak, kiralamak, devretmek, alt lisans vermek
+Uygulama'daki ticari marka, telif hakkı veya diğer bildirimlerini kaldırmak
+Uygulama'nın bütünlüğünü bozmak veya işlevselliğini değiştirmek
+
+5.4. Kullanıcı İçeriği
+KULLANICI'nın Uygulama üzerinde oluşturduğu özgün içerik üzerindeki telif hakları KULLANICI'ya aittir, ancak KULLANICI, SAĞLAYICI'ya bu içerikleri Uygulama'nın işletilmesi amacıyla kullanma, kopyalama, saklama ve işleme hakkı vermiş olur.
+5.5. Gizli Bilgiler
+KULLANICI, Uygulama'nın çalışma prensipleri, güvenlik mekanizmaları ve ticari sırları hakkında öğrendiği tüm bilgileri kesinlikle gizli tutacağını ve üçüncü kişilerle paylaşmayacağını taahhüt eder.
+
+6. HİZMET SEVİYESİ VE KULLANILIR OLMA
+6.1. Hizmet Sürekliliği
+SAĞLAYICI, Uygulama'nın 7/24 kesintisiz çalışacağını garanti etmez. Planlı bakımlar, güncellemeler ve teknik arızalar nedeniyle hizmet kesintileri yaşanabilir.
+6.2. Planlı Bakımlar
+SAĞLAYICI, Uygulama'nın performansını artırmak, güvenlik güncellemeleri yapmak ve yeni özellikler eklemek için planlı bakımlar yapabilir. Mümkün olduğunca önceden bildirim yapılacaktır.
+6.3. Hizmet Seviyesi Sözleşmesi
+Uygulama'nın kullanılabilirlik oranı (%uptime), yanıt süreleri ve performans kriterleri KURUM ile SAĞLAYICI arasındaki kurumsal lisans sözleşmesinde belirtilmiştir. KULLANICI, bu kriterlere ilişkin talep hakkını KURUM üzerinden kullanabilir.
+6.4. Üçüncü Taraf Hizmetler
+Uygulama, üçüncü taraf hizmetler veya entegrasyonlar içerebilir (push notification servisleri, bulut depolama vb.). SAĞLAYICI, bu üçüncü taraf hizmetlerin kullanılabilirliğinden veya performansından sorumlu değildir.
+
+7. SORUMLULUK SINIRLAMALARI
+7.1. Hizmet "Olduğu Gibi" Sunulur
+Uygulama "olduğu gibi" (as is) ve "mevcut haliyle" (as available) sunulmaktadır. SAĞLAYICI, Uygulama'nın kesintisiz, hatasız veya güvenli olacağına dair hiçbir garanti vermemektedir.
+7.2. Dolaylı Zararlar
+SAĞLAYICI, Uygulama'nın kullanımından veya kullanılamamasından kaynaklanan dolaylı, arızi, özel veya cezai zararlardan (veri kaybı, iş kaybı, gelir kaybı vb.) sorumlu tutulamaz.
+7.3. Azami Sorumluluk
+SAĞLAYICI'nın herhangi bir durumda KULLANICI'ya karşı sorumluluğu, yasal olarak izin verilen maksimum ölçüde sınırlandırılmıştır. SAĞLAYICI, KURUM ile yapılan lisans sözleşmesindeki tazminat limitleriyle bağlıdır.
+7.4. İçerik Sorumluluğu
+SAĞLAYICI, Uygulama'da paylaşılan içeriklerin (duyurular, dokümanlar, etkinlikler vb.) doğruluğundan, yasallığından veya kalitesinden sorumlu değildir. İçerik sorumluluğu tamamen KURUM ve/veya içeriği oluşturan kullanıcıya aittir.
+7.5. Kullanıcı İhlalleri
+KULLANICI, kendi eylemlerinden kaynaklanan üçüncü kişi talepleri, dava masrafları veya cezalardan SAĞLAYICI'yı tam olarak tazmin etmeyi ve beri kılmayı taahhüt eder.
+7.6. Veri Kaybı
+SAĞLAYICI düzenli yedekleme yapmakla birlikte, olası veri kayıplarından sorumlu tutulamaz. KURUM'un kendi yedekleme politikası uygulaması önerilir.
+7.7. Üçüncü Taraf Linkleri
+Uygulama, üçüncü taraf web sitelerine veya servislere linkler içerebilir. SAĞLAYICI, bu linklerin içeriğinden, güvenliğinden veya gizlilik politikalarından sorumlu değildir.
+
+8. TEKNİK DESTEK VE BAKIM
+8.1. Destek Kanalları
+KULLANICI, teknik destek talebi için KURUM Yöneticisi'ne veya SAĞLAYICI'nın belirlediği destek kanallarına başvurabilir.
+8.2. Destek Kapsamı
+Teknik destek, Uygulama'nın standart kullanımına ilişkin sorunları kapsar. Özel geliştirme talepleri veya KURUM'a özel özelleştirmeler destek kapsamı dışındadır.
+8.3. Yanıt Süreleri
+Destek yanıt süreleri ve çözüm süreleri, KURUM ile SAĞLAYICI arasındaki kurumsal lisans sözleşmesinde belirlenir.
+
+9. GÜNCELLEMELER VE DEĞİŞİKLİKLER
+9.1. Uygulama Güncellemeleri
+SAĞLAYICI, Uygulama'yı dilediği zaman güncelleme, yeni özellikler ekleme, mevcut özellikleri değiştirme veya kaldırma hakkını saklı tutar. Güncellemeler otomatik olarak uygulanabilir.
+9.2. Sözleşme Değişiklikleri
+SAĞLAYICI, bu SÖZLEŞME'yi tek taraflı olarak değiştirme hakkını saklı tutar. Değişiklikler Uygulama içinde veya SAĞLAYICI'nın web sitesinde yayımlandıktan sonra yürürlüğe girer. KULLANICI'nın değişikliklerden sonra Uygulama'yı kullanmaya devam etmesi, değişiklikleri kabul ettiği anlamına gelir.
+9.3. Özellik Değişiklikleri
+SAĞLAYICI, herhangi bir özelliği kaldırma, değiştirme veya yeni özellikler ekleme konusunda tam yetkilidir. Bu değişiklikler için KULLANICI'ya önceden bildirim yapma yükümlülüğü yoktur.
+
+10. SÖZLEŞME'NİN SÜRESİ VE FESHİ
+10.1. Süre
+Bu SÖZLEŞME, KULLANICI'nın ilk giriş yaptığı anda yürürlüğe girer ve aşağıdaki fesih hallerinden biri gerçekleşene kadar geçerlidir.
+10.2. Fesih Halleri
+SÖZLEŞME aşağıdaki durumlarda kendiliğinden veya tek taraflı feshedilebilir:
+
+KURUM ile SAĞLAYICI arasındaki kurumsal lisans sözleşmesinin sona ermesi
+KULLANICI'nın KURUM'dan ayrılması veya hesabının pasif edilmesi
+KULLANICI'nın SÖZLEŞME hükümlerini ihlal etmesi
+SAĞLAYICI'nın tek taraflı fesih kararı
+KURUM Yöneticisi'nin hesap kapatma talebi
+
+10.3. Fesih Sonuçları
+Fesih durumunda:
+
+KULLANICI'nın Uygulama'ya erişimi derhal kesilir
+KULLANICI'nın oluşturduğu veriler KURUM'un mülkiyetinde kalır ve KURUM'un talimatı doğrultusunda saklanır veya silinir
+KULLANICI, Uygulama'yı kullanmaya devam edemez
+SAĞLAYICI'nın herhangi bir iade veya tazminat yükümlülüğü doğmaz
+
+10.4. Fesih Sonrası Yükümlülükler
+KULLANICI, fesih sonrasında:
+
+Uygulama'dan indirmiş olduğu içerikleri silmelidir
+Uygulama'ya erişim sağlamaya çalışmamalıdır
+Gizlilik yükümlülüklerini sürdürmelidir
+
+
+11. MÜCBİR SEBEPLER
+Doğal afetler, savaş, terör eylemleri, salgın hastalıklar, yangın, deprem, sel, grev, internet altyapı arızaları, elektrik kesintileri, siber saldırılar, DDoS saldırıları, üçüncü taraf hizmet sağlayıcıların arızaları ve SAĞLAYICI'nın kontrolü dışındaki diğer olaylar "mücbir sebep" olarak kabul edilir.
+SAĞLAYICI, mücbir sebeplerden kaynaklanan hizmet kesintileri, veri kayıpları veya sözleşme yükümlülüklerini yerine getirememesinden sorumlu tutulamaz.
+
+12. UYUŞMAZLIKLARIN ÇÖZÜMÜ
+12.1. Yetkili Mahkeme
+Bu SÖZLEŞME'den doğan uyuşmazlıkların çözümünde İstanbul (Çağlayan) Mahkemeleri ve İcra Daireleri yetkilidir.
+12.2. Uygulanacak Hukuk
+SÖZLEŞME'nin yorumlanması ve uygulanmasında Türkiye Cumhuriyeti yasaları geçerlidir.
+12.3. Kısmi Hükümsüzlük
+SÖZLEŞME'nin herhangi bir hükmünün geçersiz veya uygulanamaz olması, diğer hükümlerin geçerliliğini etkilemez.
+
+13. ÇEŞİTLİ HÜKÜMLER
+13.1. Bütünlük
+Bu SÖZLEŞME, TARAFLAR arasında Uygulama'nın kullanımına ilişkin tüm anlaşmayı oluşturur ve önceki tüm yazılı veya sözlü anlaşmaların yerine geçer.
+13.2. Feragat
+SAĞLAYICI'nın herhangi bir hakkını kullanmaması, bu haktan feragat ettiği anlamına gelmez.
+13.3. Devir Yasağı
+KULLANICI, bu SÖZLEŞME kapsamındaki haklarını ve yükümlülüklerini üçüncü kişilere devredemez. SAĞLAYICI ise haklarını tamamen veya kısmen üçüncü kişilere devredebilir.
+13.4. Bildirimler
+Tüm bildirimler, KULLANICI'nın sisteme kayıtlı e-posta adresine veya Uygulama içi bildirimlerle yapılır.
+13.5. Dil
+Bu SÖZLEŞME Türkçe olarak hazırlanmıştır. Başka dillere çevrilmesi halinde, Türkçe metin geçerlidir.
+13.6. Bağımsız Taraflar
+TARAFLAR bağımsız taraflardır. Aralarında ortaklık, temsilcilik, işçi-işveren veya acente ilişkisi yoktur.
+
+14. İLETİŞİM BİLGİLERİ
+Utilwork Bilgi Teknolojileri Limited Şirketi
+
+Web: [web siteniz]
+E-posta: [destek e-postanız]
+Adres: [şirket adresiniz]
+
+Teknik destek ve sorularınız için yukarıdaki iletişim kanallarını veya KURUM Yöneticinizi kullanabilirsiniz.
+
+15. ONAY BEYANI
+BU CONNECTALIGN MOBİL UYGULAMA KULLANIM KOŞULLARINI OKUDUM, ANLADIM VE KABUL EDİYORUM.
+UYGULAMA'YI KULLANMAYA BAŞLADIĞIM ANDA BU SÖZLEŞME'NİN TÜM HÜKÜMLERİNİ KAYITSIZ ŞARTSIZ KABUL ETMİŞ SAYILIRIM.
+KURUM'UM TARAFINDAN SAĞLANAN KURUMSAL LİSANS KAPSAMINDA UYGULAMA'YI KULLANDIĞIMI VE KİŞİSEL VERİLERİMİN ASIL SORUMLUSUNUN KURUM'UM OLDUĞUNU BİLİYORUM.
+
+Son Güncelleme Tarihi: [Tarih eklenecek]
+Sürüm: 1.0

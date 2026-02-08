@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HomePage from '@/pages/HomePage';
-import PrivacyPolicy from '@/components/PrivacyPolicy';
+import PrivacyPolicyPage from '@/pages/PrivacyPolicyPage';
 import FeatureDetailPage from '@/pages/FeatureDetailPage';
 import DemoPage from '@/pages/DemoPage';
 import ContactPage from '@/pages/ContactPage';
@@ -14,7 +14,7 @@ import { Toaster } from '@/components/ui/toaster';
 import ScrollToTop from '@/components/ScrollToTop';
 
 function App() {
-  const [language, setLanguage] = useState('tr');
+  const [language, setLanguage] = useState('en');
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'tr' ? 'en' : 'tr');
@@ -41,8 +41,9 @@ function App() {
           {/* Ana Sayfa Route */}
           <Route path="/" element={<HomePage language={language} />} />
 
-          {/* Privacy Policy Route */}
-          <Route path="/privacy" element={<PrivacyPolicy language={language} />} />
+          {/* Privacy Policy Routes - Separate TR/EN URLs for App Store */}
+          <Route path="/gizlilik-politikasi" element={<PrivacyPolicyPage language="tr" />} />
+          <Route path="/privacy" element={<PrivacyPolicyPage language="en" />} />
 
           {/* Feature Detail Pages */}
           <Route path="/features/:slug" element={<FeatureDetailPage language={language} />} />
@@ -53,7 +54,8 @@ function App() {
 
           {/* Legal Pages */}
           <Route path="/terms" element={<TermsOfServicePage language={language} />} />
-          <Route path="/kvkk" element={<KVKKPage language={language} />} />
+          <Route path="/kvkk" element={<KVKKPage language="tr" />} />
+          <Route path="/gdpr" element={<KVKKPage language="en" />} />
         </Routes>
 
         <Footer language={language} />

@@ -5,7 +5,11 @@ import { Link } from 'react-router-dom';
 /**
  * Reusable legal page layout with table of contents
  */
-export default function LegalLayout({ title, lastUpdated, sections, backLink = '/' }) {
+export default function LegalLayout({ title, lastUpdated, sections, language = 'tr', backLink = '/' }) {
+  const backText = {
+    tr: 'Ana Sayfaya Dön',
+    en: 'Back to Home'
+  };
   const [activeSection, setActiveSection] = useState('');
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -64,7 +68,7 @@ export default function LegalLayout({ title, lastUpdated, sections, backLink = '
           className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors mb-8"
         >
           <ArrowLeft className="w-5 h-5" />
-          Ana Sayfaya Dön
+          {backText[language]}
         </Link>
 
         <div className="grid lg:grid-cols-4 gap-8">

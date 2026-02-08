@@ -22,7 +22,8 @@ const Footer = ({ language }) => {
         address: 'Küçükbakkalköy, Dereboyu Cd Brandium Residence D:3A R5 Blok K:7 D:48, 34758 Ataşehir/İstanbul'
       },
       copyright: '© 2026 ConnectAlign. Utilwork firmasına aittir. Tüm hakları saklıdır.',
-      legal: ['Gizlilik Politikası', 'Kullanım Koşulları', 'KVKK']
+      legal: ['Gizlilik Politikası', 'Kullanım Koşulları', 'KVKK'],
+      legalLinks: ['/gizlilik-politikasi', '/terms', '/kvkk']
     },
     en: {
       description: 'Cloud-based solution that transforms your business digitally and brings all your operational needs together in one platform.',
@@ -35,7 +36,8 @@ const Footer = ({ language }) => {
         address: 'Brandium Residence D:3A R5 Block Floor:7 No:48, Dereboyu Cd, Küçükbakkalköy, 34758 Ataşehir/Istanbul'
       },
       copyright: '© 2026 ConnectAlign. Powered by Utilwork. All rights reserved.',
-      legal: ['Privacy Policy', 'Terms of Use', 'GDPR']
+      legal: ['Privacy Policy', 'Terms of Use', 'GDPR'],
+      legalLinks: ['/privacy', '/terms', '/gdpr']
     }
   };
 
@@ -111,18 +113,18 @@ const Footer = ({ language }) => {
         </div>
 
         <div className="border-t border-white/10 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 mb-4 md:mb-0">{text.copyright}</p>
-            <div className="flex space-x-6">
-              <Link to="/privacy" className="text-gray-500 hover:text-white transition-colors text-sm">
-                {text.legal[0]}
-              </Link>
-              <Link to="/terms" className="text-gray-500 hover:text-white transition-colors text-sm">
-                {text.legal[1]}
-              </Link>
-              <Link to="/kvkk" className="text-gray-500 hover:text-white transition-colors text-sm">
-                {text.legal[2]}
-              </Link>
+          <div className="flex flex-col gap-6">
+            <p className="text-gray-500 text-center md:text-left">{text.copyright}</p>
+            <div className="flex flex-wrap justify-center md:justify-start gap-6">
+              {text.legal.map((item, index) => (
+                <Link
+                  key={index}
+                  to={text.legalLinks[index]}
+                  className="text-gray-500 hover:text-white transition-colors text-sm text-center md:text-left"
+                >
+                  {item}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

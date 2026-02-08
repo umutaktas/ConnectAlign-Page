@@ -38,7 +38,8 @@ const Technology = ({ language }) => {
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-white"
+          className="text-4xl md:text-5xl font-bold text-center mb-16 text-white leading-relaxed py-4"
+          style={{ lineHeight: '1.3' }}
         >
           {text.headline}
         </motion.h2>
