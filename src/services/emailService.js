@@ -24,18 +24,15 @@ export async function sendEmail(formData) {
       return { success: true, message: 'Email sent successfully' };
     }
 
-    // Determine endpoint based on form type
-    const endpoint = formData.formType === 'demo'
-      ? '/api/send-demo-request'
-      : '/api/send-contact';
+    const endpoint = '/api/connectalign/send';
 
     // Prepare request data
     const requestData = {
+      formType: formData.formType,
       name: formData.name,
       email: formData.email,
       phone: formData.phone,
       message: formData.message,
-      displayName: 'ConnectAlign Sales from Web',
     };
 
     // Add form-specific fields
