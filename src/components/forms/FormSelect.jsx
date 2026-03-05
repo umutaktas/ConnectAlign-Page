@@ -50,7 +50,7 @@ export default function FormSelect({
             ${error ? 'border-red-400' : 'border-gray-600'}
             text-gray-200
             focus:outline-none focus:ring-2
-            ${error ? 'focus:ring-red-400' : 'focus:ring-purple-500'}
+            ${error ? 'focus:ring-red-400' : 'focus:ring-blue-500'}
             transition-all duration-200
             disabled:opacity-50 disabled:cursor-not-allowed
             appearance-none cursor-pointer

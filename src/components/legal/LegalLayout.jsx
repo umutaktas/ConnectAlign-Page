@@ -73,7 +73,7 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
         {/* Back Button */}
         <Link
           to={backLink}
-          className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors mb-8"
         >
           <ArrowLeft className="w-5 h-5" />
           {backText[language]}
@@ -98,7 +98,7 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
                         flex items-center gap-2 group
                         ${
                           activeSection === section.id
-                            ? 'bg-purple-900/30 text-purple-300 border-l-2 border-purple-400'
+                            ? 'bg-indigo-900/30 text-indigo-300 border-l-2 border-indigo-400'
                             : 'text-gray-400 hover:text-gray-300 hover:bg-[#0f1729]'
                         }
                       `}
@@ -122,7 +122,7 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
             <div className="bg-[#16213e] border border-gray-700 rounded-2xl p-8 md:p-12">
               {/* Header */}
               <div className="mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
                   {title}
                 </h1>
                 <p className="text-gray-400 text-sm">
@@ -160,19 +160,19 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
 
               {/* Footer */}
               <div className="mt-16 pt-8 border-t border-gray-700">
-                <div className="bg-purple-900/20 border border-purple-800/30 rounded-lg p-6">
-                  <p className="text-purple-300 text-sm leading-relaxed">
+                <div className="bg-indigo-900/20 border border-indigo-800/30 rounded-lg p-6">
+                  <p className="text-indigo-300 text-sm leading-relaxed">
                     📧 {footerText[language]}{' '}
                     <a
                       href="mailto:info@utilwork.com"
-                      className="text-purple-400 hover:text-purple-300 underline"
+                      className="text-indigo-400 hover:text-indigo-300 underline"
                     >
                       info@utilwork.com
                     </a>
                     {' '}|{' '}
                     <a
                       href="mailto:kvkk@utilwork.com"
-                      className="text-purple-400 hover:text-purple-300 underline"
+                      className="text-indigo-400 hover:text-indigo-300 underline"
                     >
                       kvkk@utilwork.com
                     </a>

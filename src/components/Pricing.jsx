@@ -53,11 +53,11 @@ const Pricing = ({ language }) => {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.15 }}
               className={`pricing-card h-full flex flex-col relative ${
-                plan.popular ? 'lg:scale-105 ring-2 ring-blue-500 shadow-2xl shadow-blue-500/50' : ''
+                plan.popular ? 'lg:scale-[1.02] ring-1 ring-blue-500/50 shadow-xl shadow-blue-500/20' : ''
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-500 to-purple-500 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">
                   ⭐ {language === 'tr' ? 'ÖNERİLEN' : 'RECOMMENDED'}
                 </div>
               )}

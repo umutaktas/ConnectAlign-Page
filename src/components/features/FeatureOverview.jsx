@@ -13,7 +13,7 @@ const FeatureOverview = ({ data, language }) => {
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <h2
-          className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+          className="text-3xl font-bold text-center mb-12 bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent"
         >
           {language === 'tr' ? 'Genel Bakış' : 'Overview'}
         </h2>
@@ -22,7 +22,7 @@ const FeatureOverview = ({ data, language }) => {
         <div
           className="max-w-4xl mx-auto"
         >
-          <div className="feature-card p-10 bg-gradient-to-br from-blue-900/20 to-purple-900/20 border border-blue-500/30">
+          <div className="feature-card p-10 bg-gradient-to-br from-blue-900/20 to-indigo-900/20 border border-blue-500/30">
             <p className="text-lg text-gray-200 leading-relaxed whitespace-pre-line">
               {data.description}
             </p>

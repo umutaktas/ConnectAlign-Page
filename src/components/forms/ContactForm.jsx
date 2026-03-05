@@ -273,11 +273,11 @@ export default function ContactForm({ formType = 'demo', language = 'tr', onSucc
           onChange={(e) => setGdprConsent(e.target.checked)}
           required
           disabled={isSubmitting}
-          className="mt-1 w-4 h-4 rounded border-gray-600 bg-[#0f1729] text-purple-600 focus:ring-2 focus:ring-purple-500"
+          className="mt-1 w-4 h-4 rounded border-gray-600 bg-[#0f1729] text-blue-600 focus:ring-2 focus:ring-blue-500"
         />
         <label htmlFor="gdpr-consent" className="text-sm text-gray-400">
           {translations.gdprConsent}{' '}
-          <a href="/kvkk" target="_blank" className="text-purple-400 hover:text-purple-300 underline">
+          <a href="/kvkk" target="_blank" className="text-indigo-400 hover:text-indigo-300 underline">
             {translations.gdprLink}
           </a>
         </label>
@@ -287,7 +287,7 @@ export default function ContactForm({ formType = 'demo', language = 'tr', onSucc
       <button
         type="submit"
         disabled={isSubmitting || !gdprConsent}
-        className="w-full px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg font-medium hover:from-purple-700 hover:to-pink-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 group"
+        className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 group"
       >
         {isSubmitting ? (
           <>

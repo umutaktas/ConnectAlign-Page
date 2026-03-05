@@ -25,7 +25,7 @@ const FeatureCapabilities = ({ capabilities, language }) => {
               className="feature-card p-8"
             >
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-                <span className="w-2 h-8 bg-gradient-to-b from-blue-500 to-purple-500 rounded"></span>
+                <span className="w-2 h-8 bg-gradient-to-b from-blue-500 to-indigo-500 rounded"></span>
                 {category}
               </h3>
               <div className="grid md:grid-cols-2 gap-4">
