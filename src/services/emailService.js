@@ -3,9 +3,8 @@
  * Backend server: backend/server.js (Express + Nodemailer)
  */
 
-const API_URL = import.meta.env.DEV
-  ? 'http://localhost:3001'
-  : 'https://connectalign.com';
+const API_URL = import.meta.env.VITE_API_URL
+  || (import.meta.env.DEV ? 'http://localhost:3001' : 'https://connectalign.com');
 
 /**
  * Send email via backend API
@@ -24,11 +23,12 @@ export async function sendEmail(formData) {
       return { success: true, message: 'Email sent successfully' };
     }
 
-    const endpoint = '/api/connectalign/send';
+    const endpoint = formData.formType === 'demo'
+      ? '/api/send-demo-request'
+      : '/api/send-contact';
 
     // Prepare request data
     const requestData = {
-      formType: formData.formType,
       name: formData.name,
       email: formData.email,
       phone: formData.phone,

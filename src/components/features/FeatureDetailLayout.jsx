@@ -10,13 +10,7 @@ const FeatureDetailLayout = ({ children, feature, language }) => {
 
   const handleFeaturesClick = (e) => {
     e.preventDefault();
-    navigate('/');
-    setTimeout(() => {
-      const featuresSection = document.getElementById('features');
-      if (featuresSection) {
-        featuresSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 100);
+    navigate('/', { state: { scrollTo: 'features' } });
   };
 
   const breadcrumbs = [

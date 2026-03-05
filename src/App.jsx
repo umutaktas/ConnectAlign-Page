@@ -14,7 +14,7 @@ import { Toaster } from '@/components/ui/toaster';
 import ScrollToTop from '@/components/ScrollToTop';
 
 function App() {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('tr');
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'tr' ? 'en' : 'tr');

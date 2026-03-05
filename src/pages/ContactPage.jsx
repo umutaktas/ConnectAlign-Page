@@ -158,9 +158,7 @@ export default function ContactPage({ language = 'tr' }) {
                 <ContactForm
                   formType="contact"
                   language={language}
-                  onSuccess={() => {
-                    console.log('Contact form submitted successfully');
-                  }}
+                  onSuccess={() => {}}
                 />
               </div>
             </div>

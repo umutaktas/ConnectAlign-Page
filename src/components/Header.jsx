@@ -2,10 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const Header = ({ language, toggleLanguage }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +19,11 @@ const Header = ({ language, toggleLanguage }) => {
   }, []);
 
   const scrollToSection = (id) => {
+    if (location.pathname !== '/') {
+      navigate('/', { state: { scrollTo: id } });
+      setIsMobileMenuOpen(false);
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -43,7 +51,13 @@ const Header = ({ language, toggleLanguage }) => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             className="flex items-center cursor-pointer"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => {
+              if (location.pathname !== '/') {
+                navigate('/');
+              } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+            }}
           >
             <img
               src="/assets/logo.png"

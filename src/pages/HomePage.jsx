@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Hero from '@/components/Hero';
 import Stats from '@/components/Stats';
 import ValueProposition from '@/components/ValueProposition';
@@ -13,6 +14,22 @@ import CTA from '@/components/CTA';
  * Main landing page with all sections
  */
 const HomePage = ({ language }) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      // Wait for DOM to render before scrolling
+      requestAnimationFrame(() => {
+        const element = document.getElementById(location.state.scrollTo);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+      // Clear state so back navigation doesn't re-scroll
+      window.history.replaceState({}, '');
+    }
+  }, [location.state]);
+
   return (
     <main>
       <Hero language={language} />

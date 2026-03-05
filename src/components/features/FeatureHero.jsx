@@ -6,7 +6,7 @@ import * as Icons from 'lucide-react';
  * Large icon, title, tagline, and CTA button
  */
 const FeatureHero = ({ data, language }) => {
-  const Icon = Icons[data.icon];
+  const Icon = Icons[data.icon] || Icons.Box;
 
   const scrollToContact = () => {
     // Scroll to footer contact section or open contact modal

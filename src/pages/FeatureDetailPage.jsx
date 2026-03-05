@@ -8,7 +8,6 @@ import FeatureBenefits from '@/components/features/FeatureBenefits';
 import FeatureCapabilities from '@/components/features/FeatureCapabilities';
 import FeatureUseCases from '@/components/features/FeatureUseCases';
 import FeatureTechnicalSpecs from '@/components/features/FeatureTechnicalSpecs';
-import FeatureScreenshots from '@/components/features/FeatureScreenshots';
 import FeatureCTA from '@/components/features/FeatureCTA';
 import FeatureNavigation from '@/components/features/FeatureNavigation';
 import { getFeatureBySlug } from '@/utils/featureHelpers';
@@ -79,7 +78,6 @@ const FeatureDetailPage = ({ language }) => {
           <FeatureTechnicalSpecs specs={featureData.technicalSpecs} language={language} />
         )}
 
-        <FeatureScreenshots data={featureData.screenshots} language={language} />
         <FeatureCTA language={language} />
         <FeatureNavigation currentSlug={slug} language={language} />
       </FeatureDetailLayout>

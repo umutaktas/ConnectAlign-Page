@@ -107,10 +107,7 @@ export default function DemoPage({ language = 'tr' }) {
                 <ContactForm
                   formType="demo"
                   language={language}
-                  onSuccess={() => {
-                    // Optional: Navigate to thank you page or show modal
-                    console.log('Demo request submitted successfully');
-                  }}
+                  onSuccess={() => {}}
                 />
               </div>
             </div>

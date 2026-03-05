@@ -10,6 +10,14 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
     tr: 'Ana Sayfaya Dön',
     en: 'Back to Home'
   };
+  const tocTitle = {
+    tr: 'İçindekiler',
+    en: 'Table of Contents'
+  };
+  const footerText = {
+    tr: 'Sorularınız için:',
+    en: 'For questions:'
+  };
   const [activeSection, setActiveSection] = useState('');
   const [isScrolling, setIsScrolling] = useState(false);
 
@@ -77,7 +85,7 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
             <div className="lg:sticky lg:top-24">
               <div className="bg-[#16213e] border border-gray-700 rounded-lg p-6">
                 <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">
-                  İçindekiler
+                  {tocTitle[language]}
                 </h3>
 
                 <nav className="space-y-2">
@@ -154,7 +162,7 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
               <div className="mt-16 pt-8 border-t border-gray-700">
                 <div className="bg-purple-900/20 border border-purple-800/30 rounded-lg p-6">
                   <p className="text-purple-300 text-sm leading-relaxed">
-                    📧 Sorularınız için:{' '}
+                    📧 {footerText[language]}{' '}
                     <a
                       href="mailto:info@utilwork.com"
                       className="text-purple-400 hover:text-purple-300 underline"

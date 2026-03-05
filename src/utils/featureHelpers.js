@@ -1,31 +1,12 @@
 // Feature utility functions for routing and navigation
 import { featuresData } from '../data/featureData';
 
-// Slug mapping (TR title → slug)
-const slugMap = {
-  'Doküman Yönetim Sistemi': 'document-management',
-  'İç İletişim Merkezi': 'internal-communication',
-  'Organizasyon Yönetimi': 'organization-management',
-  'Eğitim & Gelişim': 'training-development',
-  'Dashboard & Raporlama': 'dashboard-reporting',
-  'Etkinlik Yönetimi': 'event-management',
-  'Dijital Kartvizitler': 'digital-business-cards',
-  'Mobil Destek': 'mobile-support',
-  'Güvenlik & Yetkilendirme': 'security-authorization'
-};
-
-// English title → slug mapping
-const slugMapEn = {
-  'Document Management System': 'document-management',
-  'Internal Communication Hub': 'internal-communication',
-  'Organization Management': 'organization-management',
-  'Training & Development': 'training-development',
-  'Dashboard & Reporting': 'dashboard-reporting',
-  'Event Management': 'event-management',
-  'Digital Business Cards': 'digital-business-cards',
-  'Mobile Support': 'mobile-support',
-  'Security & Authorization': 'security-authorization'
-};
+// Build title → slug map automatically from featuresData
+const titleToSlug = {};
+for (const [slug, data] of Object.entries(featuresData)) {
+  if (data.tr?.hero?.title) titleToSlug[data.tr.hero.title] = slug;
+  if (data.en?.hero?.title) titleToSlug[data.en.hero.title] = slug;
+}
 
 /**
  * Generate slug from feature title
@@ -33,7 +14,7 @@ const slugMapEn = {
  * @returns {string} URL-friendly slug
  */
 export const generateSlug = (title) => {
-  return slugMap[title] || slugMapEn[title] || title.toLowerCase().replace(/\s+/g, '-');
+  return titleToSlug[title] || title.toLowerCase().replace(/[&]/g, '').replace(/\s+/g, '-');
 };
 
 /**

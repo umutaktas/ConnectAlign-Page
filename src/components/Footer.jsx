@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Linkedin, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = ({ language }) => {
   const scrollToSection = (id) => {
@@ -48,27 +48,21 @@ const Footer = ({ language }) => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
-            <a href="#" className="flex items-center mb-4">
+            <Link to="/" className="flex items-center mb-4">
               <img
                 src="/assets/logo.png"
                 alt="ConnectAlign Logo"
                 className="h-8 w-auto"
                 style={{ maxWidth: '300px' }}
               />
-            </a>
+            </Link>
             <p className="text-gray-400 mb-6">{text.description}</p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition-colors">
-                <Instagram size={20} />
+              <a href="https://www.youtube.com/@utilwork" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-300 hover:bg-red-600 hover:text-white transition-colors">
+                <Youtube size={20} />
               </a>
             </div>
           </div>
