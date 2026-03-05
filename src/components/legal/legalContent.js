@@ -627,7 +627,7 @@ export const kvkkPolicy = {
         content: [
           'KVKK ile ilgili sorularınız veya talepleriniz için bizimle iletişime geçebilirsiniz:',
           'Utilwork A.Ş.\nKüçükbakkalköy, Dereboyu Cd Brandium Residence D:3A R5 Blok K:7 D:48, 34758 Ataşehir/İstanbul',
-          'E-posta: kvkk@utilwork.com\nTelefon: +90 (212) 345 67 89\nKEP: utilwork@hs03.kep.tr',
+          'E-posta: kvkk@utilwork.com\nTelefon: +90 216 706 30 01\nKEP: utilwork@hs03.kep.tr',
           'Web: connectalign.com\nDestek: info@utilwork.com',
           'Kişisel Verileri Koruma Kurumu:\nWeb: kvkk.gov.tr\nE-posta: kvkk@kvkk.gov.tr\nAdres: Nasuh Akar Mah. Ziya Gökalp Cad. No:27-29 Çankaya/Ankara',
         ],

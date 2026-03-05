@@ -85,10 +85,10 @@ export default function ContactPage({ language = 'tr' }) {
                         {translations.phoneDescription}
                       </p>
                       <a
-                        href="tel:+902123456789"
+                        href="tel:+902167063001"
                         className="text-purple-400 hover:text-purple-300 transition-colors"
                       >
-                        +90 (212) 345 67 89
+                        +90 (216) 706 30 01
                       </a>
                     </div>
                   </div>
@@ -187,7 +187,7 @@ function getTranslations(language) {
       phoneTitle: 'Telefon',
       phoneDescription: 'Hafta içi 09:00 - 18:00',
       addressTitle: 'Adres',
-      addressDescription: 'Maslak, Sarıyer, İstanbul, Türkiye',
+      addressDescription: 'Küçükbakkalköy, Dereboyu Cd Brandium Residence D:3A R5 Blok K:7 D:48, 34758 Ataşehir/İstanbul',
       hoursTitle: 'Çalışma Saatleri',
       hoursDescription: 'Pazartesi - Cuma: 09:00 - 18:00',
       // Additional Info
@@ -218,7 +218,7 @@ function getTranslations(language) {
       phoneTitle: 'Phone',
       phoneDescription: 'Weekdays 09:00 AM - 06:00 PM',
       addressTitle: 'Address',
-      addressDescription: 'Maslak, Sarıyer, Istanbul, Turkey',
+      addressDescription: 'Brandium Residence D:3A R5 Block Floor:7 No:48, Dereboyu Cd, Küçükbakkalköy, 34758 Ataşehir/Istanbul',
       hoursTitle: 'Working Hours',
       hoursDescription: 'Monday - Friday: 09:00 AM - 06:00 PM',
       // Additional Info
