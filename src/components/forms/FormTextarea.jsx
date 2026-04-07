@@ -26,10 +26,10 @@ export default function FormTextarea({
       {label && (
         <label
           htmlFor={textareaId}
-          className="block text-sm font-medium text-gray-300 mb-2"
+          className="block text-sm font-medium text-on-surface-variant mb-2"
         >
           {label}
-          {required && <span className="text-red-400 ml-1" aria-label="required">*</span>}
+          {required && <span className="text-[#ff6f00] ml-1" aria-label="required">*</span>}
         </label>
       )}
 
@@ -49,11 +49,10 @@ export default function FormTextarea({
         aria-describedby={error ? `${textareaId}-error` : undefined}
         className={`
           w-full px-4 py-3 rounded-lg
-          bg-[#16213e] border
-          ${error ? 'border-red-400' : 'border-gray-600'}
-          text-gray-200 placeholder-gray-500
-          focus:outline-none focus:ring-2
-          ${error ? 'focus:ring-red-400' : 'focus:ring-blue-500'}
+          bg-surface-container-high
+          text-on-surface placeholder-on-surface-variant/60
+          focus:outline-none
+          ${error ? 'shadow-[inset_0_-2px_0_0_#dc2626]' : 'focus:shadow-[inset_0_-2px_0_0_#ff6f00]'}
           transition-all duration-200
           disabled:opacity-50 disabled:cursor-not-allowed
           resize-vertical
@@ -65,7 +64,7 @@ export default function FormTextarea({
         {error && (
           <p
             id={`${textareaId}-error`}
-            className="text-sm text-red-400"
+            className="text-sm text-red-600"
             role="alert"
           >
             {error}
@@ -75,7 +74,7 @@ export default function FormTextarea({
         {showCharCount && (
           <p
             className={`text-sm ml-auto ${
-              value.length > maxLength * 0.9 ? 'text-yellow-400' : 'text-gray-500'
+              value.length > maxLength * 0.9 ? 'text-[#ff6f00]' : 'text-on-surface-variant'
             }`}
             aria-live="polite"
           >

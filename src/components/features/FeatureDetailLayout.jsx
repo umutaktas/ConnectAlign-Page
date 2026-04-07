@@ -23,15 +23,15 @@ const FeatureDetailLayout = ({ children, feature, language }) => {
     <div className="min-h-screen pattern-bg">
       {/* Breadcrumb Navigation */}
       <div className="container mx-auto px-4 pt-24 pb-8">
-        <nav className="flex items-center gap-2 text-sm text-gray-400">
+        <nav className="flex items-center gap-2 text-sm text-on-surface-variant">
           {breadcrumbs.map((crumb, index) => (
             <React.Fragment key={index}>
-              {index > 0 && <span className="text-gray-600">/</span>}
+              {index > 0 && <span className="text-on-surface-variant/50">/</span>}
               {crumb.href ? (
                 crumb.onClick ? (
                   <button
                     onClick={crumb.onClick}
-                    className="flex items-center gap-1 hover:text-blue-400 transition-colors"
+                    className="flex items-center gap-1 hover:text-[#ff6f00] transition-colors"
                   >
                     {crumb.icon && <crumb.icon className="w-4 h-4" />}
                     {crumb.label}
@@ -39,14 +39,14 @@ const FeatureDetailLayout = ({ children, feature, language }) => {
                 ) : (
                   <Link
                     to={crumb.href}
-                    className="flex items-center gap-1 hover:text-blue-400 transition-colors"
+                    className="flex items-center gap-1 hover:text-[#ff6f00] transition-colors"
                   >
                     {crumb.icon && <crumb.icon className="w-4 h-4" />}
                     {crumb.label}
                   </Link>
                 )
               ) : (
-                <span className="text-white font-medium">{crumb.label}</span>
+                <span className="text-on-surface font-medium">{crumb.label}</span>
               )}
             </React.Fragment>
           ))}
@@ -55,7 +55,7 @@ const FeatureDetailLayout = ({ children, feature, language }) => {
         {/* Back Button */}
         <button
           onClick={handleFeaturesClick}
-          className="inline-flex items-center gap-2 mt-4 text-blue-400 hover:text-blue-300 transition-colors group"
+          className="inline-flex items-center gap-2 mt-4 text-[#ff6f00] hover:text-[#9e4200] transition-colors group"
         >
           <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
           {language === 'tr' ? 'Tüm Özelliklere Dön' : 'Back to Features'}

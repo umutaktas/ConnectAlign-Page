@@ -33,16 +33,19 @@ const Technology = ({ language }) => {
   const text = content[language];
 
   return (
-    <section ref={ref} className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+    <section ref={ref} className="py-24 bg-surface-container-low">
       <div className="container mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-white leading-relaxed py-4"
-          style={{ lineHeight: '1.3' }}
-        >
-          {text.headline}
-        </motion.h2>
+        <div className="text-center mb-16">
+          <p className="overline mb-4">Infrastructure</p>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            className="text-4xl md:text-5xl font-extrabold text-on-surface display-tight max-w-3xl mx-auto"
+            style={{ lineHeight: '1.1' }}
+          >
+            {text.headline}
+          </motion.h2>
+        </div>
 
         <div className="grid md:grid-cols-4 gap-8">
           {text.items.map((item, index) => (
@@ -51,13 +54,13 @@ const Technology = ({ language }) => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.1 }}
-              className="text-center text-white"
+              className="text-center p-6 rounded-2xl bg-surface-container-lowest shadow-ambient"
             >
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-white/20 backdrop-blur-lg rounded-full mb-4">
-                <item.icon className="w-10 h-10" />
+              <div className="inline-flex items-center justify-center w-20 h-20 bg-surface-container-low rounded-full mb-4">
+                <item.icon className="w-10 h-10 text-[#ff6f00]" />
               </div>
-              <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-              <p className="text-blue-100">{item.description}</p>
+              <h3 className="text-xl font-bold mb-2 text-on-surface">{item.title}</h3>
+              <p className="text-on-surface-variant">{item.description}</p>
             </motion.div>
           ))}
         </div>

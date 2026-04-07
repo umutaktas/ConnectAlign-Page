@@ -265,7 +265,7 @@ export default function ContactForm({ formType = 'demo', language = 'tr', onSucc
       />
 
       {/* GDPR Consent */}
-      <div className="flex items-start gap-3 p-4 bg-[#16213e] rounded-lg border border-gray-700">
+      <div className="flex items-start gap-3 p-4 bg-surface-container-high rounded-lg">
         <input
           type="checkbox"
           id="gdpr-consent"
@@ -273,11 +273,11 @@ export default function ContactForm({ formType = 'demo', language = 'tr', onSucc
           onChange={(e) => setGdprConsent(e.target.checked)}
           required
           disabled={isSubmitting}
-          className="mt-1 w-4 h-4 rounded border-gray-600 bg-[#0f1729] text-blue-600 focus:ring-2 focus:ring-blue-500"
+          className="mt-1 w-4 h-4 rounded text-[#ff6f00] focus:ring-2 focus:ring-[#ff6f00]"
         />
-        <label htmlFor="gdpr-consent" className="text-sm text-gray-400">
+        <label htmlFor="gdpr-consent" className="text-sm text-on-surface-variant">
           {translations.gdprConsent}{' '}
-          <a href="/kvkk" target="_blank" className="text-indigo-400 hover:text-indigo-300 underline">
+          <a href="/kvkk" target="_blank" className="text-[#ff6f00] hover:text-[#9e4200] underline">
             {translations.gdprLink}
           </a>
         </label>
@@ -287,7 +287,7 @@ export default function ContactForm({ formType = 'demo', language = 'tr', onSucc
       <button
         type="submit"
         disabled={isSubmitting || !gdprConsent}
-        className="w-full px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 group"
+        className="btn-primary w-full disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 group"
       >
         {isSubmitting ? (
           <>

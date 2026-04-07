@@ -71,7 +71,7 @@ const Header = ({ language, toggleLanguage }) => {
               <button
                 key={item}
                 onClick={() => scrollToSection(navIds[index])}
-                className="font-medium text-gray-300 hover:text-white transition-colors"
+                className="font-medium text-on-surface-variant hover:text-on-surface transition-colors"
               >
                 {item}
               </button>
@@ -79,7 +79,7 @@ const Header = ({ language, toggleLanguage }) => {
             
             <button
               onClick={toggleLanguage}
-              className="flex items-center space-x-2 px-3 py-2 rounded-lg border border-white/20 text-white hover:bg-white/10 transition-colors"
+              className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container transition-colors"
             >
               <span className="text-lg">{language === 'tr' ? '🇹🇷' : '🇬🇧'}</span>
               <span className="font-medium text-sm">{language === 'tr' ? 'TR' : 'EN'}</span>
@@ -87,7 +87,7 @@ const Header = ({ language, toggleLanguage }) => {
 
             <Button
               onClick={() => window.open('https://dashboard.connectalign.com', '_blank')}
-              className="bg-gradient-to-r from-orange-600 to-amber-600 hover:from-orange-700 hover:to-amber-700 text-white font-semibold px-6 py-2 rounded-lg transition-all shadow-lg"
+              className="btn-primary !px-6 !py-2.5"
               size="lg"
             >
               {language === 'tr' ? 'Dashboard\'a Giriş' : 'Login to Dashboard'}
@@ -96,7 +96,7 @@ const Header = ({ language, toggleLanguage }) => {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-white"
+            className="md:hidden text-on-surface"
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -106,20 +106,20 @@ const Header = ({ language, toggleLanguage }) => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="md:hidden mt-2 bg-gray-800/80 backdrop-blur-lg rounded-lg shadow-xl p-6 space-y-4"
+            className="md:hidden mt-2 bg-surface-container-lowest backdrop-blur-lg rounded-lg shadow-ambient p-6 space-y-4"
           >
             {navItems.map((item, index) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(navIds[index])}
-                className="block w-full text-left text-gray-200 font-medium hover:text-white py-2"
+                className="block w-full text-left text-on-surface-variant font-medium hover:text-on-surface py-2"
               >
                 {item}
               </button>
             ))}
             <button
               onClick={toggleLanguage}
-              className="w-full flex items-center justify-center space-x-2 px-4 py-3 rounded-lg border border-white/30 text-white"
+              className="w-full flex items-center justify-center space-x-2 px-4 py-3 rounded-lg bg-surface-container-low text-on-surface"
             >
               <span className="text-xl">{language === 'tr' ? '🇹🇷' : '🇬🇧'}</span>
               <span className="font-medium">{language === 'tr' ? 'TR' : 'EN'}</span>

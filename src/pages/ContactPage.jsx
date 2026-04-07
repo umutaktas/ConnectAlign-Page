@@ -16,54 +16,49 @@ export default function ContactPage({ language = 'tr' }) {
         <meta property="og:description" content={translations.pageDescription} />
       </Helmet>
 
-      <div className="min-h-screen bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f1729] py-20">
+      <div className="min-h-screen bg-surface py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Back Button */}
           <Link
             to="/"
-            className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors mb-8"
+            className="inline-flex items-center gap-2 text-[#ff6f00] hover:text-[#9e4200] transition-colors mb-8"
           >
             <ArrowLeft className="w-5 h-5" />
             {translations.backToHome}
           </Link>
 
-          {/* Header */}
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-900/30 rounded-full text-purple-300 text-sm mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-surface-container-low rounded-full text-[#ff6f00] text-sm mb-6">
               <MessageCircle className="w-4 h-4" />
               {translations.badge}
             </div>
 
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-6 text-on-surface display-tight">
               {translations.title}
             </h1>
 
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-on-surface-variant max-w-3xl mx-auto">
               {translations.description}
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Contact Information */}
             <div className="space-y-8">
-              {/* Contact Cards */}
               <div className="space-y-4">
-                {/* Email */}
-                <div className="bg-[#16213e] border border-gray-700 rounded-lg p-6 hover:border-purple-500/50 transition-colors">
+                <div className="bg-surface-container-lowest rounded-2xl p-6 shadow-ambient transition-all hover:-translate-y-0.5">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-purple-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-purple-400" />
+                    <div className="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-[#ff6f00]" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-1">
+                      <h3 className="text-on-surface font-semibold mb-1">
                         {translations.emailTitle}
                       </h3>
-                      <p className="text-gray-400 text-sm mb-2">
+                      <p className="text-on-surface-variant text-sm mb-2">
                         {translations.emailDescription}
                       </p>
                       <a
                         href="mailto:info@utilwork.com"
-                        className="text-purple-400 hover:text-purple-300 transition-colors"
+                        className="text-[#ff6f00] hover:text-[#9e4200] transition-colors"
                       >
                         info@utilwork.com
                       </a>
@@ -71,22 +66,21 @@ export default function ContactPage({ language = 'tr' }) {
                   </div>
                 </div>
 
-                {/* Phone */}
-                <div className="bg-[#16213e] border border-gray-700 rounded-lg p-6 hover:border-purple-500/50 transition-colors">
+                <div className="bg-surface-container-lowest rounded-2xl p-6 shadow-ambient transition-all hover:-translate-y-0.5">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-pink-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-pink-400" />
+                    <div className="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-[#ff6f00]" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-1">
+                      <h3 className="text-on-surface font-semibold mb-1">
                         {translations.phoneTitle}
                       </h3>
-                      <p className="text-gray-400 text-sm mb-2">
+                      <p className="text-on-surface-variant text-sm mb-2">
                         {translations.phoneDescription}
                       </p>
                       <a
                         href="tel:+902167063001"
-                        className="text-purple-400 hover:text-purple-300 transition-colors"
+                        className="text-[#ff6f00] hover:text-[#9e4200] transition-colors"
                       >
                         +90 (216) 706 30 01
                       </a>
@@ -94,34 +88,32 @@ export default function ContactPage({ language = 'tr' }) {
                   </div>
                 </div>
 
-                {/* Address */}
-                <div className="bg-[#16213e] border border-gray-700 rounded-lg p-6 hover:border-purple-500/50 transition-colors">
+                <div className="bg-surface-container-lowest rounded-2xl p-6 shadow-ambient transition-all hover:-translate-y-0.5">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-green-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-green-400" />
+                    <div className="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-[#ff6f00]" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-1">
+                      <h3 className="text-on-surface font-semibold mb-1">
                         {translations.addressTitle}
                       </h3>
-                      <p className="text-gray-400 text-sm">
+                      <p className="text-on-surface-variant text-sm">
                         {translations.addressDescription}
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Working Hours */}
-                <div className="bg-[#16213e] border border-gray-700 rounded-lg p-6 hover:border-purple-500/50 transition-colors">
+                <div className="bg-surface-container-lowest rounded-2xl p-6 shadow-ambient transition-all hover:-translate-y-0.5">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-blue-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-blue-400" />
+                    <div className="w-12 h-12 bg-surface-container-low rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Clock className="w-6 h-6 text-[#ff6f00]" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold mb-1">
+                      <h3 className="text-on-surface font-semibold mb-1">
                         {translations.hoursTitle}
                       </h3>
-                      <p className="text-gray-400 text-sm">
+                      <p className="text-on-surface-variant text-sm">
                         {translations.hoursDescription}
                       </p>
                     </div>
@@ -129,15 +121,14 @@ export default function ContactPage({ language = 'tr' }) {
                 </div>
               </div>
 
-              {/* Additional Info */}
-              <div className="bg-purple-900/20 border border-purple-800/30 rounded-lg p-6">
-                <h3 className="text-white font-semibold mb-3">
+              <div className="bg-surface-container-low rounded-2xl p-6 engagement-pulse">
+                <h3 className="text-on-surface font-semibold mb-3">
                   {translations.infoTitle}
                 </h3>
-                <ul className="space-y-2 text-gray-400 text-sm">
+                <ul className="space-y-2 text-on-surface-variant text-sm">
                   {translations.infoItems.map((item, index) => (
                     <li key={index} className="flex items-start gap-2">
-                      <span className="text-purple-400 mt-1">•</span>
+                      <span className="text-[#ff6f00] mt-1">•</span>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -145,13 +136,12 @@ export default function ContactPage({ language = 'tr' }) {
               </div>
             </div>
 
-            {/* Right Column - Form */}
             <div className="lg:sticky lg:top-24">
-              <div className="bg-[#16213e] border border-gray-700 rounded-2xl p-8 shadow-2xl">
-                <h2 className="text-2xl font-bold text-white mb-2">
+              <div className="bg-surface-container-lowest rounded-2xl p-8 shadow-ambient">
+                <h2 className="text-2xl font-bold text-on-surface mb-2">
                   {translations.formTitle}
                 </h2>
-                <p className="text-gray-400 mb-8">
+                <p className="text-on-surface-variant mb-8">
                   {translations.formDescription}
                 </p>
 

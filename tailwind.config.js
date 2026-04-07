@@ -16,45 +16,49 @@ module.exports = {
 			},
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+			},
 			colors: {
-				border: 'hsl(var(--border))',
-				input: 'hsl(var(--input))',
-				ring: 'hsl(var(--ring))',
-				background: 'hsl(var(--background))',
-				foreground: 'hsl(var(--foreground))',
+				// Precision Atmosphere tokens
 				primary: {
-					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))',
+					DEFAULT: 'var(--primary)',
+					container: 'var(--primary-container)',
+					foreground: 'var(--on-primary)',
 				},
+				'on-primary': 'var(--on-primary)',
 				secondary: {
-					DEFAULT: 'hsl(var(--secondary))',
-					foreground: 'hsl(var(--secondary-foreground))',
+					DEFAULT: 'var(--secondary)',
+					container: 'var(--secondary-container)',
+					foreground: 'var(--on-secondary-container)',
 				},
-				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))',
+				tertiary: {
+					DEFAULT: 'var(--tertiary)',
+					container: 'var(--tertiary-container)',
 				},
-				muted: {
-					DEFAULT: 'hsl(var(--muted))',
-					foreground: 'hsl(var(--muted-foreground))',
+				surface: {
+					DEFAULT: 'var(--surface)',
+					dim: 'var(--surface-dim)',
+					bright: 'var(--surface-bright)',
 				},
-				accent: {
-					DEFAULT: 'hsl(var(--accent))',
-					foreground: 'hsl(var(--accent-foreground))',
-				},
-				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))',
-				},
-				card: {
-					DEFAULT: 'hsl(var(--card))',
-					foreground: 'hsl(var(--card-foreground))',
-				},
+				'surface-container-lowest': 'var(--surface-container-lowest)',
+				'surface-container-low': 'var(--surface-container-low)',
+				'surface-container': 'var(--surface-container)',
+				'surface-container-high': 'var(--surface-container-high)',
+				'surface-container-highest': 'var(--surface-container-highest)',
+				'on-surface': 'var(--on-surface)',
+				'on-surface-variant': 'var(--on-surface-variant)',
+				'outline-variant': 'var(--outline-variant)',
 			},
 			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)',
+				lg: '8px',
+				xl: '12px',
+				'2xl': '20px',
+			},
+			boxShadow: {
+				ambient: '0 24px 40px -16px rgba(26, 28, 30, 0.06), 0 8px 16px -8px rgba(26, 28, 30, 0.04)',
+				'ambient-lg': '0 32px 64px -20px rgba(26, 28, 30, 0.08), 0 12px 24px -12px rgba(26, 28, 30, 0.05)',
+				glow: '0 0 0 8px rgba(255, 111, 0, 0.08)',
 			},
 			keyframes: {
 				'accordion-down': {

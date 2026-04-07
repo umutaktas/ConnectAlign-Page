@@ -34,16 +34,19 @@ const Pricing = ({ language }) => {
   const text = content[language];
 
   return (
-    <section id="pricing" ref={ref} className="py-24 bg-black/20">
+    <section id="pricing" ref={ref} className="py-24 bg-surface">
       <div className="container mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient leading-relaxed py-4"
-          style={{ lineHeight: '1.3' }}
-        >
-          {text.headline}
-        </motion.h2>
+        <div className="max-w-3xl mb-16">
+          <p className="overline mb-4">Pricing</p>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            className="text-4xl md:text-5xl font-extrabold text-on-surface display-tight"
+            style={{ lineHeight: '1.1' }}
+          >
+            {text.headline}
+          </motion.h2>
+        </div>
 
         <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto items-stretch">
           {text.plans.map((plan, index) => (
@@ -52,29 +55,27 @@ const Pricing = ({ language }) => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.15 }}
-              className={`pricing-card h-full flex flex-col relative ${
-                plan.popular ? 'lg:scale-[1.02] ring-1 ring-blue-500/50 shadow-xl shadow-blue-500/20' : ''
-              }`}
+              className={`${plan.popular ? 'pricing-card-popular' : 'pricing-card'} h-full flex flex-col relative`}
             >
               {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-surface-container-lowest text-[#9e4200] px-6 py-2 rounded-full font-bold text-sm shadow-ambient">
                   ⭐ {language === 'tr' ? 'ÖNERİLEN' : 'RECOMMENDED'}
                 </div>
               )}
               <div className="text-center mb-6">
-                <h3 className={`text-2xl font-bold mb-2 ${plan.popular ? 'text-white' : 'text-white'}`}>
+                <h3 className={`text-2xl font-bold mb-2 ${plan.popular ? 'text-white' : 'text-on-surface'}`}>
                   {plan.name}
                 </h3>
-                <p className={`text-sm ${plan.popular ? 'text-blue-100' : 'text-gray-400'}`}>
+                <p className={`text-sm ${plan.popular ? 'text-white/80' : 'text-on-surface-variant'}`}>
                   {plan.target}
                 </p>
               </div>
 
               <div className="text-center mb-8">
-                <span className={`text-5xl font-bold ${plan.popular ? 'text-white' : 'text-white'}`}>
+                <span className={`text-5xl font-extrabold display-tight ${plan.popular ? 'text-white' : 'text-on-surface'}`}>
                   {plan.price}
                 </span>
-                <span className={`text-lg ml-1 ${plan.popular ? 'text-blue-100' : 'text-gray-400'}`}>
+                <span className={`text-lg ml-1 ${plan.popular ? 'text-white/80' : 'text-on-surface-variant'}`}>
                   {plan.period}
                 </span>
               </div>
@@ -83,11 +84,11 @@ const Pricing = ({ language }) => {
                 {plan.features.map((feature, idx) => (
                   <li key={idx} className="flex items-start">
                     {feature.included ? (
-                      <Check className={`w-5 h-5 mr-3 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-green-300' : 'text-green-400'}`} />
+                      <Check className={`w-5 h-5 mr-3 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-white' : 'text-[#ff6f00]'}`} />
                     ) : (
-                      <X className={`w-5 h-5 mr-3 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-red-300' : 'text-red-400'}`} />
+                      <X className={`w-5 h-5 mr-3 mt-0.5 flex-shrink-0 ${plan.popular ? 'text-white/50' : 'text-on-surface-variant/50'}`} />
                     )}
-                    <span className={plan.popular ? 'text-white' : 'text-gray-300'}>
+                    <span className={plan.popular ? 'text-white' : 'text-on-surface-variant'}>
                       {feature.text}
                     </span>
                   </li>
@@ -96,9 +97,9 @@ const Pricing = ({ language }) => {
 
               <Button
                 onClick={() => navigate('/demo')}
-                className={`w-full text-lg py-3 ${
+                className={`w-full text-base py-3 ${
                   plan.popular
-                    ? 'bg-white text-blue-600 hover:bg-gray-200'
+                    ? 'bg-surface-container-lowest text-[#9e4200] hover:bg-surface-container-low rounded-lg font-semibold'
                     : 'btn-primary'
                 }`}
               >

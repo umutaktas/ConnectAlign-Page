@@ -19,11 +19,11 @@ const FeatureNavigation = ({ currentSlug, language }) => {
         {prev && prevTitle ? (
           <Link
             to={`/features/${prev}`}
-            className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition-colors group feature-card p-4 flex-1"
+            className="flex items-center gap-3 text-on-surface hover:text-[#ff6f00] transition-colors group feature-card p-4 flex-1"
           >
             <ChevronLeft className="w-6 h-6 group-hover:-translate-x-1 transition-transform" />
             <div className="text-left">
-              <div className="text-sm text-gray-500 mb-1">
+              <div className="text-sm text-on-surface-variant mb-1">
                 {language === 'tr' ? 'Önceki Özellik' : 'Previous Feature'}
               </div>
               <div className="font-semibold">{prevTitle}</div>
@@ -37,10 +37,10 @@ const FeatureNavigation = ({ currentSlug, language }) => {
         {next && nextTitle ? (
           <Link
             to={`/features/${next}`}
-            className="flex items-center gap-3 text-gray-300 hover:text-blue-400 transition-colors group feature-card p-4 flex-1 justify-end"
+            className="flex items-center gap-3 text-on-surface hover:text-[#ff6f00] transition-colors group feature-card p-4 flex-1 justify-end"
           >
             <div className="text-right">
-              <div className="text-sm text-gray-500 mb-1">
+              <div className="text-sm text-on-surface-variant mb-1">
                 {language === 'tr' ? 'Sonraki Özellik' : 'Next Feature'}
               </div>
               <div className="font-semibold">{nextTitle}</div>

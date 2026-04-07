@@ -21,7 +21,8 @@ const FeatureHero = ({ data, language }) => {
       <div className="max-w-4xl mx-auto text-center">
         {/* Icon */}
         <div
-          className="inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 mb-8 shadow-2xl"
+          className="inline-flex items-center justify-center w-24 h-24 rounded-2xl mb-8 shadow-ambient"
+          style={{ backgroundImage: 'linear-gradient(135deg, #9e4200 0%, #ff6f00 100%)' }}
         >
           <Icon className="w-12 h-12 text-white" />
         </div>
@@ -35,7 +36,7 @@ const FeatureHero = ({ data, language }) => {
 
         {/* Tagline */}
         <p
-          className="text-xl text-gray-300 mb-10 leading-relaxed"
+          className="text-xl text-on-surface-variant mb-10 leading-relaxed"
         >
           {data.tagline}
         </p>
@@ -45,7 +46,7 @@ const FeatureHero = ({ data, language }) => {
         >
           <button
             onClick={scrollToContact}
-            className="btn-primary text-lg px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            className="btn-primary text-lg"
           >
             {data.primaryCTA}
           </button>

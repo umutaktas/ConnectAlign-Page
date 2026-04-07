@@ -11,7 +11,12 @@
       "Bash(git checkout:*)",
       "Bash(node:*)",
       "Bash(curl:*)",
-      "Bash(powershell -Command:*)"
+      "Bash(powershell -Command:*)",
+      "Bash(npm run build:*)",
+      "Bash(git push:*)",
+      "Bash(xargs wc:*)",
+      "Bash(grep -E '\\\\.\\(jsx?|tsx?\\)$')",
+      "Bash(git merge:*)"
     ],
     "deny": [],
     "ask": []
