@@ -49,13 +49,13 @@ const ValueProposition = ({ language }) => {
   const text = content[language];
 
   return (
-    <section ref={ref} className="py-24 bg-black/20">
+    <section ref={ref} className="py-24 bg-surface">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient leading-relaxed py-4"
-          style={{ lineHeight: '1.3' }}
+          className="text-4xl md:text-5xl font-extrabold text-center mb-16 text-on-surface display-tight max-w-3xl mx-auto"
+          style={{ lineHeight: '1.1' }}
         >
           {text.headline}
         </motion.h2>
@@ -65,17 +65,18 @@ const ValueProposition = ({ language }) => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.7 }}
-            className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-red-500/30"
+            className="bg-surface-container-lowest rounded-2xl p-8 shadow-ambient"
+            style={{ borderLeft: '4px solid #c4c6c9' }}
           >
             <div className="flex items-center mb-6">
-              <XCircle className="w-10 h-10 text-red-400 mr-4" />
-              <h3 className="text-2xl font-bold text-white">{text.problemTitle}</h3>
+              <XCircle className="w-10 h-10 text-on-surface-variant mr-4" />
+              <h3 className="text-2xl font-bold text-on-surface">{text.problemTitle}</h3>
             </div>
             <ul className="space-y-4">
               {text.problems.map((problem, index) => (
                 <li key={index} className="flex items-start">
-                  <XCircle className="w-5 h-5 text-red-400 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-300">{problem}</span>
+                  <XCircle className="w-5 h-5 text-on-surface-variant mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-on-surface-variant">{problem}</span>
                 </li>
               ))}
             </ul>
@@ -85,17 +86,17 @@ const ValueProposition = ({ language }) => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.4, duration: 0.7 }}
-            className="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-green-500/30"
+            className="bg-surface-container-lowest rounded-2xl p-8 shadow-ambient engagement-pulse"
           >
             <div className="flex items-center mb-6">
-              <CheckCircle className="w-10 h-10 text-green-400 mr-4" />
-              <h3 className="text-2xl font-bold text-white">{text.solutionTitle}</h3>
+              <CheckCircle className="w-10 h-10 text-[#ff6f00] mr-4" />
+              <h3 className="text-2xl font-bold text-on-surface">{text.solutionTitle}</h3>
             </div>
             <ul className="space-y-4">
               {text.solutions.map((solution, index) => (
                 <li key={index} className="flex items-start">
-                  <CheckCircle className="w-5 h-5 text-green-400 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-gray-200 font-medium">{solution}</span>
+                  <CheckCircle className="w-5 h-5 text-[#ff6f00] mr-3 mt-1 flex-shrink-0" />
+                  <span className="text-on-surface font-medium">{solution}</span>
                 </li>
               ))}
             </ul>

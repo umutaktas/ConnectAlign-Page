@@ -10,11 +10,9 @@ const FeatureBenefits = ({ benefits, language }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (
-    <section ref={ref} className="py-20 bg-black/20">
+    <section ref={ref} className="py-20 bg-surface-container-low">
       <div className="container mx-auto px-4">
-        <h2
-          className="text-3xl md:text-4xl font-bold text-center text-gradient mb-16"
-        >
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-on-surface display-tight mb-16">
           {language === 'tr' ? 'Temel Faydalar' : 'Key Benefits'}
         </h2>
 
@@ -23,17 +21,14 @@ const FeatureBenefits = ({ benefits, language }) => {
             const Icon = Icons[benefit.icon];
 
             return (
-              <div
-                key={index}
-                className="feature-card p-6 hover:scale-105 transition-transform"
-              >
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center mb-4">
+              <div key={index} className="feature-card p-6">
+                <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-4" style={{ backgroundImage: 'linear-gradient(135deg, #9e4200 0%, #ff6f00 100%)' }}>
                   <Icon className="w-7 h-7 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <h3 className="text-xl font-bold text-on-surface mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-on-surface-variant leading-relaxed">
                   {benefit.description}
                 </p>
               </div>

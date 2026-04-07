@@ -41,14 +41,17 @@ const FAQ = ({ language }) => {
   return (
     <section id="faq" ref={ref} className="py-24 pattern-bg">
       <div className="container mx-auto px-4 max-w-4xl relative z-10">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient leading-relaxed py-4"
-          style={{ lineHeight: '1.3' }}
-        >
-          {text.headline}
-        </motion.h2>
+        <div className="text-center mb-16">
+          <p className="overline mb-4">FAQ</p>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            className="text-4xl md:text-5xl font-extrabold text-on-surface display-tight"
+            style={{ lineHeight: '1.1' }}
+          >
+            {text.headline}
+          </motion.h2>
+        </div>
 
         <div className="space-y-4">
           {text.faqs.map((faq, index) => (
@@ -56,21 +59,21 @@ const FAQ = ({ language }) => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10"
+              transition={{ delay: index * 0.06 }}
+              className="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-ambient"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
+                className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-surface-container-low transition-colors"
               >
-                <span className="font-semibold text-white pr-4 text-lg">{faq.question}</span>
+                <span className="font-semibold text-on-surface pr-4 text-lg">{faq.question}</span>
                 <ChevronDown
-                  className={`w-6 h-6 text-blue-400 flex-shrink-0 transition-transform duration-300 ${
+                  className={`w-6 h-6 text-[#ff6f00] flex-shrink-0 transition-transform duration-300 ${
                     openIndex === index ? 'transform rotate-180' : ''
                   }`}
                 />
               </button>
-              
+
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.div
@@ -80,7 +83,7 @@ const FAQ = ({ language }) => {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 pt-2 pb-5 text-gray-300 leading-relaxed">
+                    <div className="px-6 pt-2 pb-5 text-on-surface-variant leading-relaxed">
                       {faq.answer}
                     </div>
                   </motion.div>

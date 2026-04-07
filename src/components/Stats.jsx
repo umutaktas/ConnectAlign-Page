@@ -31,7 +31,7 @@ const Stats = ({ language }) => {
   const stats = content[language].stats;
 
   return (
-    <section ref={ref} className="py-20 bg-[#1a1a2e]">
+    <section ref={ref} className="py-20 bg-surface-container-low">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -40,17 +40,17 @@ const Stats = ({ language }) => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="text-center p-4 rounded-lg"
+              className="text-center p-6 rounded-2xl bg-surface-container-lowest shadow-ambient"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-white/10 rounded-full mb-4">
-                <stat.icon className="w-8 h-8 text-blue-400" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-surface-container-low rounded-full mb-4">
+                <stat.icon className="w-8 h-8 text-[#ff6f00]" />
               </div>
               <motion.div
-                className="text-4xl font-bold text-white mb-2"
+                className="text-4xl font-extrabold text-on-surface mb-2 display-tight"
               >
                 {stat.value}
               </motion.div>
-              <div className="text-gray-400 font-medium">{stat.label}</div>
+              <div className="text-on-surface-variant font-medium">{stat.label}</div>
             </motion.div>
           ))}
         </div>

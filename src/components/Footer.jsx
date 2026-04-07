@@ -44,7 +44,7 @@ const Footer = ({ language }) => {
   const text = content[language];
 
   return (
-    <footer id="footer" className="bg-[#10101d] text-gray-300 pt-16 pb-8">
+    <footer id="footer" className="bg-surface-container-highest text-on-surface-variant pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div>
@@ -56,25 +56,25 @@ const Footer = ({ language }) => {
                 style={{ maxWidth: '300px' }}
               />
             </Link>
-            <p className="text-gray-400 mb-6">{text.description}</p>
+            <p className="text-on-surface-variant mb-6">{text.description}</p>
             <div className="flex space-x-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition-colors">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-surface-container-lowest rounded-full flex items-center justify-center text-on-surface-variant hover:bg-[#ff6f00] hover:text-white transition-colors">
                 <Linkedin size={20} />
               </a>
-              <a href="https://www.youtube.com/@utilwork" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-gray-300 hover:bg-red-600 hover:text-white transition-colors">
+              <a href="https://www.youtube.com/@utilwork" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-surface-container-lowest rounded-full flex items-center justify-center text-on-surface-variant hover:bg-[#ff6f00] hover:text-white transition-colors">
                 <Youtube size={20} />
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">{text.links.title}</h3>
+            <h3 className="text-xl font-bold text-on-surface mb-4">{text.links.title}</h3>
             <ul className="space-y-3">
               {text.links.items.map((item, index) => (
                 <li key={index}>
                   <button
                     onClick={() => scrollToSection(text.navLinks[index])}
-                    className="text-gray-400 hover:text-white transition-colors text-left"
+                    className="text-on-surface-variant hover:text-on-surface transition-colors text-left"
                   >
                     {item}
                   </button>
@@ -84,37 +84,37 @@ const Footer = ({ language }) => {
           </div>
 
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">{text.contact.title}</h3>
+            <h3 className="text-xl font-bold text-on-surface mb-4">{text.contact.title}</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <Mail className="w-5 h-5 mr-3 mt-1 text-blue-400 flex-shrink-0" />
-                <a href={`mailto:${text.contact.email}`} className="text-gray-400 hover:text-white transition-colors">
+                <Mail className="w-5 h-5 mr-3 mt-1 text-[#ff6f00] flex-shrink-0" />
+                <a href={`mailto:${text.contact.email}`} className="text-on-surface-variant hover:text-on-surface transition-colors">
                   {text.contact.email}
                 </a>
               </li>
               <li className="flex items-start">
-                <Phone className="w-5 h-5 mr-3 mt-1 text-blue-400 flex-shrink-0" />
-                <a href={`tel:${text.contact.phone.replace(/\s/g, '')}`} className="text-gray-400 hover:text-white transition-colors">
+                <Phone className="w-5 h-5 mr-3 mt-1 text-[#ff6f00] flex-shrink-0" />
+                <a href={`tel:${text.contact.phone.replace(/\s/g, '')}`} className="text-on-surface-variant hover:text-on-surface transition-colors">
                   {text.contact.phone}
                 </a>
               </li>
               <li className="flex items-start">
-                <MapPin className="w-5 h-5 mr-3 mt-1 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-400">{text.contact.address}</span>
+                <MapPin className="w-5 h-5 mr-3 mt-1 text-[#ff6f00] flex-shrink-0" />
+                <span className="text-on-surface-variant">{text.contact.address}</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8">
+        <div className="pt-8 mt-8 bg-surface-container rounded-2xl p-6">
           <div className="flex flex-col gap-6">
-            <p className="text-gray-500 text-center md:text-left">{text.copyright}</p>
+            <p className="text-on-surface-variant text-center md:text-left">{text.copyright}</p>
             <div className="flex flex-wrap justify-center md:justify-start gap-6">
               {text.legal.map((item, index) => (
                 <Link
                   key={index}
                   to={text.legalLinks[index]}
-                  className="text-gray-500 hover:text-white transition-colors text-sm text-center md:text-left"
+                  className="text-on-surface-variant hover:text-on-surface transition-colors text-sm text-center md:text-left"
                 >
                   {item}
                 </Link>

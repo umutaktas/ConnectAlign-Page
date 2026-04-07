@@ -68,12 +68,12 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f1729] py-20">
+    <div className="min-h-screen bg-surface py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Back Button */}
         <Link
           to={backLink}
-          className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors mb-8"
+          className="inline-flex items-center gap-2 text-[#ff6f00] hover:text-[#9e4200] transition-colors mb-8"
         >
           <ArrowLeft className="w-5 h-5" />
           {backText[language]}
@@ -83,8 +83,8 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
           {/* Table of Contents - Sticky Sidebar */}
           <div className="lg:col-span-1">
             <div className="lg:sticky lg:top-24">
-              <div className="bg-[#16213e] border border-gray-700 rounded-lg p-6">
-                <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wide">
+              <div className="bg-surface-container-lowest rounded-2xl p-6 shadow-ambient">
+                <h3 className="text-on-surface font-semibold mb-4 text-sm uppercase tracking-wide">
                   {tocTitle[language]}
                 </h3>
 
@@ -98,8 +98,8 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
                         flex items-center gap-2 group
                         ${
                           activeSection === section.id
-                            ? 'bg-indigo-900/30 text-indigo-300 border-l-2 border-indigo-400'
-                            : 'text-gray-400 hover:text-gray-300 hover:bg-[#0f1729]'
+                            ? 'bg-surface-container-low text-[#ff6f00] engagement-pulse'
+                            : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low'
                         }
                       `}
                     >
@@ -119,22 +119,20 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
 
           {/* Main Content */}
           <div className="lg:col-span-3">
-            <div className="bg-[#16213e] border border-gray-700 rounded-2xl p-8 md:p-12">
-              {/* Header */}
+            <div className="bg-surface-container-lowest rounded-2xl p-8 md:p-12 shadow-ambient">
               <div className="mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">
+                <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-on-surface display-tight">
                   {title}
                 </h1>
-                <p className="text-gray-400 text-sm">
+                <p className="text-on-surface-variant text-sm">
                   {lastUpdated}
                 </p>
               </div>
 
-              {/* Sections */}
               <div className="space-y-12">
                 {sections.map((section) => (
                   <section key={section.id} id={section.id} className="scroll-mt-24">
-                    <h2 className="text-2xl md:text-3xl font-bold text-white mb-6 pb-3 border-b border-gray-700">
+                    <h2 className="text-2xl md:text-3xl font-bold text-on-surface mb-6">
                       {section.title}
                     </h2>
 
@@ -142,12 +140,11 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
                       {section.content.map((paragraph, index) => (
                         <div key={index}>
                           {paragraph.includes('\n') ? (
-                            // Preserve line breaks for lists
-                            <div className="text-gray-300 leading-relaxed whitespace-pre-line">
+                            <div className="text-on-surface-variant leading-relaxed whitespace-pre-line">
                               {paragraph}
                             </div>
                           ) : (
-                            <p className="text-gray-300 leading-relaxed">
+                            <p className="text-on-surface-variant leading-relaxed">
                               {paragraph}
                             </p>
                           )}
@@ -158,21 +155,20 @@ export default function LegalLayout({ title, lastUpdated, sections, language = '
                 ))}
               </div>
 
-              {/* Footer */}
-              <div className="mt-16 pt-8 border-t border-gray-700">
-                <div className="bg-indigo-900/20 border border-indigo-800/30 rounded-lg p-6">
-                  <p className="text-indigo-300 text-sm leading-relaxed">
+              <div className="mt-16 pt-8">
+                <div className="bg-surface-container-low rounded-2xl p-6 engagement-pulse">
+                  <p className="text-on-surface text-sm leading-relaxed">
                     📧 {footerText[language]}{' '}
                     <a
                       href="mailto:info@utilwork.com"
-                      className="text-indigo-400 hover:text-indigo-300 underline"
+                      className="text-[#ff6f00] hover:text-[#9e4200] underline"
                     >
                       info@utilwork.com
                     </a>
                     {' '}|{' '}
                     <a
                       href="mailto:kvkk@utilwork.com"
-                      className="text-indigo-400 hover:text-indigo-300 underline"
+                      className="text-[#ff6f00] hover:text-[#9e4200] underline"
                     >
                       kvkk@utilwork.com
                     </a>

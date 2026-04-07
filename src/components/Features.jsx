@@ -135,16 +135,18 @@ const Features = ({ language }) => {
   const text = content[language];
 
   return (
-    <section id="features" ref={ref} className="py-20 bg-white">
+    <section id="features" ref={ref} className="py-24 bg-surface-container-low">
       <div className="container mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-gradient leading-relaxed py-4"
-          style={{ lineHeight: '1.3' }}
-        >
-          {text.headline}
-        </motion.h2>
+        <div className="max-w-3xl mb-16">
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            className="text-4xl md:text-5xl font-extrabold text-on-surface display-tight"
+            style={{ lineHeight: '1.1' }}
+          >
+            {text.headline}
+          </motion.h2>
+        </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {text.features.map((feature, index) => (
@@ -152,19 +154,22 @@ const Features = ({ language }) => {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: index * 0.1 }}
+              transition={{ delay: index * 0.06 }}
               className="feature-card relative"
             >
-              <div className="w-14 h-14 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center mb-4">
+              <div
+                className="w-14 h-14 rounded-xl flex items-center justify-center mb-5"
+                style={{ backgroundImage: 'linear-gradient(135deg, #9e4200 0%, #ff6f00 100%)' }}
+              >
                 <feature.icon className="w-7 h-7 text-white" />
               </div>
-              
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{feature.title}</h3>
-              <p className="text-gray-600 mb-4">{feature.description}</p>
-              
+
+              <h3 className="text-xl font-bold text-on-surface mb-3">{feature.title}</h3>
+              <p className="text-on-surface-variant mb-5" style={{ lineHeight: 1.6 }}>{feature.description}</p>
+
               <Link
                 to={`/features/${generateSlug(feature.title)}`}
-                className="text-blue-600 font-semibold hover:text-blue-700 transition-colors inline-block"
+                className="text-[#ff6f00] font-semibold hover:text-[#9e4200] transition-colors inline-block"
               >
                 {language === 'tr' ? 'Daha Fazla →' : 'Learn More →'}
               </Link>
