@@ -1,13 +1,162 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Connect Align</title>
+
+		<!-- Primary SEO: static baseline for crawlers that don't execute JS.
+		     data-react-helmet="true" hands ownership to react-helmet so per-route
+		     Helmet values replace these instead of duplicating them. -->
+		<title data-react-helmet="true">ConnectAlign - Dijital Dönüşüm Platformu | İç İletişim ve Doküman Yönetimi</title>
+		<meta data-react-helmet="true" name="description" content="ConnectAlign; iç iletişim, doküman yönetimi, eğitim, etkinlik ve organizasyon yönetimini tek platformda toplayan bulut tabanlı SaaS çözümüdür. KVKK/GDPR uyumlu, web ve mobil erişim." />
+		<link data-react-helmet="true" rel="canonical" href="https://connectalign.com/" />
+		<meta data-react-helmet="true" name="robots" content="index, follow, max-image-preview:large" />
+		<meta name="theme-color" content="#1a1a2e" />
+
+		<!-- Open Graph -->
+		<meta data-react-helmet="true" property="og:type" content="website" />
+		<meta data-react-helmet="true" property="og:site_name" content="ConnectAlign" />
+		<meta data-react-helmet="true" property="og:url" content="https://connectalign.com/" />
+		<meta data-react-helmet="true" property="og:title" content="ConnectAlign - Dijital Dönüşüm Platformu" />
+		<meta data-react-helmet="true" property="og:description" content="İç iletişim, doküman yönetimi, eğitim ve etkinlik yönetimi tek platformda. Bulut tabanlı, KVKK/GDPR uyumlu SaaS çözümü." />
+		<meta data-react-helmet="true" property="og:image" content="https://connectalign.com/connect-align-main.png" />
+		<meta property="og:image:width" content="1240" />
+		<meta property="og:image:height" content="742" />
+		<meta data-react-helmet="true" property="og:locale" content="tr_TR" />
+		<meta property="og:locale:alternate" content="en_US" />
+
+		<!-- Twitter Card -->
+		<meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+		<meta data-react-helmet="true" name="twitter:title" content="ConnectAlign - Dijital Dönüşüm Platformu" />
+		<meta data-react-helmet="true" name="twitter:description" content="İç iletişim, doküman yönetimi, eğitim ve etkinlik yönetimi tek platformda. Bulut tabanlı, KVKK/GDPR uyumlu SaaS çözümü." />
+		<meta data-react-helmet="true" name="twitter:image" content="https://connectalign.com/connect-align-main.png" />
+
+		<!-- Structured Data: Organization + WebSite + SoftwareApplication -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@graph": [
+				{
+					"@type": "Organization",
+					"@id": "https://connectalign.com/#organization",
+					"name": "ConnectAlign",
+					"legalName": "Utilwork Bilgi Teknolojileri",
+					"url": "https://connectalign.com/",
+					"logo": "https://connectalign.com/connect-align-main.png",
+					"email": "info@utilwork.com",
+					"telephone": "+90-216-706-30-01",
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "Küçükbakkalköy, Dereboyu Cd Brandium Residence D:3A R5 Blok K:7 D:48",
+						"addressLocality": "Ataşehir",
+						"addressRegion": "İstanbul",
+						"postalCode": "34758",
+						"addressCountry": "TR"
+					},
+					"contactPoint": {
+						"@type": "ContactPoint",
+						"telephone": "+90-216-706-30-01",
+						"email": "info@utilwork.com",
+						"contactType": "customer service",
+						"availableLanguage": ["Turkish", "English"]
+					}
+				},
+				{
+					"@type": "WebSite",
+					"@id": "https://connectalign.com/#website",
+					"url": "https://connectalign.com/",
+					"name": "ConnectAlign",
+					"publisher": { "@id": "https://connectalign.com/#organization" },
+					"inLanguage": ["tr", "en"]
+				},
+				{
+					"@type": "SoftwareApplication",
+					"@id": "https://connectalign.com/#software",
+					"name": "ConnectAlign",
+					"applicationCategory": "BusinessApplication",
+					"operatingSystem": "Web, iOS, Android",
+					"url": "https://connectalign.com/",
+					"description": "İç iletişim, doküman yönetimi, eğitim, etkinlik ve organizasyon yönetimini tek platformda toplayan bulut tabanlı kurumsal SaaS çözümü.",
+					"featureList": [
+						"Doküman Yönetim Sistemi",
+						"İç İletişim",
+						"Organizasyon Yönetimi",
+						"Eğitim ve Gelişim",
+						"Dashboard ve Raporlama",
+						"Etkinlik Yönetimi",
+						"Dijital Kartvizit",
+						"Mobil Destek (iOS/Android)",
+						"Güvenlik ve Yetkilendirme"
+					],
+					"publisher": { "@id": "https://connectalign.com/#organization" }
+				},
+				{
+					"@type": "FAQPage",
+					"@id": "https://connectalign.com/#faq",
+					"inLanguage": "tr",
+					"mainEntity": [
+						{
+							"@type": "Question",
+							"name": "ConnectAlign nedir ve ne işe yarar?",
+							"acceptedAnswer": { "@type": "Answer", "text": "ConnectAlign, işletmelerin iç iletişim, doküman yönetimi, eğitim ve etkinlik yönetimi gibi tüm operasyonel ihtiyaçlarını tek bir platformda toplayan bulut tabanlı bir SaaS çözümüdür." }
+						},
+						{
+							"@type": "Question",
+							"name": "Hangi cihazlardan erişebilirim?",
+							"acceptedAnswer": { "@type": "Answer", "text": "ConnectAlign'a web tarayıcısı üzerinden her cihazdan erişebilirsiniz. Ayrıca iOS ve Android mobil uygulamalarımız da yakında kullanıma sunulacak." }
+						},
+						{
+							"@type": "Question",
+							"name": "Verilerim güvende mi?",
+							"acceptedAnswer": { "@type": "Answer", "text": "Evet, verileriniz ISO 27001 sertifikalı veri merkezlerinde saklanır. Tüm veriler şifrelenir ve KVKK/GDPR uyumlu olarak işlenir." }
+						},
+						{
+							"@type": "Question",
+							"name": "Kaç kullanıcı ekleyebilirim?",
+							"acceptedAnswer": { "@type": "Answer", "text": "Seçtiğiniz pakete göre değişir. Basic pakette 50, Pro pakette 200 kullanıcı, Enterprise pakette ise sınırsız kullanıcı ekleyebilirsiniz." }
+						},
+						{
+							"@type": "Question",
+							"name": "Mobil uygulama var mı?",
+							"acceptedAnswer": { "@type": "Answer", "text": "Şu anda responsive web arayüzümüz mevcut. iOS ve Android mobil uygulamalarımız geliştirme aşamasında ve yakında yayınlanacak." }
+						},
+						{
+							"@type": "Question",
+							"name": "Destek hizmeti nasıl çalışır?",
+							"acceptedAnswer": { "@type": "Answer", "text": "Basic pakette email destek, Pro pakette öncelikli destek, Enterprise pakette ise 7/24 özel destek ekibi hizmetinizdedir." }
+						}
+					]
+				}
+			]
+		}
+		</script>
 	</head>
 	<body>
-		<div id="root"></div>
+		<div id="root">
+			<!-- Static crawlable content for bots that don't execute JS; replaced by React on mount -->
+			<div style="font-family: system-ui, sans-serif; background: #1a1a2e; color: #e5e7eb; min-height: 100vh; padding: 48px 24px;">
+				<div style="max-width: 900px; margin: 0 auto;">
+					<h1>ConnectAlign - Dijital Dönüşüm Platformu</h1>
+					<p>ConnectAlign; iç iletişim, doküman yönetimi, eğitim, etkinlik ve organizasyon yönetimini tek platformda toplayan bulut tabanlı kurumsal SaaS çözümüdür. KVKK/GDPR uyumlu; web, iOS ve Android üzerinden erişilebilir.</p>
+					<h2>Özellikler</h2>
+					<ul>
+						<li><a href="/features/document-management">Doküman Yönetim Sistemi</a> — hiyerarşik kategoriler, rol bazlı erişim, gelişmiş arama</li>
+						<li><a href="/features/internal-communication">İç İletişim</a> — duyurular, bildirimler, hedefli mesajlaşma</li>
+						<li><a href="/features/organization-management">Organizasyon Yönetimi</a> — firma, departman ve rol yönetimi</li>
+						<li><a href="/features/training-development">Eğitim ve Gelişim</a> — video tabanlı eğitim içerikleri</li>
+						<li><a href="/features/dashboard-reporting">Dashboard ve Raporlama</a> — gerçek zamanlı analitik</li>
+						<li><a href="/features/event-management">Etkinlik Yönetimi</a> — kurumsal etkinlik planlama ve katılım takibi</li>
+						<li><a href="/features/digital-business-cards">Dijital Kartvizit</a> — QR kodlu personel kartvizitleri</li>
+						<li><a href="/features/mobile-support">Mobil Destek</a> — iOS ve Android uygulamaları</li>
+						<li><a href="/features/security-authorization">Güvenlik ve Yetkilendirme</a> — şifreli veri, rol bazlı yetkiler</li>
+					</ul>
+					<p><a href="/demo">Ücretsiz demo talep edin</a> · <a href="/contact">İletişim</a></p>
+				</div>
+			</div>
+		</div>
 		<script type="module" src="/src/main.jsx"></script>
 	</body>
 </html>

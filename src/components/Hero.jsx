@@ -86,8 +86,11 @@ const Hero = ({ language }) => {
           <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-[#9e4200]/10 to-[#ff6f00]/10 blur-2xl"></div>
           <img
             className="relative rounded-2xl shadow-ambient-lg w-full"
-            alt="ConnectAlign platform dashboard interface"
+            alt={language === 'tr' ? 'ConnectAlign platform yönetim paneli arayüzü' : 'ConnectAlign platform dashboard interface'}
             src="/connect-align-main.png"
+            width="1240"
+            height="742"
+            fetchpriority="high"
           />
         </motion.div>
       </div>

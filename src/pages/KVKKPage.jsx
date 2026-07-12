@@ -17,11 +17,15 @@ export default function KVKKPage({ language = 'tr' }) {
   return (
     <>
       <Helmet>
+        <html lang={language} />
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta name="robots" content="index, follow" />
+        <link rel="alternate" hrefLang="tr" href="https://connectalign.com/kvkk" />
+        <link rel="alternate" hrefLang="en" href="https://connectalign.com/gdpr" />
+        <link rel="alternate" hrefLang="x-default" href="https://connectalign.com/kvkk" />
       </Helmet>
 
       <LegalLayout

@@ -1,0 +1,40 @@
+# ConnectAlign
+
+> ConnectAlign is a cloud-based, all-in-one SaaS platform for digital transformation that unites internal communication, document management, training, event management, and employee engagement in a single system. Developed by Utilwork Bilgi Teknolojileri (Istanbul, Turkey). The platform is bilingual (Turkish / English), GDPR and KVKK compliant, and accessible via web with iOS/Android mobile apps.
+
+ConnectAlign (Türkçe): İç iletişim, doküman yönetimi, eğitim, etkinlik ve organizasyon yönetimini tek platformda toplayan bulut tabanlı kurumsal SaaS çözümüdür.
+
+## Core Features
+
+- [Document Management System](https://connectalign.com/features/document-management): Hierarchical category trees, role-based access control, advanced content search, audit trail, secure cloud storage.
+- [Internal Communication](https://connectalign.com/features/internal-communication): Announcements, push notifications, targeted messaging and engagement channels.
+- [Organization Management](https://connectalign.com/features/organization-management): Companies, departments, users and role-based authorization management.
+- [Training & Development](https://connectalign.com/features/training-development): Video-based training content distribution for continuous employee development.
+- [Dashboard & Reporting](https://connectalign.com/features/dashboard-reporting): Real-time analytics and graphical dashboards.
+- [Event Management](https://connectalign.com/features/event-management): Corporate event planning, announcements and attendee tracking.
+- [Digital Business Cards](https://connectalign.com/features/digital-business-cards): QR-code based digital business cards for staff.
+- [Mobile Support](https://connectalign.com/features/mobile-support): iOS and Android apps with responsive web interface.
+- [Security & Authorization](https://connectalign.com/features/security-authorization): Encrypted data storage, secure authentication, role-based permissions, ISO 27001 certified data centers.
+
+## Plans
+
+- Basic: up to 50 users, email support
+- Pro: up to 200 users, priority support
+- Enterprise: unlimited users, 24/7 dedicated support
+
+## Pages
+
+- [Home](https://connectalign.com/): Product overview, features, pricing and FAQ (Turkish default, English available)
+- [Request a Demo](https://connectalign.com/demo)
+- [Contact](https://connectalign.com/contact)
+- [Privacy Policy (EN)](https://connectalign.com/privacy) / [Gizlilik Politikası (TR)](https://connectalign.com/gizlilik-politikasi)
+- [Terms of Service](https://connectalign.com/terms)
+- [KVKK (TR)](https://connectalign.com/kvkk) / [GDPR (EN)](https://connectalign.com/gdpr)
+
+## Company
+
+- Corporate entity: Utilwork Bilgi Teknolojileri
+- Address: Küçükbakkalköy, Dereboyu Cd Brandium Residence D:3A R5 Blok K:7 D:48, 34758 Ataşehir/İstanbul, Turkey
+- Email: info@utilwork.com
+- Phone: +90 216 706 30 01
+- Website: https://connectalign.com
