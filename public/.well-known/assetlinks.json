@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.utilwork.connectalign",
+      "sha256_cert_fingerprints": [
+        "07:A2:15:4D:2B:F4:6F:0B:E9:EC:E8:16:D9:C1:62:7D:FF:7C:AE:CB:5C:5E:EA:D4:EC:1F:8B:D9:1E:45:4F:AD",
+        "32:06:FB:2F:EA:16:E6:45:F2:A0:FE:0F:B3:4B:F3:A4:F7:F2:84:30:D9:B7:32:EA:4B:DD:9B:AB:4E:71:40:EB"
+      ]
+    }
+  }
+]
